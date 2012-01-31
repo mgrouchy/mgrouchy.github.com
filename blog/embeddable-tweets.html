@@ -22,7 +22,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>Mike Grouchy</title>
+  <title>Embeddable Tweets</title>
   <meta name="description" content="">
   <meta name="author" content="Mike Grouchy">
 
@@ -42,7 +42,7 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="index">
+<body id="embeddable-tweets">
 	<div class="topbar ">
 			<div class="topbar-inner topbar-override">
         <div class="container container-expand">
@@ -55,36 +55,46 @@
       </div>
 	</div>
 		<div class="container container-expand">
-		<div class="blog-list">
-	<ul class="posts clear">
-					<li class="post clear">
-						 	<time datetime="2010-12-14">Tuesday, 14 Dec, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/setting-up-nginx-with-ssl-and-godaddy.html">Setting up SSL with Nginx and Godaddy</a>
-			</li>
+		<article class="post">
+		<h1 class="title">
+	    <a class="post-link" href="/blog/embeddable-tweets.html">
+	        Embeddable Tweets
+	    </a>
+	</h1>
+	<time datetime="2010-05-05">
+	    Posted: Wednesday, 05 May, 2010
+	</time>
+<div class="post-content">
+	<p>Twitter now allows you to Embed a Tweet, all you need is the url of a tweet, like
+<a href="http://twitter.com/mgrouchy/status/13429079254">http://twitter.com/mgrouchy/status/13429079254</a>,
+and you can use Twitters <a href="http://media.twitter.com/blackbird-pie/">Blackbird Pie</a>
+app to embed the tweet in your website like&nbsp;below:</p>
+<!-- http://twitter.com/mgrouchy/status/13429079254 --> <style type='text/css'>.bbpBox{background:url(http://s.twimg.com/a/1271891196/images/themes/theme15/bg.png) #022330;padding:20px;}p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px}p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6}p.bbpTweet span.metadata span.author{line-height:19px}p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px}p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}</style> <div class='bbpBox'><p class='bbpTweet'>This is me tweeting about how you can embed tweets, is this embedded?<span class='timestamp'><a title='Wed May 05 14:23:55 +0000 2010' href='http://twitter.com/mgrouchy/status/13429079254'>less than a minute ago</a> via <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a></span><span class='metadata'><span class='author'><a href='http://twitter.com/mgrouchy'><img src='http://a3.twimg.com/profile_images/817183015/swix-hipster_normal.JPG' /></a><strong><a href='http://twitter.com/mgrouchy'>Mike Grouchy</a></strong><br/>mgrouchy</span></span></p></div> <!-- end of tweet -->
 
-  			<li class="post clear">
-						 	<time datetime="2010-07-05">Monday, 05 Jul, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/structure-and-interpretation-of-computer-programs-epub.html">SICP in Epub Format</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-07-04">Sunday, 04 Jul, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/my-development-toolbox.html">My Development Toolbox: An Introduction</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-05-05">Wednesday, 05 May, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/embeddable-tweets.html">Embeddable Tweets</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-04-30">Friday, 30 Apr, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/a-new-blog-a-new-beginning.html">A New Blog A New Beginning</a>
-			</li>
-
-  </ul>
-</div>
-					</div> <!--! end of .container -->
+<p>Here is the Source:
+<script src="http://gist.github.com/390841.js"></script></p>
+<p>Its kind of interesting, Blackbird Pie just generates a html/css snippet that you
+ can embed in your page. I am not sure if I prefer this way of doing things or the
+ way <a href="http://github.com">github</a> does it with cross site&nbsp;javascript.</p>
+<p>What do you&nbsp;think?</p>
+			<div class="hero-unit disqus">
+		Tags:  <a class="" href="/blog/tags/twitter.html">twitter</a>,  <a class="" href="/blog/tags/embed.html">embed</a>.	</div>	
+	</article>			<div class="hero-unit disqus">
+<h3 id="comment-header">Comments</h1>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = 'http://mikegrouchy.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=mikegrouchy">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">Powered by <span class="logo-disqus">Disqus</span></a>
+</div>	</div> <!--! end of .container -->
 	<footer> Copyright 2009-2012 Mike Grouchy
   </footer>
     		<!-- Javascript at the bottom for fast page loading -->
