@@ -7,10 +7,40 @@
         <link href="/"/>
     
         
-    <updated>2012-01-30T19:26:08Z</updated>
+    <updated>2012-01-30T20:16:39Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Zsh is your friend.</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/zsh-is-your-friend.html"/>
+            <updated>2012-01-30T02:14:00Z</updated>
+            <published>2012-01-30T02:14:00Z</published>
+            <id>/blog/zsh-is-your-friend.html</id>
+                        <category   scheme="/blog/tags"
+                        term="zsh"
+                        label="Zsh" />
+                        <category   scheme="/blog/tags"
+                        term="shell"
+                        label="Shell" />
+                        <category   scheme="/blog/tags"
+                        term="terminal"
+                        label="Terminal" />
+            
+            <content type="html">
+                                &lt;p&gt;I don&amp;#8217;t know if you know this, but ZShell is your friend, you might not know it
+yet, but its true. I know what you are thinking , &amp;#8220;whats wrong with Bash?&amp;#8221;,
+nothing, except its not&amp;nbsp;Zsh.&lt;/p&gt;
+&lt;p&gt;Its not that Bash is a bad guy, I don&amp;#8217;t want to put him down, but if we
+were picking teams, Bash would be last picked in gym&amp;nbsp;class.&lt;/p&gt;
+&lt;p&gt;He isn&amp;#8217;t very versatile and he doesn&amp;#8217;t do anything particularily great, all in all
+he is kind of just a worse&amp;nbsp;Zsh.&lt;/p&gt;
+&lt;p&gt;Zsh is great because it looks and acts like bash. If you are familiar with bash
+don&amp;#8217;t worry, you can try zsh out without skipping a beat and you still end up
+with a better&amp;nbsp;shell.&lt;/p&gt;
+&lt;p&gt;Why is Zsh better then&amp;nbsp;Bash?&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Setting up SSL with Nginx and Godaddy</title>
             <author><name>Mike Grouchy</name></author>

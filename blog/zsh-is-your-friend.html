@@ -22,7 +22,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>A New Blog A New Beginning</title>
+  <title>Zsh is your friend</title>
   <meta name="description" content="">
   <meta name="author" content="Mike Grouchy">
 
@@ -44,7 +44,7 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="a-new-blog-a-new-beginning">
+<body id="zsh-is-your-friend">
 	<div class="topbar ">
 			<div class="topbar-inner topbar-override">
         <div class="container container-expand">
@@ -60,32 +60,75 @@
 		<div class="container container-expand">
 		<article class="post">
 		<h1 class="title">
-	    <a class="post-link" href="/blog/a-new-blog-a-new-beginning.html">
-	        A New Blog A New Beginning
+	    <a class="post-link" href="/blog/zsh-is-your-friend.html">
+	        Zsh is your friend
 	    </a>
 	</h1>
-	<time datetime="2010-04-30">
-	    Posted: Friday, 30 April, 2010
+	<time datetime="2012-01-31">
+	    Posted: Tuesday, 31 January, 2012
 	</time>
 <div class="post-content">
-	<p>So as you can tell this all looks a bit different. This blog that you are currently
-reading is <strong>completely static</strong>. All of this post content is actually written in
-<a href="http://daringfireball.net/projects/markdown/">markdown</a> and then generated as static html by
-<a href="http://hyde.github.com/">Hyde</a>. As you can tell some of the css is off and
-this blog isn&#8217;t overly full featured. I&#8217;m considering this a work in process and
-a little project to import my css skills as well as a fun little thing I can work
-on, on the side.  I will probably write a post about how to get started with hyde
-for people interested in trying it&nbsp;out.</p>
-<p>I decided that with this new blog its a completely fresh start, I haven&#8217;t carried
-over any of the old posts from my old blog and I could care less about the google
-juice I am losing because of that. In this new incarnation of the blog, I&#8217;m hoping
-I will post a little more consistently as well as bring a tighter focus. I have
-had <a href="http://mikegrouchy.com">mikegrouchy.com</a> for 6 years and it has
-been a blog that entire time, but there hasn&#8217;t been a lot of great content. I plan
-on bringing back some of my old tutorial posts that people used ,
-but probably update them a bit which hopefully will be an&nbsp;improvement.</p>
+	<p>I don&#8217;t know if you know this, but ZShell is your friend, you might not know it
+yet, but its true. I know what you are thinking , &#8220;whats wrong with Bash?&#8221;,
+nothing, except its not&nbsp;Zsh.</p>
+<p>Its not that Bash is a bad guy, I don&#8217;t want to put him down, but if we
+were picking teams, Bash would be last picked in gym&nbsp;class.</p>
+<p>He isn&#8217;t very versatile and he doesn&#8217;t do anything particularily great, all in all
+he is kind of just a worse Zsh(or Zsh is kind of like a better&nbsp;Bash).</p>
+<p>Zsh is easy to get started with because it looks and acts like bash in a lot of
+ways. So if you are familiar with bash don&#8217;t worry, you can try zsh out without
+skipping a beat and you still end up with a better&nbsp;shell.</p>
+<h3>Why is Zsh better then&nbsp;Bash?</h3>
+<p>In my mind one of the most important reasons why Zsh is better then bash is
+autocompletion, and I don&#8217;t mean that whimpy autocompletion you get by installing
+bash completion. I mean, this is real deal command completion, besides getting all
+the completion of common commands on the command line, and being ridiculously
+fast, the completion also gives you a keyboard navigable completion&nbsp;list.</p>
+<p><img src="/media/images/2012/01/zshcompletion.jpg" style="width:660px; padding-top:10px;"/></p>
+<p>Okay, I know what you are saying, big deal right? Well how about really great built
+in autocompletion for common commands. Lets use Kill as an example. You&nbsp;type</p>
+<pre><code>Kill &lt;tab&gt;
+</code></pre>
+<p>in bash, you get what, the list of all files that are in your current
+working directory. Not very helpful behavior in my opinion. What happens if you&nbsp;type</p>
+<pre><code>kill &lt;tab&gt;
+</code></pre>
+<p>in Zsh?&nbsp;This:</p>
+<p><img src="/media/images/2012/01/zshkillcompletion.jpg" style="width:660px; padding-top:10px;"/></p>
+<p>Lists of all your processes with pids? Yes&nbsp;please.</p>
+<p>Another thing that make makes Zsh stand out is shared history. If you are anything
+like me you live in the terminal all day long. There is nothing worse(I&#8217;m exaggerating)
+then opening another terminal in a tab and navigating your history looking for
+that recent thing you just did in another window and have it not be in your
+history. In Zsh this isn&#8217;t an&nbsp;issue.</p>
+<h3>Time for more&nbsp;awesome</h3>
+<p>Okay, so we have great, fast autocompletion and shared history. How much more awesome
+could there be?&nbsp;Lots!</p>
+<p>Autocorrect is pretty&nbsp;cool</p>
+<pre><code>mikegrouchyv2 ::(master*) » gut status
+zsh: correct 'gut' to 'git' [nyae]?y
+git status
+</code></pre>
+<p>Hey thats pretty cool, autocorrect for known commands. What would I do
+without you(besides type the command&nbsp;again)?</p>
+<p>Even cooler then autocorrect, for the super nerd(like me) Vi and emacs mode,
+<strong>shit yeah</strong>, you can have your favorite editor on your command line. It will
+support common movement commands and editing modes, like command and insert mode
+for&nbsp;Vi.</p>
+<p>Last but certianly not least, Zsh has <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
+from the&nbsp;website:</p>
+<blockquote>
+<p>A community-driven framework for managing your zsh configuration. Includes 40+ optional plugins (rails, git, <span class="caps">OSX</span>, hub, capistrano, brew, ant, macports, etc), over 80 terminal themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the&nbsp;community.</p>
+</blockquote>
+<p>I know one exists for bash, but I find oh-my-zsh to be excellent, it autoupdates,
+has great plugins and a very active community behind&nbsp;it.</p>
+<p>All in all, Zsh is pretty great, so if you haven&#8217;t tried Zsh, maybe its time you
+try it out. If so <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> is a
+pretty great place to&nbsp;start.</p>
+<p>If you are already drinking the Kool-aid and have some Zsh tips to share, either
+leave a comment or hit me up on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
 			<div class="hero-unit disqus">
-		Tags:  <a class="" href="/blog/tags/meta.html">meta</a>.	</div>	
+		Tags:  <a class="" href="/blog/tags/zsh.html">zsh</a>,  <a class="" href="/blog/tags/shell.html">shell</a>,  <a class="" href="/blog/tags/terminal.html">terminal</a>.	</div>	
 	</article>			<div class="hero-unit disqus">
 <h3 id="comment-header">Comments</h1>
 	<div id="disqus_thread"></div>

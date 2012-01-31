@@ -7,10 +7,31 @@
         <link href="/"/>
     
         
-    <updated>2012-01-30T19:26:09Z</updated>
+    <updated>2012-01-30T20:16:40Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Zsh is your friend.</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/zsh-is-your-friend.html"/>
+            <updated>2012-01-30T02:14:00Z</updated>
+            <published>2012-01-30T02:14:00Z</published>
+            <id>/blog/zsh-is-your-friend.html</id>
+                        <category   scheme="/blog/tags"
+                        term="zsh"
+                        label="Zsh" />
+                        <category   scheme="/blog/tags"
+                        term="shell"
+                        label="Shell" />
+                        <category   scheme="/blog/tags"
+                        term="terminal"
+                        label="Terminal" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Setting up SSL with Nginx and Godaddy</title>
             <author><name>Mike Grouchy</name></author>
