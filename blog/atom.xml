@@ -7,17 +7,17 @@
         <link href="/"/>
     
         
-    <updated>2012-02-06T08:36:11Z</updated>
+    <updated>2012-02-06T11:42:11Z</updated>
 
     <id>/blog/atom.xml/</id>
 
             <entry>
-            <title type="html">Introducting Pycoders Weekly</title>
+            <title type="html">Introducing Pycoders Weekly</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/introducting-pycoders-weekly.html"/>
+            <link href="/blog/introducing-pycoders-weekly.html"/>
             <updated>2012-02-06T10:00:00Z</updated>
             <published>2012-02-06T10:00:00Z</published>
-            <id>/blog/introducting-pycoders-weekly.html</id>
+            <id>/blog/introducing-pycoders-weekly.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -31,9 +31,9 @@ about the python newsletter that we would want to recieve weekly. A curated
 collection of the best python news, articles and projects from around the internet
 delivered to your inbox in a beautiful package&amp;nbsp;weekly.&lt;/p&gt;
 &lt;p&gt;The result of this talk has been &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoders Weekly&lt;/a&gt;.
-We hope you like it.
-&lt;img src=&#34;/media/images/2012/02/pycoders_weekly.png&#34; style=&#34;width:560px; padding:10px;&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;If you have created some content, or run some project that you think should be
+The first issue is set to drop on Friday, February 17th, we hope you like it.
+&lt;img src=&#34;/media/images/2012/02/pycoders_weekly.png&#34; style=&#34;width:560px; padding:10px;left:auto;right:auto;border:0px;&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;If you have created some content or run some project that you think should be
 in &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoders Weekly&lt;/a&gt; contact &lt;a href=&#34;http://twitter.com/myusuf3&#34;&gt;Mahdi&lt;/a&gt;
 or &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;me&lt;/a&gt; and let us&amp;nbsp;know.&lt;/p&gt;            </content>
         </entry>
