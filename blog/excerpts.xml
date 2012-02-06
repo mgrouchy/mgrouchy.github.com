@@ -7,16 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-01-30T20:16:40Z</updated>
+    <updated>2012-02-06T08:36:11Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
             <entry>
-            <title type="html">Zsh is your friend.</title>
+            <title type="html">Introducting Pycoders Weekly</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/introducting-pycoders-weekly.html"/>
+            <updated>2012-02-06T10:00:00Z</updated>
+            <published>2012-02-06T10:00:00Z</published>
+            <id>/blog/introducting-pycoders-weekly.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="newsletter"
+                        label="Newsletter" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Zsh is your friend</title>
             <author><name>Mike Grouchy</name></author>
             <link href="/blog/zsh-is-your-friend.html"/>
-            <updated>2012-01-30T02:14:00Z</updated>
-            <published>2012-01-30T02:14:00Z</published>
+            <updated>2012-01-31T11:14:00Z</updated>
+            <published>2012-01-31T11:14:00Z</published>
             <id>/blog/zsh-is-your-friend.html</id>
                         <category   scheme="/blog/tags"
                         term="zsh"
