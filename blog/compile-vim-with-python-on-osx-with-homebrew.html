@@ -85,10 +85,16 @@ to install&nbsp;Vim.</p>
 <script src="https://gist.github.com/2051422.js?file=vim.rb"></script>
 
 <p>To install this formula you can just use this command, or fork the Gist and modify
-the formula as you see fit to install your flavor of&nbsp;Vim.</p>
-<div class="codebox"><figure class="code"><div class="highlight"><pre>brew install https://raw.github.com/gist/2051422/6b9f33b7135f44e3e55af6e15ed32b738de2f666/vim.rb<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
-
-<p>Now you can test your version of vim with:
+the formula as you see fit to install your flavor of Vim.
+<div class="codebox"><figure class="code"><div class="highlight"><pre>brew install https://raw.github.com/gist/2051422/97b17d79e404b78bf9eef581c190ff158485cb30/vim.rb<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
+<p>By default the Vim is compile with +python and +ruby, if you want support for other
+interpreters you can pass those parameters to the script with:
+<div class="codebox"><figure class="code"><div class="highlight"><pre>--enable-interp<span class="o">=</span><span class="caps">NAME</span>,...<span class="s2">&quot;, &quot;</span>lua, mzscheme, perl, python, python3, tcl and/or ruby<span class="err">&quot;</span><br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
+<p>You can also specify vim be compiled with features(the scripts, default is normal)
+To see what the features do, you can see this <a href="http://www.drchip.org/astronaut/vim/vimfeat.html">rather ugly table</a>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>--with-features<span class="o">=</span><span class="caps">TYPE</span><span class="s2">&quot;, &quot;</span>tiny, small, normal, big or huge<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
+<p>Now that you have vim installed with your interpreters and features compiled,
+go ahead and check the version:
 <div class="codebox"><figure class="code"><div class="highlight"><pre>vim --version<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
 <p>and you should see that it is the updated&nbsp;version.</p>
 <p>If you don&#8217;t see that it is the updated version, it means your /usr/local/bin isn&#8217;t
