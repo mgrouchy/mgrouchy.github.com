@@ -7,10 +7,76 @@
         <link href="/"/>
     
         
-    <updated>2012-02-06T11:42:11Z</updated>
+    <updated>2012-05-09T11:58:44Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Compile Vim with Python support on OSX with Homebrew</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
+            <updated>2012-05-09T10:17:00Z</updated>
+            <published>2012-05-09T10:17:00Z</published>
+            <id>/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="vim"
+                        label="Vim" />
+                        <category   scheme="/blog/tags"
+                        term="homebrew"
+                        label="Homebrew" />
+                        <category   scheme="/blog/tags"
+                        term="OSX"
+                        label="Osx" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;a href=&#34;http://twitter.com/myusuf3&#34;&gt;Mahdi&lt;/a&gt; asked me today how I compiled Vim with +Python
+on &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; and I couldn&amp;#8217;t remember the exact commands, so I am writing this blog post
+so I will remember in the future and because someone else might find this&amp;nbsp;useful.&lt;/p&gt;
+&lt;p&gt;Compiling Vim with +Python or +Ruby is required if you want to run any plugins
+that have peices that are written in those languages. The usual way around this
+on &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; is to just install &lt;a href=&#34;https://github.com/b4winckler/macvim&#34;&gt;MacVim&lt;/a&gt; and use
+that. However, if you really want to use terminal Vim, you are out of luck on&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So this is where &lt;a href=&#34;http://mxcl.github.com/homebrew/&#34;&gt;Homebrew&lt;/a&gt; comes in, we can use Homebrew to compile vim from a custom
+formula. The only requirements to do this are &lt;a href=&#34;http://mercurial.selenic.com/&#34;&gt;Mercurial&lt;/a&gt; and&amp;nbsp;Homebrew.&lt;/p&gt;
+&lt;p&gt;You can install Mercurial by using either easy_install or pip:
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;c&#34;&gt;#install mercurial&lt;/span&gt;&lt;br /&gt;easy_install mercurial&lt;br /&gt;&lt;span class=&#34;c&#34;&gt;#or&lt;/span&gt;&lt;br /&gt;pip install mercurial&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;You can follow the directions on the &lt;a href=&#34;https://github.com/mxcl/homebrew/wiki/installation&#34;&gt;Homebrew Github Wiki&lt;/a&gt; to install&amp;nbsp;homebrew.&lt;/p&gt;
+&lt;p&gt;Now you can Install this Homebrew formula which has been modified slightly to my tastes
+to install&amp;nbsp;Vim.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/2051422.js?file=vim.rb&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;To install this formula you can just use this command, or fork the Gist and modify
+the formula as you see fit to install your flavor of&amp;nbsp;Vim.&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;brew install https://raw.github.com/gist/2051422/6b9f33b7135f44e3e55af6e15ed32b738de2f666/vim.rb&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can test your version of vim with:
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;vim --version&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;and you should see that it is the updated&amp;nbsp;version.&lt;/p&gt;
+&lt;p&gt;If you don&amp;#8217;t see that it is the updated version, it means your /usr/local/bin isn&amp;#8217;t
+on your path, or if it is on your path it comes after&amp;nbsp;usr/bin.&lt;/p&gt;
+&lt;p&gt;So how do you fix&amp;nbsp;this?&lt;/p&gt;
+&lt;h2&gt;Option 1: Update your&amp;nbsp;path:&lt;/h2&gt;
+&lt;p&gt;In your .zshrc (&lt;a href=&#34;http://mikegrouchy.com/blog/zsh-is-your-friend.html&#34;&gt;you are using Zsh right?&lt;/a&gt;) or .bashrc
+update your&amp;nbsp;path.&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;c&#34;&gt;#this&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;nb&#34;&gt;export &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/bin:/usr/sbin&lt;br /&gt;&lt;span class=&#34;c&#34;&gt;#to this&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;nb&#34;&gt;export &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;h2&gt;Option 2: Move your old Vim and symlink the new&amp;nbsp;one&lt;/h2&gt;
+&lt;p&gt;You can move the Vim that comes with &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; and Symlink the one brew&amp;nbsp;installed&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;sudo mv /usr/bin/vim /usr/bin/oldvim&lt;br /&gt;ln -s /usr/local/bin/vim /usr/bin/vim&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;One of those should solve your&amp;nbsp;problem.&lt;/p&gt;
+&lt;h2&gt;Protip:&lt;/h2&gt;
+&lt;p&gt;You may notice that your terminal Vim does not support backspace in Insert mode
+with the settings I have setup in the brew&amp;nbsp;formula.&lt;/p&gt;
+&lt;p&gt;If this is something you want, you can stick this line in your&amp;nbsp;.vimrc:&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;backspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;indent&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;eol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;start&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;VimL&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;I think that should be it. If you have any questions leave it in the comments or
+ask me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Introducing Pycoders Weekly</title>
             <author><name>Mike Grouchy</name></author>
@@ -266,8 +332,9 @@ and I were talking about some annoyances when dealing with godaddys &lt;span cla
 &lt;a href=&#34;http://twitter.com/mgrouchy/status/13429079254&#34;&gt;http://twitter.com/mgrouchy/status/13429079254&lt;/a&gt;,
 and you can use Twitters &lt;a href=&#34;http://media.twitter.com/blackbird-pie/&#34;&gt;Blackbird Pie&lt;/a&gt;
 app to embed the tweet in your website like&amp;nbsp;below:&lt;/p&gt;
-&lt;!-- http://twitter.com/mgrouchy/status/13429079254 --&gt; &lt;style type=&#39;text/css&#39;&gt;.bbpBox{background:url(http://s.twimg.com/a/1271891196/images/themes/theme15/bg.png) #022330;padding:20px;}p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px}p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6}p.bbpTweet span.metadata span.author{line-height:19px}p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px}p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}&lt;/style&gt; &lt;div class=&#39;bbpBox&#39;&gt;&lt;p class=&#39;bbpTweet&#39;&gt;This is me tweeting about how you can embed tweets, is this embedded?&lt;span class=&#39;timestamp&#39;&gt;&lt;a title=&#39;Wed May 05 14:23:55 +0000 2010&#39; href=&#39;http://twitter.com/mgrouchy/status/13429079254&#39;&gt;less than a minute ago&lt;/a&gt; via &lt;a href=&#34;http://www.tweetdeck.com&#34; rel=&#34;nofollow&#34;&gt;TweetDeck&lt;/a&gt;&lt;/span&gt;&lt;span class=&#39;metadata&#39;&gt;&lt;span class=&#39;author&#39;&gt;&lt;a href=&#39;http://twitter.com/mgrouchy&#39;&gt;&lt;img src=&#39;http://a3.twimg.com/profile_images/817183015/swix-hipster_normal.JPG&#39; /&gt;&lt;/a&gt;&lt;strong&gt;&lt;a href=&#39;http://twitter.com/mgrouchy&#39;&gt;Mike Grouchy&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt;mgrouchy&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt; &lt;!-- end of tweet --&gt;
+&lt;!-- http://twitter.com/mgrouchy/status/13429079254 --&gt;
 
+&lt;p&gt;&lt;style type=&#39;text/css&#39;&gt;.bbpBox{background:url(http://s.twimg.com/a/1271891196/images/themes/theme15/bg.png) #022330;padding:20px;}p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px}p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6}p.bbpTweet span.metadata span.author{line-height:19px}p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px}p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}&lt;/style&gt; &lt;div class=&#39;bbpBox&#39;&gt;&lt;p class=&#39;bbpTweet&#39;&gt;This is me tweeting about how you can embed tweets, is this embedded?&lt;span class=&#39;timestamp&#39;&gt;&lt;a title=&#39;Wed May 05 14:23:55 +0000 2010&#39; href=&#39;http://twitter.com/mgrouchy/status/13429079254&#39;&gt;less than a minute ago&lt;/a&gt; via &lt;a href=&#34;http://www.tweetdeck.com&#34; rel=&#34;nofollow&#34;&gt;TweetDeck&lt;/a&gt;&lt;/span&gt;&lt;span class=&#39;metadata&#39;&gt;&lt;span class=&#39;author&#39;&gt;&lt;a href=&#39;http://twitter.com/mgrouchy&#39;&gt;&lt;img src=&#39;http://a3.twimg.com/profile_images/817183015/swix-hipster_normal.JPG&#39; /&gt;&lt;/a&gt;&lt;strong&gt;&lt;a href=&#39;http://twitter.com/mgrouchy&#39;&gt;Mike Grouchy&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt;mgrouchy&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt; &lt;!-- end of tweet --&gt;&lt;/p&gt;
 &lt;p&gt;Here is the Source:
 &lt;script src=&#34;http://gist.github.com/390841.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Its kind of interesting, Blackbird Pie just generates a html/css snippet that you

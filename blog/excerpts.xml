@@ -7,10 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-02-06T11:42:11Z</updated>
+    <updated>2012-05-09T11:58:46Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Compile Vim with Python support on OSX with Homebrew</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
+            <updated>2012-05-09T10:17:00Z</updated>
+            <published>2012-05-09T10:17:00Z</published>
+            <id>/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="vim"
+                        label="Vim" />
+                        <category   scheme="/blog/tags"
+                        term="homebrew"
+                        label="Homebrew" />
+                        <category   scheme="/blog/tags"
+                        term="OSX"
+                        label="Osx" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Introducing Pycoders Weekly</title>
             <author><name>Mike Grouchy</name></author>
