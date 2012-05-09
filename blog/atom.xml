@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-05-09T14:00:20Z</updated>
+    <updated>2012-05-09T14:07:42Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -42,7 +42,7 @@ that. However, if you really want to use terminal Vim, you are out of luck on&am
 &lt;p&gt;So this is where &lt;a href=&#34;http://mxcl.github.com/homebrew/&#34;&gt;Homebrew&lt;/a&gt; comes in, we can use Homebrew to compile vim from a custom
 formula. The only requirements to do this are &lt;a href=&#34;http://mercurial.selenic.com/&#34;&gt;Mercurial&lt;/a&gt; and&amp;nbsp;Homebrew.&lt;/p&gt;
 &lt;p&gt;You can install Mercurial by using either easy_install or pip:
-&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;c&#34;&gt;#install mercurial&lt;/span&gt;&lt;br /&gt;easy_install mercurial&lt;br /&gt;&lt;span class=&#34;c&#34;&gt;#or&lt;/span&gt;&lt;br /&gt;pip install mercurial&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;c&#34;&gt;#install mercurial&lt;/span&gt;&lt;br /&gt;sudo easy_install mercurial&lt;br /&gt;&lt;span class=&#34;c&#34;&gt;#or&lt;/span&gt;&lt;br /&gt;sudo pip install mercurial&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;You can follow the directions on the &lt;a href=&#34;https://github.com/mxcl/homebrew/wiki/installation&#34;&gt;Homebrew Github Wiki&lt;/a&gt; to install&amp;nbsp;homebrew.&lt;/p&gt;
 &lt;p&gt;Now you can Install this Homebrew formula which has been modified slightly to my tastes
 to install&amp;nbsp;Vim.&lt;/p&gt;
