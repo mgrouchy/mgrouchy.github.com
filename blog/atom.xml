@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-05-09T14:07:42Z</updated>
+    <updated>2012-05-09T14:20:26Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -49,7 +49,7 @@ to install&amp;nbsp;Vim.&lt;/p&gt;
 &lt;script src=&#34;https://gist.github.com/2051422.js?file=vim.rb&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;To install this formula you can just use this command, or fork the Gist and modify
-the formula as you see fit to install your flavor of Vim.
+the formula as you see fit(that&amp;#8217;s what I did) to install your flavor of Vim.
 &lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;brew install https://raw.github.com/gist/2051422/97b17d79e404b78bf9eef581c190ff158485cb30/vim.rb&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;By default the Vim compiled with this script is compiled with +python and +ruby,
 if you want support for other interpreters you can pass those parameters to the script with:
@@ -81,7 +81,8 @@ with the settings I have setup in the brew&amp;nbsp;formula.&lt;/p&gt;
 &lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;backspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;indent&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;eol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;start&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;VimL&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
 
 &lt;p&gt;I think that should be it. If you have any questions leave it in the comments or
-ask me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;            </content>
+ask me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Edit: Discussion on &lt;a href=&#34;http://news.ycombinator.com/item?id=3949774&#34;&gt;Hacker&amp;nbsp;News&lt;/a&gt;&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Introducing Pycoders Weekly</title>
