@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-05-09T14:20:26Z</updated>
+    <updated>2012-05-10T09:31:19Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -50,7 +50,7 @@ to install&amp;nbsp;Vim.&lt;/p&gt;
 
 &lt;p&gt;To install this formula you can just use this command, or fork the Gist and modify
 the formula as you see fit(that&amp;#8217;s what I did) to install your flavor of Vim.
-&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;brew install https://raw.github.com/gist/2051422/97b17d79e404b78bf9eef581c190ff158485cb30/vim.rb&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;brew install https://raw.github.com/gist/2051422/0cfce544a4ab86318221c4d7213306a7b7ec7b3d/vim.rb&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;By default the Vim compiled with this script is compiled with +python and +ruby,
 if you want support for other interpreters you can pass those parameters to the script with:
 &lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;--enable-interp&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;caps&#34;&gt;NAME&lt;/span&gt;,...&lt;span class=&#34;s2&#34;&gt;&amp;quot;, &amp;quot;&lt;/span&gt;lua, mzscheme, perl, python, python3, tcl and/or ruby&lt;span class=&#34;err&#34;&gt;&amp;quot;&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Bash&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
