@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-05-16T23:20:41Z</updated>
+    <updated>2012-05-16T23:23:50Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -51,7 +51,7 @@ package/
 a directory indicates to the Python interpreter that the directory should be
 treated like a Python&amp;nbsp;package&lt;/p&gt;
 &lt;h2&gt;What goes in &lt;code&gt;__init__.py&lt;/code&gt;?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;init&lt;/strong&gt;.py is often an empty file but it often is used to perform setup needed
+&lt;p&gt;&lt;code&gt;__init__.py&lt;/code&gt; is often an empty file but it often is used to perform setup needed
 for the package(import things, load things into path,&amp;nbsp;etc).&lt;/p&gt;
 &lt;p&gt;One common thing to do in your &lt;code&gt;__init__.py&lt;/code&gt; is to import selected Classes, functions,
 etc into the package level so they can be convieniently imported from the&amp;nbsp;package.&lt;/p&gt;
