@@ -7,10 +7,76 @@
         <link href="/"/>
     
         
-    <updated>2012-05-10T09:31:19Z</updated>
+    <updated>2012-05-16T23:20:41Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Be Pythonic -- __init__.py</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/be-pythonic-initpy.html"/>
+            <updated>2012-05-16T23:25:00Z</updated>
+            <published>2012-05-16T23:25:00Z</published>
+            <id>/blog/be-pythonic-initpy.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="tips"
+                        label="Tips" />
+                        <category   scheme="/blog/tags"
+                        term="tutorial"
+                        label="Tutorial" />
+            
+            <content type="html">
+                                &lt;p&gt;This is hopefully the first in a series of posts about writing Pythonic code and
+explaining some common Python&amp;nbsp;idioms.&lt;/p&gt;
+&lt;p&gt;So the first thing I am going to address in this series of posts is &lt;code&gt;__init__.py&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;What is &lt;code&gt;__init__.py&lt;/code&gt; used&amp;nbsp;for?&lt;/h2&gt;
+&lt;p&gt;The primary use of &lt;code&gt;__init__.py&lt;/code&gt; is to initialize Python packages. The easiest
+way to demonstrate this is to take a look at the structure of a standard python&amp;nbsp;module.&lt;/p&gt;
+&lt;pre&gt;
+package/
+    __init__.py
+  file.py
+    file2.py
+    file3.py
+    subpackage/
+        __init__.py
+        submodule1.py
+        submodule2.py
+&lt;/pre&gt;
+
+&lt;p&gt;As you can see in the structure above the inclusion of the &lt;code&gt;__init__.py&lt;/code&gt; file in
+a directory indicates to the Python interpreter that the directory should be
+treated like a Python&amp;nbsp;package&lt;/p&gt;
+&lt;h2&gt;What goes in &lt;code&gt;__init__.py&lt;/code&gt;?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;init&lt;/strong&gt;.py is often an empty file but it often is used to perform setup needed
+for the package(import things, load things into path,&amp;nbsp;etc).&lt;/p&gt;
+&lt;p&gt;One common thing to do in your &lt;code&gt;__init__.py&lt;/code&gt; is to import selected Classes, functions,
+etc into the package level so they can be convieniently imported from the&amp;nbsp;package.&lt;/p&gt;
+&lt;p&gt;In our example above we can say that file.py has the Class File. So without
+anything in our &lt;code&gt;__init__.py&lt;/code&gt; you would import with this syntax:
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;package.file&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Python&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;However you can import File into your &lt;code&gt;__init__.py&lt;/code&gt; to make it available at the
+package level:
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;c&#34;&gt;# in your &lt;strong&gt;init&lt;/strong&gt;.py&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;br /&gt;&amp;nbsp;&lt;br /&gt;&lt;span class=&#34;c&#34;&gt;# now import File from package&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Python&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Another thing to do is at the package level make subpackages/modules available
+with the &lt;code&gt;__all__&lt;/code&gt; variable. When the interpeter sees an &lt;code&gt;__all__&lt;/code&gt; variable defined
+in an &lt;code&gt;__init__.py&lt;/code&gt; it imports the modules listed in the &lt;code&gt;__all__&lt;/code&gt; variable when you do:
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;Python&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;__all__&lt;/code&gt; is a list containing the names of modules that you want to be imported
+with import * so looking at our above example again if we wanted to import the
+submodules in subpackage the &lt;code&gt;__all__&lt;/code&gt; variable in &lt;code&gt;subpackage/__init__.py&lt;/code&gt; would be:
+    &lt;code&gt;__all__ = [&#39;submodule1&#39;, &#39;submodule2&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;With the &lt;code&gt;__all__&lt;/code&gt; variable populated like that, when you perform &lt;code&gt;from subpackage import *&lt;/code&gt;
+it would import submodule1 and&amp;nbsp;submodule2.&lt;/p&gt;
+&lt;p&gt;As you can see &lt;code&gt;__init__.py&lt;/code&gt; can be very useful besides its primary function of
+indicating that a directory is a module. If you have any comments or questions,
+hit up the comments or contact me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are looking for more Python news, tips and discussion you should check out
+&lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoder&amp;#8217;s Weekly&lt;/a&gt; a weekly Python newsletter that I&amp;nbsp;curate.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Compile Vim with Python support on OSX with Homebrew</title>
             <author><name>Mike Grouchy</name></author>

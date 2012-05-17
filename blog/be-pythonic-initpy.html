@@ -1,0 +1,165 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Be Pythonic -- __init__.py</title>
+  <meta name="description" content="">
+  <meta name="author" content="Mike Grouchy">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom" />
+
+		<link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="be-pythonic-initpy">
+	<div class="topbar ">
+			<div class="topbar-inner topbar-override">
+        <div class="container container-expand">
+          <a class="brand btitle" href="http://mikegrouchy.com">Mike Grouchy</a>
+          <ul class="nav">
+							<li class=""><a href="http://mikegrouchy.com">Home</a></li>
+							<li class=""><a href="/about.html">About</a></li>
+							<li class=""><a href="http://feeds.feedburner.com/mikegrouchycom">Feed</a></li>
+          </ul>
+        </div>
+      </div>
+	</div>
+		<div class="container container-expand">
+		<article class="post">
+		<h1 class="title">
+	    <a class="post-link" href="/blog/be-pythonic-initpy.html">
+	        Be Pythonic -- __init__.py
+	    </a>
+	</h1>
+	<time datetime="2012-05-16">
+	    Posted: Wednesday, 16 May, 2012
+	</time>
+<div class="post-content">
+	<p>This is hopefully the first in a series of posts about writing Pythonic code and
+explaining some common Python&nbsp;idioms.</p>
+<p>So the first thing I am going to address in this series of posts is <code>__init__.py</code>.</p>
+<h2>What is <code>__init__.py</code> used&nbsp;for?</h2>
+<p>The primary use of <code>__init__.py</code> is to initialize Python packages. The easiest
+way to demonstrate this is to take a look at the structure of a standard python&nbsp;module.</p>
+<pre>
+package/
+    __init__.py
+  file.py
+    file2.py
+    file3.py
+    subpackage/
+        __init__.py
+        submodule1.py
+        submodule2.py
+</pre>
+
+<p>As you can see in the structure above the inclusion of the <code>__init__.py</code> file in
+a directory indicates to the Python interpreter that the directory should be
+treated like a Python&nbsp;package</p>
+<h2>What goes in <code>__init__.py</code>?</h2>
+<p><strong>init</strong>.py is often an empty file but it often is used to perform setup needed
+for the package(import things, load things into path,&nbsp;etc).</p>
+<p>One common thing to do in your <code>__init__.py</code> is to import selected Classes, functions,
+etc into the package level so they can be convieniently imported from the&nbsp;package.</p>
+<p>In our example above we can say that file.py has the Class File. So without
+anything in our <code>__init__.py</code> you would import with this syntax:
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">package.file</span> <span class="kn">import</span> <span class="n">File</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div></p>
+<p>However you can import File into your <code>__init__.py</code> to make it available at the
+package level:
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="c"># in your <strong>init</strong>.py</span><br /><span class="kn">from</span> <span class="nn">file</span> <span class="kn">import</span> <span class="n">File</span><br />&nbsp;<br /><span class="c"># now import File from package</span><br /><span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">File</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div></p>
+<p>Another thing to do is at the package level make subpackages/modules available
+with the <code>__all__</code> variable. When the interpeter sees an <code>__all__</code> variable defined
+in an <code>__init__.py</code> it imports the modules listed in the <code>__all__</code> variable when you do:
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="o">*</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div></p>
+<p><code>__all__</code> is a list containing the names of modules that you want to be imported
+with import * so looking at our above example again if we wanted to import the
+submodules in subpackage the <code>__all__</code> variable in <code>subpackage/__init__.py</code> would be:
+    <code>__all__ = ['submodule1', 'submodule2']</code></p>
+<p>With the <code>__all__</code> variable populated like that, when you perform <code>from subpackage import *</code>
+it would import submodule1 and&nbsp;submodule2.</p>
+<p>As you can see <code>__init__.py</code> can be very useful besides its primary function of
+indicating that a directory is a module. If you have any comments or questions,
+hit up the comments or contact me on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
+<p>If you are looking for more Python news, tips and discussion you should check out
+<a href="http://pycoders.com">Pycoder&#8217;s Weekly</a> a weekly Python newsletter that I&nbsp;curate.</p>
+			<div class="hero-unit disqus">
+		Tags:  <a class="" href="/blog/tags/python.html">python</a>,  <a class="" href="/blog/tags/tips.html">tips</a>,  <a class="" href="/blog/tags/tutorial.html">tutorial</a>.	</div>	
+	</article>			<div class="hero-unit disqus">
+<h3 id="comment-header">Comments</h1>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		 var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>	</div> <!--! end of .container -->
+	<footer> Copyright 2009-2012 Mike Grouchy
+  </footer>
+    		<!-- Javascript at the bottom for fast page loading -->
+					<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+			<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+						
+
+		<!--[if lt IE 7 ]>
+		  <script src="js/libs/dd_belatedpng.js"></script>
+		  <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+		<![endif]-->
+
+					<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet  -->
+<script>
+    var _gaq = [['_setAccount', 'UA-1990784-1'], ['_trackPageview']];
+    (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+</script>
+		
+			</body>
+</html>
