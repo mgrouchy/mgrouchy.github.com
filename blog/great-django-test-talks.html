@@ -1,0 +1,147 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Great Python/Django Test Talks</title>
+  <meta name="description" content="">
+  <meta name="author" content="Mike Grouchy">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom" />
+
+		<link rel="stylesheet" href="/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="great-django-test-talks">
+	<div class="topbar ">
+			<div class="topbar-inner topbar-override">
+        <div class="container container-expand">
+          <a class="brand btitle" href="http://mikegrouchy.com">Mike Grouchy</a>
+          <ul class="nav">
+							<li class=""><a href="http://mikegrouchy.com">Home</a></li>
+							<li class=""><a href="/about.html">About</a></li>
+							<li class=""><a href="http://feeds.feedburner.com/mikegrouchycom">Feed</a></li>
+          </ul>
+        </div>
+      </div>
+	</div>
+		<div class="container container-expand">
+		<article class="post">
+		<h1 class="title">
+	    <a class="post-link" href="/blog/great-django-test-talks.html">
+	        Great Python/Django Test Talks
+	    </a>
+	</h1>
+	<time datetime="2012-06-10">
+	    Posted: Sunday, 10 June, 2012
+	</time>
+<div class="post-content">
+	<p>I have been working on some tests for an upcoming product at <a href="http://swixhq.com"><span class="caps">SWIX</span></a>
+and as any good developer I think its important to make an effort to constantly be
+learning new things. In this vein I starting digging through the videos for
+this years <a href="https://us.pycon.org/2012/">Pycon <span class="caps">US</span></a>. Lo and Behold Testing was a
+popular topic at Pycon so there were lots of talks to&nbsp;watch!</p>
+<p>My two favorite talks were Testing and Django by <a href="https://twitter.com/carljm">Carl Meyer</a>
+and Fast Test, Slow Test by the always insightful <a href="https://twitter.com/garybernhardt">Gary Bernhardt</a>.</p>
+<h2>Testing and Django - Carl&nbsp;Meyer</h2>
+<p><iframe width="480" height="360" src="http://www.youtube.com/embed/ickNQcNXiS4" frameborder="0" allowfullscreen></iframe>
+Carl Meyer gives this great deep dive into testing Django projects, there are
+plenty of gems in here, including some code for a Django Test Runner using Unittest2&#8217;s
+test discovery. Carl gives some great tips for writing tests with Django as well as tips
+for just writing good tests in&nbsp;general.</p>
+<h2>Fast Test, Slow Test - Gary&nbsp;Bernhardt</h2>
+<p><iframe width="480" height="360" src="http://www.youtube.com/embed/RAxiiRPHS9k" frameborder="0" allowfullscreen></iframe>
+This talk is superb. Gary Bernhardt talks about how to write a fast test suite as
+well as how you should be testing your applications. He points out that the slow
+test suite problem is usually releated to the problem of test authors writing Unit
+Tests which are actually System&nbsp;Tests.</p>
+<p>Those two testing talks were my favorites, but some other good ones that are
+worth checking out are:
+<em> <a href="http://www.youtube.com/watch?v=TmuEDxX1FDQ">Certainty in an Uncertain World: Gaining Confidence through Security Testing</a> - Geremy Condra
+</em> <a href="https://www.youtube.com/watch?v=hvPYuqzTPIk">Fake It Til You Make It: Unit Testing Patterns With Mocks and Fakes</a> - Brian K. Jones
+<em> <a href="https://www.youtube.com/watch?v=1VZfL9JVgFg">Speedily Practical Large-Scale Tests</a> - Erik Rose
+</em> <a href="https://www.youtube.com/watch?v=Xu5EhKVZdV8">Stop Mocking, Start Testing</a> - Augie Fackler <span class="amp">&amp;</span> Nathaniel Manista
+* <a href="https://www.youtube.com/watch?v=9LVqBQcFmyw">pytest - rapid and simple testing with Python</a> - Holger&nbsp;Krekel</p>
+<p>If you have any other good Django testing tips or Talks leave them in the comments.
+If you are looking for more Python news, tips and discussion you should check out
+<a href="http://pycoders.com">Pycoder’s Weekly</a> a weekly Python newsletter that I&nbsp;curate.</p>
+			<div class="hero-unit disqus">
+		Tags:  <a class="" href="/blog/tags/django.html">django</a>,  <a class="" href="/blog/tags/python.html">python</a>,  <a class="" href="/blog/tags/test.html">test</a>,  <a class="" href="/blog/tags/testing.html">testing</a>.	</div>	
+	</article>			<div class="hero-unit disqus">
+<h3 id="comment-header">Comments</h1>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		 var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>	</div> <!--! end of .container -->
+	<footer> Copyright 2009-2012 Mike Grouchy
+  </footer>
+    		<!-- Javascript at the bottom for fast page loading -->
+					<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+			<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+						
+
+		<!--[if lt IE 7 ]>
+		  <script src="js/libs/dd_belatedpng.js"></script>
+		  <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+		<![endif]-->
+
+					<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet  -->
+<script>
+    var _gaq = [['_setAccount', 'UA-1990784-1'], ['_trackPageview']];
+    (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+</script>
+		
+			</body>
+</html>

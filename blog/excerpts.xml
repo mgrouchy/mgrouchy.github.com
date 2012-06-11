@@ -7,10 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-06-10T07:14:35Z</updated>
+    <updated>2012-06-10T21:32:30Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Great Python/Django Test Talks</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/great-django-test-talks.html"/>
+            <updated>2012-06-10T21:05:00Z</updated>
+            <published>2012-06-10T21:05:00Z</published>
+            <id>/blog/great-django-test-talks.html</id>
+                        <category   scheme="/blog/tags"
+                        term="django"
+                        label="Django" />
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="test"
+                        label="Test" />
+                        <category   scheme="/blog/tags"
+                        term="testing"
+                        label="Testing" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Be Pythonic: __init__.py</title>
             <author><name>Mike Grouchy</name></author>
