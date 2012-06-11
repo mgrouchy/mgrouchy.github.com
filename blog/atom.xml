@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-06-10T21:32:29Z</updated>
+    <updated>2012-06-10T21:35:00Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -41,23 +41,27 @@ popular topic at Pycon so there were lots of talks to&amp;nbsp;watch!&lt;/p&gt;
 and Fast Test, Slow Test by the always insightful &lt;a href=&#34;https://twitter.com/garybernhardt&#34;&gt;Gary Bernhardt&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Testing and Django - Carl&amp;nbsp;Meyer&lt;/h2&gt;
 &lt;p&gt;&lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;http://www.youtube.com/embed/ickNQcNXiS4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br/&gt;
 Carl Meyer gives this great deep dive into testing Django projects, there are
 plenty of gems in here, including some code for a Django Test Runner using Unittest2&amp;#8217;s
 test discovery. Carl gives some great tips for writing tests with Django as well as tips
 for just writing good tests in&amp;nbsp;general.&lt;/p&gt;
 &lt;h2&gt;Fast Test, Slow Test - Gary&amp;nbsp;Bernhardt&lt;/h2&gt;
 &lt;p&gt;&lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;http://www.youtube.com/embed/RAxiiRPHS9k&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br/&gt;
 This talk is superb. Gary Bernhardt talks about how to write a fast test suite as
 well as how you should be testing your applications. He points out that the slow
 test suite problem is usually releated to the problem of test authors writing Unit
 Tests which are actually System&amp;nbsp;Tests.&lt;/p&gt;
 &lt;p&gt;Those two testing talks were my favorites, but some other good ones that are
-worth checking out are:
-&lt;em&gt; &lt;a href=&#34;http://www.youtube.com/watch?v=TmuEDxX1FDQ&#34;&gt;Certainty in an Uncertain World: Gaining Confidence through Security Testing&lt;/a&gt; - Geremy Condra
-&lt;/em&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=hvPYuqzTPIk&#34;&gt;Fake It Til You Make It: Unit Testing Patterns With Mocks and Fakes&lt;/a&gt; - Brian K. Jones
-&lt;em&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=1VZfL9JVgFg&#34;&gt;Speedily Practical Large-Scale Tests&lt;/a&gt; - Erik Rose
-&lt;/em&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=Xu5EhKVZdV8&#34;&gt;Stop Mocking, Start Testing&lt;/a&gt; - Augie Fackler &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; Nathaniel Manista
-* &lt;a href=&#34;https://www.youtube.com/watch?v=9LVqBQcFmyw&#34;&gt;pytest - rapid and simple testing with Python&lt;/a&gt; - Holger&amp;nbsp;Krekel&lt;/p&gt;
+worth checking out&amp;nbsp;are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=TmuEDxX1FDQ&#34;&gt;Certainty in an Uncertain World: Gaining Confidence through Security Testing&lt;/a&gt; - Geremy&amp;nbsp;Condra&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=hvPYuqzTPIk&#34;&gt;Fake It Til You Make It: Unit Testing Patterns With Mocks and Fakes&lt;/a&gt; - Brian K.&amp;nbsp;Jones&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1VZfL9JVgFg&#34;&gt;Speedily Practical Large-Scale Tests&lt;/a&gt; - Erik&amp;nbsp;Rose&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xu5EhKVZdV8&#34;&gt;Stop Mocking, Start Testing&lt;/a&gt; - Augie Fackler &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; Nathaniel&amp;nbsp;Manista&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=9LVqBQcFmyw&#34;&gt;pytest - rapid and simple testing with Python&lt;/a&gt; - Holger&amp;nbsp;Krekel&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;If you have any other good Django testing tips or Talks leave them in the comments.
 If you are looking for more Python news, tips and discussion you should check out
 &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoder’s Weekly&lt;/a&gt; a weekly Python newsletter that I&amp;nbsp;curate.&lt;/p&gt;            </content>
