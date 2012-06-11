@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-06-11T08:07:22Z</updated>
+    <updated>2012-06-11T11:44:08Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -63,7 +63,7 @@ worth checking out&amp;nbsp;are:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=9LVqBQcFmyw&#34;&gt;pytest - rapid and simple testing with Python&lt;/a&gt; - Holger&amp;nbsp;Krekel&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Besides these videos another great resource to take your Python testing a bit
-farther is this book9, the &lt;a href=&#34;http://amzn.to/LUe8SX&#34;&gt;Python Testing Cookbook &lt;/a&gt;. It
+farther is this book, the &lt;a href=&#34;http://amzn.to/LUe8SX&#34;&gt;Python Testing Cookbook &lt;/a&gt;. It
 has plenty of great strategys that you can use for testing your Python&amp;nbsp;projects.&lt;/p&gt;
 &lt;p&gt;If you have any other good Django testing tips or Talks leave them in the comments.
 If you are looking for more Python news, tips and discussion you should check out
