@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-06-10T21:37:13Z</updated>
+    <updated>2012-06-10T21:38:38Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -40,14 +40,14 @@ popular topic at Pycon so there were lots of talks to&amp;nbsp;watch!&lt;/p&gt;
 &lt;p&gt;My two favorite talks were Testing and Django by &lt;a href=&#34;https://twitter.com/carljm&#34;&gt;Carl Meyer&lt;/a&gt;
 and Fast Test, Slow Test by the always insightful &lt;a href=&#34;https://twitter.com/garybernhardt&#34;&gt;Gary Bernhardt&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Testing and Django - Carl&amp;nbsp;Meyer&lt;/h2&gt;
-&lt;p&gt;&lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;http://www.youtube.com/embed/ickNQcNXiS4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;iframe width=&#34;600&#34; height=&#34;450&#34; src=&#34;http://www.youtube.com/embed/ickNQcNXiS4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br/&gt;
 Carl Meyer gives this great deep dive into testing Django projects, there are
 plenty of gems in here, including some code for a Django Test Runner using Unittest2&amp;#8217;s
 test discovery. Carl gives some great tips for writing tests with Django as well as tips
 for just writing good tests in&amp;nbsp;general.&lt;/p&gt;
 &lt;h2&gt;Fast Test, Slow Test - Gary&amp;nbsp;Bernhardt&lt;/h2&gt;
-&lt;p&gt;&lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;http://www.youtube.com/embed/RAxiiRPHS9k&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;iframe width=&#34;600&#34; height=&#34;450&#34; src=&#34;http://www.youtube.com/embed/RAxiiRPHS9k&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br/&gt;
 This talk is superb. Gary Bernhardt talks about how to write a fast test suite as
 well as how you should be testing your applications. He points out that the slow
