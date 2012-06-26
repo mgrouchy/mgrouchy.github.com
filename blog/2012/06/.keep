@@ -22,7 +22,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>Introducing Pycoders Weekly</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="author" content="Mike Grouchy">
 
@@ -44,7 +44,7 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="introducing-pycoders-weekly">
+<body id=".keep">
 	<div class="topbar ">
 			<div class="topbar-inner topbar-override">
         <div class="container container-expand">
@@ -60,26 +60,17 @@
 		<div class="container container-expand">
 		<article class="post">
 		<h1 class="title">
-	    <a class="post-link" href="/blog/introducing-pycoders-weekly.html">
-	        Introducing Pycoders Weekly
+	    <a class="post-link" href="/blog/2012/06/.keep">
+	        
 	    </a>
 	</h1>
-	<time datetime="2012-02-06">
-	    Posted: Monday, 06 February, 2012
+	<time datetime="2010-01-01">
+	    Posted: Friday, 01 January, 2010
 	</time>
 <div class="post-content">
-	<p>The last couple of weeks <a href="http://mahdiyusuf.com">Mahdi Yusuf</a> and I have been talking
-about the python newsletter that we would want to recieve weekly. A curated
-collection of the best python news, articles and projects from around the internet
-delivered to your inbox in a beautiful package&nbsp;weekly.</p>
-<p>The result of this talk has been <a href="http://pycoders.com">Pycoders Weekly</a>.
-The first issue is set to drop on Friday, February 17th, we hope you like it.
-<img src="/media/images/2012/02/pycoders_weekly.png" style="width:560px; padding:10px;left:auto;right:auto;border:0px;"/></p>
-<p>If you have created some content or run some project that you think should be
-in <a href="http://pycoders.com">Pycoders Weekly</a> contact <a href="http://twitter.com/myusuf3">Mahdi</a>
-or <a href="http://twitter.com/mgrouchy">me</a> and let us&nbsp;know.</p>
+	
 			<div class="hero-unit disqus">
-		Tags:  <a class="" href="/blog/tags/python.html">python</a>,  <a class="" href="/blog/tags/newsletter.html">newsletter</a>.	</div>	
+	</div>	
 	</article>			<div class="hero-unit about-block">
 <p><img alt="Mike" src="/media/images/mike.jpg" /> Mike is an ambitious Python/Django Developer, Beer drinker and lover of all things basketball.
     He is also a curator of <a href="http://pycoders.com">Pycoder&#8217;s Weekly</a>.

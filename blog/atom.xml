@@ -7,12 +7,76 @@
         <link href="/"/>
     
         
-    <updated>2012-06-11T16:37:06Z</updated>
+    <updated>2012-06-26T10:11:34Z</updated>
 
     <id>/blog/atom.xml/</id>
 
             <entry>
-            <title type="html">Great Python/Django Test Talks</title>
+            <title type="html">Write Less Code</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/2012/06/write-less-code.html"/>
+            <updated>2012-06-26T09:50:00Z</updated>
+            <published>2012-06-26T09:50:00Z</published>
+            <id>/blog/2012/06/write-less-code.html</id>
+                        <category   scheme="/blog/tags"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="/blog/tags"
+                        term="programming"
+                        label="Programming" />
+            
+            <content type="html">
+                                &lt;p&gt;One of the fundamental truths of software development is that you have to write code,
+but one of the biggest fallacies is the idea that writing code is your job. When I
+first started out as a software developer, I fell into that trap, writing code is
+a powerful thing, its empowering, you feel like you are productive and you are
+accomplishing things. However, what I have learned over the years is the real
+truth of the matter. The truth that the job of a software developer is to write
+as little code as&amp;nbsp;possible.&lt;/p&gt;
+&lt;p&gt;Now, don&amp;#8217;t get me wrong, we should not be getting ourselves into &lt;a href=&#34;http://codegolf.com/&#34;&gt;code golf&lt;/a&gt;
+situations where we are compacting code and saving keystrokes to the point where
+the code you produce is no longer understandable. When you think about it though
+the fact that most of your time will be maintaining the terrible code you wrote,
+writing less code and not creating more work for yourself will start to look like
+an exceptionally good&amp;nbsp;idea.&lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;Look around, look at your tools, look at the framework you likely use to
+produce that thing you work on. Everything you do, all the tools you use,
+everything is trying make you write less code. Your tools are trying to make
+you less error prone, and abstracting away the things that will cause you trouble
+down the&amp;nbsp;road.&lt;/p&gt;
+&lt;p&gt;So why should you write less code? When I said earlier that your job was to write
+less code, I was fibbing a little bit. Really your job is to &lt;strong&gt;think&lt;/strong&gt;, your job
+is to think about the problem at hand, devise an elegant solution and then turn
+that solution into software. One of the byproducts of creating software is that you
+have to write code to solve&amp;nbsp;problems.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;the thinker&#34; src=&#34;http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/The_Thinker,_Rodin.jpg/250px-The_Thinker,_Rodin.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Code is a&amp;nbsp;by-product&lt;/h2&gt;
+&lt;p&gt;Code isn&amp;#8217;t that important. We love to convince ourselves that it is because
+as we actually start executing and turning our solutions into software, it seems
+like writing code is both a means and an end unto itself. We talk about our
+&lt;a href=&#34;http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html&#34;&gt;editors&lt;/a&gt;,
+we talk about our &lt;a href=&#34;http://pycoders.com&#34;&gt;language of choice&lt;/a&gt; and we talk about our
+&lt;a href=&#34;http://mikegrouchy.com/blog/zsh-is-your-friend.html&#34;&gt;environments&lt;/a&gt;. I do it,
+you do it, we all do it. There is no shame in enjoying the craft of the work you do.
+The trick is to stay focused. Code is awesome, but its also the enemy, it takes
+time to write, it can be fragile, it can be unclear and not particularly&amp;nbsp;robust.&lt;/p&gt;
+&lt;p&gt;This is why I stick with the mantra &amp;#8220;Write less code&amp;#8221;. Whenever I feel like something
+is getting bigger then it should be or more complicated then it should be, I say
+&amp;#8220;Write less code&amp;#8221;. Whenever I write so much code that it gets hard to keep it
+in context, I refactor, I clean it up, all the while, thinking about &amp;#8220;Write less&amp;nbsp;code&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;As much as it pains me to say, sometimes there is no way to get around writing a
+bunch of code, but if you can&amp;#8217;t be concise, be clear. Writing less code is
+writing &lt;a href=&#34;http://amzn.to/MJFkE4&#34;&gt;clean code&lt;/a&gt;. Writing less code is also about
+writing clear code. When you are economical with the code you write the purpose
+of your code becomes&amp;nbsp;clear.&lt;/p&gt;
+&lt;p&gt;So, whats the lesson here? Most importantly I think the lesson here is that
+code is a by-product, its an unavoidable thing that you generate in the process
+of doing your job. So think more, &lt;a href=&#34;http://amzn.to/KHjbJp&#34;&gt;refactor more&lt;/a&gt;, remove some
+old code and write less new code, do yourself a favor and start this&amp;nbsp;today.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Great Python/Django Testing Talks</title>
             <author><name>Mike Grouchy</name></author>
             <link href="/blog/great-django-test-talks.html"/>
             <updated>2012-06-10T21:05:00Z</updated>

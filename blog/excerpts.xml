@@ -7,12 +7,30 @@
         <link href="/"/>
     
         
-    <updated>2012-06-11T16:37:08Z</updated>
+    <updated>2012-06-26T10:11:36Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
             <entry>
-            <title type="html">Great Python/Django Test Talks</title>
+            <title type="html">Write Less Code</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/2012/06/write-less-code.html"/>
+            <updated>2012-06-26T09:50:00Z</updated>
+            <published>2012-06-26T09:50:00Z</published>
+            <id>/blog/2012/06/write-less-code.html</id>
+                        <category   scheme="/blog/tags"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="/blog/tags"
+                        term="programming"
+                        label="Programming" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Great Python/Django Testing Talks</title>
             <author><name>Mike Grouchy</name></author>
             <link href="/blog/great-django-test-talks.html"/>
             <updated>2012-06-10T21:05:00Z</updated>
