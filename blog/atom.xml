@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-06-26T10:11:34Z</updated>
+    <updated>2012-06-26T11:51:48Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -62,7 +62,7 @@ you do it, we all do it. There is no shame in enjoying the craft of the work you
 The trick is to stay focused. Code is awesome, but its also the enemy, it takes
 time to write, it can be fragile, it can be unclear and not particularly&amp;nbsp;robust.&lt;/p&gt;
 &lt;p&gt;This is why I stick with the mantra &amp;#8220;Write less code&amp;#8221;. Whenever I feel like something
-is getting bigger then it should be or more complicated then it should be, I say
+is getting bigger than it should be or more complicated than it should be, I say
 &amp;#8220;Write less code&amp;#8221;. Whenever I write so much code that it gets hard to keep it
 in context, I refactor, I clean it up, all the while, thinking about &amp;#8220;Write less&amp;nbsp;code&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;As much as it pains me to say, sometimes there is no way to get around writing a
