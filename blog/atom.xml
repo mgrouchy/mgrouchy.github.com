@@ -7,10 +7,88 @@
         <link href="/"/>
     
         
-    <updated>2012-06-26T11:51:48Z</updated>
+    <updated>2012-07-08T09:46:44Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Setting up PyPy 1.9 on OSX</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
+            <updated>2012-07-08T10:00:00Z</updated>
+            <published>2012-07-08T10:00:00Z</published>
+            <id>/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
+                        <category   scheme="/blog/tags"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="/blog/tags"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="/blog/tags"
+                        term="pypy"
+                        label="Pypy" />
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;pypy&#34; src=&#34;http://pypy.org/image/pypy-logo.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;As I had said before on &lt;a href=&#34;http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html&#34;&gt;this&lt;/a&gt; &lt;a href=&#34;http://mikegrouchy.com/blog/great-django-test-talks.html&#34;&gt;blog&lt;/a&gt;, I sometimes use it as a way to record things I want to remember. This is one of those&amp;nbsp;times.&lt;/p&gt;
+&lt;p&gt;I have started a new project that uses PyPy and while there is documentation out there to get started, I find it useful to have it all in the same place and not spread&amp;nbsp;around.&lt;/p&gt;
+&lt;h2&gt;What is&amp;nbsp;PyPy&lt;/h2&gt;
+&lt;p&gt;PyPy is Python interpreter and &lt;span class=&#34;caps&#34;&gt;JIT&lt;/span&gt; compiler. The latest PyPy release PyPy 1.9, the one we are installing, is CPython 2.7.2 compatible. PyPy is focused on speed and 100% compatibility with the &lt;a href=&#34;http://en.wikipedia.org/wiki/CPython&#34;&gt;CPython&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Installing&amp;nbsp;PyPy&lt;/h2&gt;
+&lt;p&gt;There are a couple of options to install PyPy on &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;.
+&lt;em&gt; You can install using the &lt;a href=&#34;https://bitbucket.org/pypy/pypy/downloads/pypy-1.9-osx64.tar.bz2&#34;&gt;binary&lt;/a&gt; from the PyPy website.
+&lt;/em&gt; You can &lt;a href=&#34;http://pypy.org/download.html#building-from-source&#34;&gt;build PyPy from source&lt;/a&gt;.
+* You can install using &lt;a href=&#34;http://mxcl.github.com/homebrew/&#34;&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I like to manage my packages using Homebrew when thats an option, so I installed using Homebrew.
+It was very easy to get setup&amp;nbsp;just&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install pypy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then follow any instructions in your&amp;nbsp;terminal.&lt;/p&gt;
+&lt;p&gt;You should then see a symlink in your /usr/local/bin directory for&amp;nbsp;PyPy&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~ &amp;gt;&amp;gt; ls /usr/local/bin | grep pypy
+pypy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And assuming you have homebrew setup correctly you should be able to type &amp;#8220;pypy&amp;#8221; in your terminal and get an interactive&amp;nbsp;interpreter.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~ &amp;gt;&amp;gt; pypy
+Python 2.7.2 (341e1e3821ff, Jun 07 2012, 15:42:54)
+[PyPy 1.9.0 with GCC 4.2.1] on darwin
+Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.
+And now for something completely different: ``it&#39;s beautiful: very rectangular
+and yellow&#39;&#39;
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you have gotten this far you have been successful at installing&amp;nbsp;PyPy!&lt;/p&gt;
+&lt;p&gt;Now, like any good &lt;a href=&#34;http://pycoders.com&#34;&gt;pycoder&lt;/a&gt;, lets move on to getting PyPy setup inside a&amp;nbsp;Virtualenv.&lt;/p&gt;
+&lt;h2&gt;Getting PyPy to work with Virtualenv or&amp;nbsp;Virtualenvwrapper&lt;/h2&gt;
+&lt;p&gt;Luckily getting PyPy set up in a virtualenv is really easy, for virtualenv the command&amp;nbsp;is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;virtualenv -p /usr/local/bin/pypy environmentname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;for Virtualenvwrapper, its basically the&amp;nbsp;same:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkvirtualenv -p /usr/local/bin/pypy environmentname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the output of each of these commands you should&amp;nbsp;see:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Running virtualenv with interpreter /usr/local/bin/pypy
+New pypy executable in testpypy2/bin/pypy
+Installing setuptools............done.
+Installing pip...............done.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can activate your&amp;nbsp;environment.&lt;/p&gt;
+&lt;p&gt;In&amp;nbsp;virtualenv:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source /path/to/your/virtualenv/bin/activate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In &lt;a href=&#34;http://www.doughellmann.com/projects/virtualenvwrapper/&#34;&gt;virtualenvwrapper&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;workon environmentname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And test your Python&amp;nbsp;version:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python --version
+Python 2.7.2 (341e1e3821ff, Jun 07 2012, 15:42:54)
+[PyPy 1.9.0 with GCC 4.2.1]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you are good to get working on your Python project with PyPy. Happy&amp;nbsp;hacking!&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Write Less Code</title>
             <author><name>Mike Grouchy</name></author>

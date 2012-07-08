@@ -7,10 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-06-26T11:51:50Z</updated>
+    <updated>2012-07-08T09:46:46Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Setting up PyPy 1.9 on OSX</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
+            <updated>2012-07-08T10:00:00Z</updated>
+            <published>2012-07-08T10:00:00Z</published>
+            <id>/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
+                        <category   scheme="/blog/tags"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="/blog/tags"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="/blog/tags"
+                        term="pypy"
+                        label="Pypy" />
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Write Less Code</title>
             <author><name>Mike Grouchy</name></author>
