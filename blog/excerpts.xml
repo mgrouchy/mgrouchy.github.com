@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>
         excerpts feed for mikegrouchy.com    </title>
-        <link href="blog/excerpts.xml" rel="self" />
+        <link href="http://mikegrouchy.comblog/excerpts.xml" rel="self" />
     
         <link href="/"/>
     
         
-    <updated>2012-07-08T09:46:46Z</updated>
+    <updated>2012-07-09T14:41:58Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
