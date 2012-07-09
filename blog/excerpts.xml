@@ -4,20 +4,20 @@
         excerpts feed for mikegrouchy.com    </title>
         <link href="http://mikegrouchy.comblog/excerpts.xml" rel="self" />
     
-        <link href="/"/>
+        <link href="http://mikegrouchy.com/"/>
     
         
-    <updated>2012-07-09T14:41:58Z</updated>
+    <updated>2012-07-09T14:47:01Z</updated>
 
-    <id>/blog/excerpts.xml/</id>
+    <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
             <entry>
             <title type="html">Setting up PyPy 1.9 on OSX</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
+            <link href="http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
             <updated>2012-07-08T10:00:00Z</updated>
             <published>2012-07-08T10:00:00Z</published>
-            <id>/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
+            <id>http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
                         <category   scheme="/blog/tags"
                         term="software"
                         label="Software" />
@@ -38,10 +38,10 @@
             <entry>
             <title type="html">Write Less Code</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/2012/06/write-less-code.html"/>
+            <link href="http://mikegrouchy.com/blog/2012/06/write-less-code.html"/>
             <updated>2012-06-26T09:50:00Z</updated>
             <published>2012-06-26T09:50:00Z</published>
-            <id>/blog/2012/06/write-less-code.html</id>
+            <id>http://mikegrouchy.com/blog/2012/06/write-less-code.html</id>
                         <category   scheme="/blog/tags"
                         term="software"
                         label="Software" />
@@ -56,10 +56,10 @@
             <entry>
             <title type="html">Great Python/Django Testing Talks</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/great-django-test-talks.html"/>
+            <link href="http://mikegrouchy.com/blog/great-django-test-talks.html"/>
             <updated>2012-06-10T21:05:00Z</updated>
             <published>2012-06-10T21:05:00Z</published>
-            <id>/blog/great-django-test-talks.html</id>
+            <id>http://mikegrouchy.com/blog/great-django-test-talks.html</id>
                         <category   scheme="/blog/tags"
                         term="django"
                         label="Django" />
@@ -80,10 +80,10 @@
             <entry>
             <title type="html">Be Pythonic: __init__.py</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/be-pythonic-initpy.html"/>
+            <link href="http://mikegrouchy.com/blog/be-pythonic-initpy.html"/>
             <updated>2012-05-16T23:25:00Z</updated>
             <published>2012-05-16T23:25:00Z</published>
-            <id>/blog/be-pythonic-initpy.html</id>
+            <id>http://mikegrouchy.com/blog/be-pythonic-initpy.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -101,10 +101,10 @@
             <entry>
             <title type="html">Compile Vim with Python support on OSX with Homebrew</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
+            <link href="http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
             <updated>2012-05-09T10:17:00Z</updated>
             <published>2012-05-09T10:17:00Z</published>
-            <id>/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
+            <id>http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -125,10 +125,10 @@
             <entry>
             <title type="html">Introducing Pycoders Weekly</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/introducing-pycoders-weekly.html"/>
+            <link href="http://mikegrouchy.com/blog/introducing-pycoders-weekly.html"/>
             <updated>2012-02-06T10:00:00Z</updated>
             <published>2012-02-06T10:00:00Z</published>
-            <id>/blog/introducing-pycoders-weekly.html</id>
+            <id>http://mikegrouchy.com/blog/introducing-pycoders-weekly.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -143,10 +143,10 @@
             <entry>
             <title type="html">Zsh is your friend</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/zsh-is-your-friend.html"/>
+            <link href="http://mikegrouchy.com/blog/zsh-is-your-friend.html"/>
             <updated>2012-01-31T11:14:00Z</updated>
             <published>2012-01-31T11:14:00Z</published>
-            <id>/blog/zsh-is-your-friend.html</id>
+            <id>http://mikegrouchy.com/blog/zsh-is-your-friend.html</id>
                         <category   scheme="/blog/tags"
                         term="zsh"
                         label="Zsh" />
@@ -164,10 +164,10 @@
             <entry>
             <title type="html">Setting up SSL with Nginx and Godaddy</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/setting-up-nginx-with-ssl-and-godaddy.html"/>
+            <link href="http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html"/>
             <updated>2010-12-14T18:07:00Z</updated>
             <published>2010-12-14T18:07:00Z</published>
-            <id>/blog/setting-up-nginx-with-ssl-and-godaddy.html</id>
+            <id>http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html</id>
                         <category   scheme="/blog/tags"
                         term="ssl"
                         label="Ssl" />
@@ -185,10 +185,10 @@
             <entry>
             <title type="html">SICP in Epub Format</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/structure-and-interpretation-of-computer-programs-epub.html"/>
+            <link href="http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html"/>
             <updated>2010-07-05T20:14:00Z</updated>
             <published>2010-07-05T20:14:00Z</published>
-            <id>/blog/structure-and-interpretation-of-computer-programs-epub.html</id>
+            <id>http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html</id>
                         <category   scheme="/blog/tags"
                         term="book"
                         label="Book" />
@@ -206,10 +206,10 @@
             <entry>
             <title type="html">My Development Toolbox: An Introduction</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/my-development-toolbox.html"/>
+            <link href="http://mikegrouchy.com/blog/my-development-toolbox.html"/>
             <updated>2010-07-04T18:14:00Z</updated>
             <published>2010-07-04T18:14:00Z</published>
-            <id>/blog/my-development-toolbox.html</id>
+            <id>http://mikegrouchy.com/blog/my-development-toolbox.html</id>
                         <category   scheme="/blog/tags"
                         term="development"
                         label="Development" />
@@ -224,10 +224,10 @@
             <entry>
             <title type="html">Embeddable Tweets</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/embeddable-tweets.html"/>
+            <link href="http://mikegrouchy.com/blog/embeddable-tweets.html"/>
             <updated>2010-05-05T02:14:00Z</updated>
             <published>2010-05-05T02:14:00Z</published>
-            <id>/blog/embeddable-tweets.html</id>
+            <id>http://mikegrouchy.com/blog/embeddable-tweets.html</id>
                         <category   scheme="/blog/tags"
                         term="twitter"
                         label="Twitter" />
@@ -242,10 +242,10 @@
             <entry>
             <title type="html">A New Blog A New Beginning</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/a-new-blog-a-new-beginning.html"/>
+            <link href="http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html"/>
             <updated>2010-04-30T20:14:00Z</updated>
             <published>2010-04-30T20:14:00Z</published>
-            <id>/blog/a-new-blog-a-new-beginning.html</id>
+            <id>http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html</id>
                         <category   scheme="/blog/tags"
                         term="meta"
                         label="Meta" />

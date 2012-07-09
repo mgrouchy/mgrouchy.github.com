@@ -4,20 +4,20 @@
         feed for mikegrouchy.com    </title>
         <link href="http://mikegrouchy.comblog/atom.xml" rel="self" />
     
-        <link href="/"/>
+        <link href="http://mikegrouchy.com/"/>
     
         
-    <updated>2012-07-09T14:41:56Z</updated>
+    <updated>2012-07-09T14:46:59Z</updated>
 
-    <id>/blog/atom.xml/</id>
+    <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
             <entry>
             <title type="html">Setting up PyPy 1.9 on OSX</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
+            <link href="http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
             <updated>2012-07-08T10:00:00Z</updated>
             <published>2012-07-08T10:00:00Z</published>
-            <id>/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
+            <id>http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
                         <category   scheme="/blog/tags"
                         term="software"
                         label="Software" />
@@ -81,10 +81,10 @@ It was very easy to get setup just
             <entry>
             <title type="html">Write Less Code</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/2012/06/write-less-code.html"/>
+            <link href="http://mikegrouchy.com/blog/2012/06/write-less-code.html"/>
             <updated>2012-06-26T09:50:00Z</updated>
             <published>2012-06-26T09:50:00Z</published>
-            <id>/blog/2012/06/write-less-code.html</id>
+            <id>http://mikegrouchy.com/blog/2012/06/write-less-code.html</id>
                         <category   scheme="/blog/tags"
                         term="software"
                         label="Software" />
@@ -145,10 +145,10 @@ old code and write less new code, do yourself a favor and start this&amp;nbsp;to
             <entry>
             <title type="html">Great Python/Django Testing Talks</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/great-django-test-talks.html"/>
+            <link href="http://mikegrouchy.com/blog/great-django-test-talks.html"/>
             <updated>2012-06-10T21:05:00Z</updated>
             <published>2012-06-10T21:05:00Z</published>
-            <id>/blog/great-django-test-talks.html</id>
+            <id>http://mikegrouchy.com/blog/great-django-test-talks.html</id>
                         <category   scheme="/blog/tags"
                         term="django"
                         label="Django" />
@@ -203,10 +203,10 @@ If you are looking for more Python news, tips and discussion you should check ou
             <entry>
             <title type="html">Be Pythonic: __init__.py</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/be-pythonic-initpy.html"/>
+            <link href="http://mikegrouchy.com/blog/be-pythonic-initpy.html"/>
             <updated>2012-05-16T23:25:00Z</updated>
             <published>2012-05-16T23:25:00Z</published>
-            <id>/blog/be-pythonic-initpy.html</id>
+            <id>http://mikegrouchy.com/blog/be-pythonic-initpy.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -269,10 +269,10 @@ hit up the comments or contact me on &lt;a href=&#34;http://twitter.com/mgrouchy
             <entry>
             <title type="html">Compile Vim with Python support on OSX with Homebrew</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
+            <link href="http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
             <updated>2012-05-09T10:17:00Z</updated>
             <published>2012-05-09T10:17:00Z</published>
-            <id>/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
+            <id>http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -342,10 +342,10 @@ ask me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;twitter&lt;/a&gt;.
             <entry>
             <title type="html">Introducing Pycoders Weekly</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/introducing-pycoders-weekly.html"/>
+            <link href="http://mikegrouchy.com/blog/introducing-pycoders-weekly.html"/>
             <updated>2012-02-06T10:00:00Z</updated>
             <published>2012-02-06T10:00:00Z</published>
-            <id>/blog/introducing-pycoders-weekly.html</id>
+            <id>http://mikegrouchy.com/blog/introducing-pycoders-weekly.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
@@ -368,10 +368,10 @@ or &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;me&lt;/a&gt; and let us&a
             <entry>
             <title type="html">Zsh is your friend</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/zsh-is-your-friend.html"/>
+            <link href="http://mikegrouchy.com/blog/zsh-is-your-friend.html"/>
             <updated>2012-01-31T11:14:00Z</updated>
             <published>2012-01-31T11:14:00Z</published>
-            <id>/blog/zsh-is-your-friend.html</id>
+            <id>http://mikegrouchy.com/blog/zsh-is-your-friend.html</id>
                         <category   scheme="/blog/tags"
                         term="zsh"
                         label="Zsh" />
@@ -451,10 +451,10 @@ Its pretty complete and much better than I could do in a very basic blog&amp;nbs
             <entry>
             <title type="html">Setting up SSL with Nginx and Godaddy</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/setting-up-nginx-with-ssl-and-godaddy.html"/>
+            <link href="http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html"/>
             <updated>2010-12-14T18:07:00Z</updated>
             <published>2010-12-14T18:07:00Z</published>
-            <id>/blog/setting-up-nginx-with-ssl-and-godaddy.html</id>
+            <id>http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html</id>
                         <category   scheme="/blog/tags"
                         term="ssl"
                         label="Ssl" />
@@ -496,10 +496,10 @@ and I were talking about some annoyances when dealing with godaddys &lt;span cla
             <entry>
             <title type="html">SICP in Epub Format</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/structure-and-interpretation-of-computer-programs-epub.html"/>
+            <link href="http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html"/>
             <updated>2010-07-05T20:14:00Z</updated>
             <published>2010-07-05T20:14:00Z</published>
-            <id>/blog/structure-and-interpretation-of-computer-programs-epub.html</id>
+            <id>http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html</id>
                         <category   scheme="/blog/tags"
                         term="book"
                         label="Book" />
@@ -548,10 +548,10 @@ and I were talking about some annoyances when dealing with godaddys &lt;span cla
             <entry>
             <title type="html">My Development Toolbox: An Introduction</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/my-development-toolbox.html"/>
+            <link href="http://mikegrouchy.com/blog/my-development-toolbox.html"/>
             <updated>2010-07-04T18:14:00Z</updated>
             <published>2010-07-04T18:14:00Z</published>
-            <id>/blog/my-development-toolbox.html</id>
+            <id>http://mikegrouchy.com/blog/my-development-toolbox.html</id>
                         <category   scheme="/blog/tags"
                         term="development"
                         label="Development" />
@@ -580,10 +580,10 @@ and I were talking about some annoyances when dealing with godaddys &lt;span cla
             <entry>
             <title type="html">Embeddable Tweets</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/embeddable-tweets.html"/>
+            <link href="http://mikegrouchy.com/blog/embeddable-tweets.html"/>
             <updated>2010-05-05T02:14:00Z</updated>
             <published>2010-05-05T02:14:00Z</published>
-            <id>/blog/embeddable-tweets.html</id>
+            <id>http://mikegrouchy.com/blog/embeddable-tweets.html</id>
                         <category   scheme="/blog/tags"
                         term="twitter"
                         label="Twitter" />
@@ -609,10 +609,10 @@ app to embed the tweet in your website like&amp;nbsp;below:&lt;/p&gt;
             <entry>
             <title type="html">A New Blog A New Beginning</title>
             <author><name>Mike Grouchy</name></author>
-            <link href="/blog/a-new-blog-a-new-beginning.html"/>
+            <link href="http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html"/>
             <updated>2010-04-30T20:14:00Z</updated>
             <published>2010-04-30T20:14:00Z</published>
-            <id>/blog/a-new-blog-a-new-beginning.html</id>
+            <id>http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html</id>
                         <category   scheme="/blog/tags"
                         term="meta"
                         label="Meta" />
