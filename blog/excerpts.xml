@@ -2,32 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>
         excerpts feed for mikegrouchy.com    </title>
-        <link href="http://mikegrouchy.comblog/excerpts.xml" rel="self" />
+        <link href="http://mikegrouchy.com/blog/excerpts.xml" rel="self" />
     
-        <link href="http://mikegrouchy.com/"/>
+        <link href="/"/>
     
         
-    <updated>2012-07-09T19:34:10Z</updated>
+    <updated>2012-07-10T09:08:53Z</updated>
 
     <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Broken RSS Links Fixed</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2012/07/broken-rss-links-fixed.html"/>
+            <updated>2012-07-10T09:00:00Z</updated>
+            <published>2012-07-10T09:00:00Z</published>
+            <id>http://mikegrouchy.comblog/2012/07/broken-rss-links-fixed.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="meta"
+                        label="Meta" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Setting up PyPy 1.9 on OSX</title>
             <author><name>Mike Grouchy</name></author>
             <link href="http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html"/>
             <updated>2012-07-08T10:00:00Z</updated>
             <published>2012-07-08T10:00:00Z</published>
-            <id>http://mikegrouchy.com/blog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/2012/07/setting-up-pypy-1.9-on-osx.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="software"
                         label="Software" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="programming"
                         label="Programming" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="pypy"
                         label="Pypy" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="python"
                         label="Python" />
             
@@ -41,11 +56,11 @@
             <link href="http://mikegrouchy.com/blog/2012/06/write-less-code.html"/>
             <updated>2012-06-26T09:50:00Z</updated>
             <published>2012-06-26T09:50:00Z</published>
-            <id>http://mikegrouchy.com/blog/2012/06/write-less-code.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/2012/06/write-less-code.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="software"
                         label="Software" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="programming"
                         label="Programming" />
             
@@ -59,17 +74,17 @@
             <link href="http://mikegrouchy.com/blog/great-django-test-talks.html"/>
             <updated>2012-06-10T21:05:00Z</updated>
             <published>2012-06-10T21:05:00Z</published>
-            <id>http://mikegrouchy.com/blog/great-django-test-talks.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/great-django-test-talks.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="django"
                         label="Django" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="test"
                         label="Test" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="testing"
                         label="Testing" />
             
@@ -83,14 +98,14 @@
             <link href="http://mikegrouchy.com/blog/be-pythonic-initpy.html"/>
             <updated>2012-05-16T23:25:00Z</updated>
             <published>2012-05-16T23:25:00Z</published>
-            <id>http://mikegrouchy.com/blog/be-pythonic-initpy.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/be-pythonic-initpy.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="tips"
                         label="Tips" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="tutorial"
                         label="Tutorial" />
             
@@ -104,17 +119,17 @@
             <link href="http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html"/>
             <updated>2012-05-09T10:17:00Z</updated>
             <published>2012-05-09T10:17:00Z</published>
-            <id>http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/compile-vim-with-python-on-osx-with-homebrew.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="vim"
                         label="Vim" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="homebrew"
                         label="Homebrew" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="OSX"
                         label="Osx" />
             
@@ -128,11 +143,11 @@
             <link href="http://mikegrouchy.com/blog/introducing-pycoders-weekly.html"/>
             <updated>2012-02-06T10:00:00Z</updated>
             <published>2012-02-06T10:00:00Z</published>
-            <id>http://mikegrouchy.com/blog/introducing-pycoders-weekly.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/introducing-pycoders-weekly.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="python"
                         label="Python" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="newsletter"
                         label="Newsletter" />
             
@@ -146,14 +161,14 @@
             <link href="http://mikegrouchy.com/blog/zsh-is-your-friend.html"/>
             <updated>2012-01-31T11:14:00Z</updated>
             <published>2012-01-31T11:14:00Z</published>
-            <id>http://mikegrouchy.com/blog/zsh-is-your-friend.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/zsh-is-your-friend.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="zsh"
                         label="Zsh" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="shell"
                         label="Shell" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="terminal"
                         label="Terminal" />
             
@@ -167,14 +182,14 @@
             <link href="http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html"/>
             <updated>2010-12-14T18:07:00Z</updated>
             <published>2010-12-14T18:07:00Z</published>
-            <id>http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/setting-up-nginx-with-ssl-and-godaddy.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="ssl"
                         label="Ssl" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="nginx"
                         label="Nginx" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="godaddy"
                         label="Godaddy" />
             
@@ -188,14 +203,14 @@
             <link href="http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html"/>
             <updated>2010-07-05T20:14:00Z</updated>
             <published>2010-07-05T20:14:00Z</published>
-            <id>http://mikegrouchy.com/blog/structure-and-interpretation-of-computer-programs-epub.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/structure-and-interpretation-of-computer-programs-epub.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="book"
                         label="Book" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="lisp"
                         label="Lisp" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="scheme"
                         label="Scheme" />
             
@@ -209,11 +224,11 @@
             <link href="http://mikegrouchy.com/blog/my-development-toolbox.html"/>
             <updated>2010-07-04T18:14:00Z</updated>
             <published>2010-07-04T18:14:00Z</published>
-            <id>http://mikegrouchy.com/blog/my-development-toolbox.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/my-development-toolbox.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="development"
                         label="Development" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="tools"
                         label="Tools" />
             
@@ -227,11 +242,11 @@
             <link href="http://mikegrouchy.com/blog/embeddable-tweets.html"/>
             <updated>2010-05-05T02:14:00Z</updated>
             <published>2010-05-05T02:14:00Z</published>
-            <id>http://mikegrouchy.com/blog/embeddable-tweets.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/embeddable-tweets.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="twitter"
                         label="Twitter" />
-                        <category   scheme="/blog/tags"
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="embed"
                         label="Embed" />
             
@@ -245,8 +260,8 @@
             <link href="http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html"/>
             <updated>2010-04-30T20:14:00Z</updated>
             <published>2010-04-30T20:14:00Z</published>
-            <id>http://mikegrouchy.com/blog/a-new-blog-a-new-beginning.html</id>
-                        <category   scheme="/blog/tags"
+            <id>http://mikegrouchy.comblog/a-new-blog-a-new-beginning.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="meta"
                         label="Meta" />
             
