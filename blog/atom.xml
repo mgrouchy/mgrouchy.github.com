@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-07-18T08:50:02Z</updated>
+    <updated>2012-07-18T08:53:21Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
@@ -32,7 +32,7 @@
                         label="Setup" />
             
             <content type="html">
-                                &lt;p&gt;This post is inspired by &lt;a href=&#34;http://www.mahdiyusuf.com/post/16687503726/the-setup&#34;&gt;Mahdi&lt;/a&gt; and &lt;a href=&#34;http://usesthis.com/&#34;&gt;The Setup&lt;/a&gt;. I had originally written a rather terrible post about my &lt;a href=&#34;http://mikegrouchy.com/blog/my-development-toolbox.html&#34;&gt;development toolbox&lt;/a&gt; so I figure it was time to revisit this and get it right for people who&amp;nbsp;care.&lt;/p&gt;
+                                &lt;p&gt;This post is inspired by &lt;a href=&#34;http://www.mahdiyusuf.com/post/16687503726/the-setup&#34;&gt;Mahdi&lt;/a&gt; and &lt;a href=&#34;http://usesthis.com/&#34;&gt;The Setup&lt;/a&gt;. I had originally written a rather terrible post about my &lt;a href=&#34;http://mikegrouchy.com/blog/my-development-toolbox.html&#34;&gt;development toolbox&lt;/a&gt; so I figured it was time to revisit this and get it right for people who&amp;nbsp;care.&lt;/p&gt;
 &lt;h2&gt;Hardware&lt;/h2&gt;
 &lt;p&gt;Not a lot going on here, nothing fancy. Just macs, running &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; Lion. The hardware is a bit older, but I spend most of my time in a terminal, so I don&amp;#8217;t really notice so&amp;nbsp;much.&lt;/p&gt;
 &lt;h3&gt;Work:&lt;/h3&gt;
