@@ -7,10 +7,87 @@
         <link href="/"/>
     
         
-    <updated>2012-07-10T09:08:50Z</updated>
+    <updated>2012-07-18T08:50:02Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">The Setup</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2012/07/the-setup.html"/>
+            <updated>2012-07-18T08:35:00Z</updated>
+            <published>2012-07-18T08:35:00Z</published>
+            <id>http://mikegrouchy.comblog/2012/07/the-setup.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="hardware"
+                        label="Hardware" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="setup"
+                        label="Setup" />
+            
+            <content type="html">
+                                &lt;p&gt;This post is inspired by &lt;a href=&#34;http://www.mahdiyusuf.com/post/16687503726/the-setup&#34;&gt;Mahdi&lt;/a&gt; and &lt;a href=&#34;http://usesthis.com/&#34;&gt;The Setup&lt;/a&gt;. I had originally written a rather terrible post about my &lt;a href=&#34;http://mikegrouchy.com/blog/my-development-toolbox.html&#34;&gt;development toolbox&lt;/a&gt; so I figure it was time to revisit this and get it right for people who&amp;nbsp;care.&lt;/p&gt;
+&lt;h2&gt;Hardware&lt;/h2&gt;
+&lt;p&gt;Not a lot going on here, nothing fancy. Just macs, running &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; Lion. The hardware is a bit older, but I spend most of my time in a terminal, so I don&amp;#8217;t really notice so&amp;nbsp;much.&lt;/p&gt;
+&lt;h3&gt;Work:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2008 Aluminum Macbook, &lt;span class=&#34;caps&#34;&gt;4GB&lt;/span&gt;&amp;nbsp;ram&lt;/li&gt;
+&lt;li&gt;Magic&amp;nbsp;Mouse&lt;/li&gt;
+&lt;li&gt;Standard Apple wired keyboard (I like having the numberpad and not having to be worried about&amp;nbsp;batteries)&lt;/li&gt;
+&lt;li&gt;27&amp;#8221; Cinema&amp;nbsp;Display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Out of all these things, I would have to say the cinema display is incredible. I don&amp;#8217;t normally use my laptop screen when it is connected to the cinema display to avoid &lt;a href=&#34;http://en.wikipedia.org/wiki/Repetitive_strain_injury&#34;&gt;&lt;span class=&#34;caps&#34;&gt;RSI&lt;/span&gt;&lt;/a&gt; issues, however, when I do have it open its normally just for the &lt;a href=&#34;http://rd.io&#34;&gt;rdio&lt;/a&gt;&amp;nbsp;client.&lt;/p&gt;
+&lt;h3&gt;Home:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2010 iMac 21.5&amp;#8221;, &lt;span class=&#34;caps&#34;&gt;8GB&lt;/span&gt;&amp;nbsp;Ram&lt;/li&gt;
+&lt;li&gt;Magic&amp;nbsp;Mouse&lt;/li&gt;
+&lt;li&gt;Apple wireless bluetooth&amp;nbsp;keyboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don&amp;#8217;t use this too much, as it is the computer my &lt;a href=&#34;http://twitter.com/nicolegrouchy&#34;&gt;wife&lt;/a&gt; uses&amp;nbsp;primarily.&lt;/p&gt;
+&lt;p&gt;I have also taken to writing drafts for my blogposts using &lt;a href=&#34;http://gist.github.com&#34;&gt;Github Gists&lt;/a&gt; with my &lt;a href=&#34;http://amzn.to/KLFZrw&#34;&gt;1st Generation &lt;span class=&#34;caps&#34;&gt;32GB&lt;/span&gt; iPad&lt;/a&gt; and the apple bluetooth keyboard. I have found this to be a fantastic way to write a blogpost or a little code while out at a coffee shop or anywhere else when I am on the&amp;nbsp;go.&lt;/p&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;Like I said earlier, I don&amp;#8217;t spend too much time outside the console, but when I do there are the things I couldn&amp;#8217;t live&amp;nbsp;without.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://manytricks.com/moom/&#34;&gt;Moom&lt;/a&gt; - This is an awesome app, it allows you to tile windows in &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;, attach hotkeys to tiling commands and a bunch of other niceties that don&amp;#8217;t exist on&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rd.io&#34;&gt;rdio&lt;/a&gt; - As I mentioned earlier, I use rdio. I listen to music all the time while coding, or thinking or just about anything, so I have rdio going basically all the&amp;nbsp;time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://giantcomet.com/flint&#34;&gt;Flint&lt;/a&gt; - We use campfire for team chat in the office so I use flint for&amp;nbsp;that.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://chrome.google.com&#34;&gt;Chrome&lt;/a&gt; - The web browser of champions, I pretty much use Chrome exclusively now and normally have way too many tabs&amp;nbsp;open.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://skitch.com/&#34;&gt;Skitch&lt;/a&gt; - I use skitch for taking screenshots on &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; it has really great support for simple editing and cropping of your screenshots that I would have a hard time switching to anything else. I dont use their server anymore for storage of my screenshots, I have a proxy set up using &lt;a href=&#34;http://heroku.com&#34;&gt;heroku&lt;/a&gt; to send my screenshots to a Amazon S3 bucket. This is accomplished with &lt;a href=&#34;https://github.com/mgrouchy/s3itch&#34;&gt;s3itch&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://db.tt/Hc6Cqm1&#34;&gt;Dropbox&lt;/a&gt; -Dropbox is fantastic. I store all the git repos I am working on in Github and it has saved my butt a few times now. I can feel safe everything is backed up and even untracked files(in git) are being versioned, just incase I delete a untracked file I end up&amp;nbsp;needing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; - Alfred is an indispensable quick launcher app in the vein of &lt;a href=&#34;http://qsapp.com/&#34;&gt;quicksilver&lt;/a&gt;. I spend most of my time with my hands off the mouse so I don&amp;#8217;t know what I would do without&amp;nbsp;Alfred.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rescuetime.com/ref/161860&#34;&gt;RescueTime&lt;/a&gt; - I work pretty hard to try to stay productive and at the very least stay knowledgeable about where my time is going. RescueTime helps with that by tracking what I do on the computer every&amp;nbsp;day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Command Line&amp;nbsp;Life&lt;/h2&gt;
+&lt;p&gt;The command line is where I spend most of my time, on &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt; I don&amp;#8217;t use the terminal software that comes with &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;, I use &lt;a href=&#34;http://www.iterm2.com/&#34;&gt;iTerm2&lt;/a&gt;. In that terminal I&amp;nbsp;use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.zsh.org/&#34;&gt;Zsh&lt;/a&gt; with &lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh/&#34;&gt;Oh-my-zsh&lt;/a&gt;, because as you know, &lt;a href=&#34;&#34;&gt;Zsh is your friend&lt;/a&gt;, you can check out my .zshrc in my &lt;a href=&#34;https://github.com/mgrouchy/dotfiles&#34;&gt;dotfiles repo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;Vim&lt;/a&gt; - The only text editor in my opinion. This is where I spend most of my time check out my &lt;a href=&#34;https://github.com/mgrouchy/vim&#34;&gt;vimfiles&lt;/a&gt; for setup&amp;nbsp;details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;vim screenshot&#34; src=&#34;http://img.mikegrouchy.s3.amazonaws.com/1._ControlP_-_%28%7E%29_-_VIM_%28vim%29-20120628-111826.jpg&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tmux.sourceforge.net/&#34;&gt;tmux&lt;/a&gt; - Tmux is great. Its a great alternative to gnu screen, highly configurable and looks&amp;nbsp;great.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;tmux screenshot&#34; src=&#34;http://img.mikegrouchy.s3.amazonaws.com/1._tmux_%28tmux%29-20120628-111332.jpg&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bpython-interpreter.org/&#34;&gt;bpython&lt;/a&gt; - bpython is improved interface to the Python interpreter. It supports syntax highlighting, autocomplete and a bunch of other useful features. I usually have bpython open all day every&amp;nbsp;day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;bpython screenshot&#34; src=&#34;http://img.mikegrouchy.s3.amazonaws.com/1._bpython_%28Python%29-20120628-111458.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;On My&amp;nbsp;desk&lt;/h2&gt;
+&lt;p&gt;Books:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://amzn.to/L2qI4V&#34;&gt;Natural Language Processing With Python&lt;/a&gt; - Steven Bird, Ewan Klein and Edward&amp;nbsp;Loper&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://amzn.to/KyjsLo&#34;&gt;Javascript - The Definitive Guide&lt;/a&gt; - David&amp;nbsp;Flanagan&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://amzn.to/M3xogV&#34;&gt;Expert Python Programming&lt;/a&gt; - Tarek&amp;nbsp;Zaide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A bunch of &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoders&lt;/a&gt;&amp;nbsp;stickers&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Pycoders Sickers!&#34; src=&#34;/media/images/2012/07/pycoders-stickers.jpg&#34; /&gt;&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Broken RSS Links Fixed</title>
             <author><name>Mike Grouchy</name></author>

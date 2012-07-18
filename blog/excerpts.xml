@@ -7,10 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-07-10T09:08:53Z</updated>
+    <updated>2012-07-18T08:50:04Z</updated>
 
     <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">The Setup</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2012/07/the-setup.html"/>
+            <updated>2012-07-18T08:35:00Z</updated>
+            <published>2012-07-18T08:35:00Z</published>
+            <id>http://mikegrouchy.comblog/2012/07/the-setup.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="software"
+                        label="Software" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="hardware"
+                        label="Hardware" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="setup"
+                        label="Setup" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Broken RSS Links Fixed</title>
             <author><name>Mike Grouchy</name></author>
