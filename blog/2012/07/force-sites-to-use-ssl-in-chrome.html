@@ -22,7 +22,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>Mike Grouchy</title>
+  <title>Force websites to use SSL in Google Chrome</title>
   <meta name="description" content="">
   <meta name="author" content="Mike Grouchy">
 
@@ -47,7 +47,7 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="index">
+<body id="force-sites-to-use-ssl-in-chrome">
 	<div class="topbar ">
 			<div class="topbar-inner topbar-override">
         <div class="container container-expand">
@@ -61,86 +61,56 @@
       </div>
 	</div>
 		<div class="container container-expand">
-		<div class="blog-list">
-	<ul class="posts clear">
-					<li class="post clear">
-						 	<time datetime="2012-07-23">Monday, 23 Jul, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/2012/07/force-sites-to-use-ssl-in-chrome.html">Force websites to use SSL in Google Chrome</a>
-			</li>
+		<article class="post">
+		<h1 class="title">
+	    <a class="post-link" href="/blog/2012/07/force-sites-to-use-ssl-in-chrome.html">
+	        Force websites to use SSL in Google Chrome
+	    </a>
+	</h1>
+	<time datetime="2012-07-23">
+	    Posted: Monday, 23 July, 2012
+	</time>
+<div class="post-content">
+	<p>I saw this tip in the comments over at <a href="http://news.ycombinator.com">Hacker News</a> today
+and I thought that this is a great alternative to force <span class="caps">SSL</span> for sites that don&#8217;t have
+it&nbsp;available.</p>
+<h2>Step&nbsp;1</h2>
+<p>Navigate to Chrome&#8217;s net internals dashboard by&nbsp;typing</p>
+<p><code>chrome://net-internals/</code> into your&nbsp;browser.</p>
+<p>You should&nbsp;see:</p>
+<p><img alt="net-internals" src="/media/images/2012/07/net-internals.png" /></p>
+<h2>Step&nbsp;2</h2>
+<p>Navigate to the <a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security"><span class="caps">HSTS</span></a>(<span class="caps">HTTPS</span> Strict Transport Security) Tab and you should see&nbsp;this:</p>
+<p><img alt="hsts" src="/media/images/2012/07/hsts.png" /></p>
+<h2>Step&nbsp;3</h2>
+<p>From there its pretty easy, just type in the site you want to force to <span class="caps">SSL</span> and
+you are&nbsp;done!</p>
+<p><img alt="hsts" src="/media/images/2012/07/add-hsts-domain.png" /></p>
+<p>Do you have any other Chrome security tips? Leave them in the&nbsp;comments!</p>
+			<div class="hero-unit disqus">
+		Tags:  <a class="" href="/blog/tags/browser.html">browser</a>,  <a class="" href="/blog/tags/security.html">security</a>,  <a class="" href="/blog/tags/tip.html">tip</a>.	</div>	
+	</article>			<div class="hero-unit about-block">
+<p><img alt="Mike" src="/media/images/mike.jpg" /> Mike is an ambitious Python/Django Developer, Beer drinker and lover of all things basketball.
+    He is also a curator of <a href="http://pycoders.com">Pycoder&#8217;s Weekly</a>.
+    You can follow him on <a href="http://twitter.com/mgrouchy">Twitter</a> or <a href="http://github.com/mgrouchy">Github</a>.</p></div>	<div class="hero-unit disqus">
+<h3 id="comment-header">Comments</h1>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		 var disqus_shortname = 'mikegrouchy';
 
-  			<li class="post clear">
-						 	<time datetime="2012-07-18">Wednesday, 18 Jul, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/2012/07/the-setup.html">The Setup</a>
-			</li>
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-  			<li class="post clear">
-						 	<time datetime="2012-07-10">Tuesday, 10 Jul, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/2012/07/broken-rss-links-fixed.html">Broken RSS Links Fixed</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-07-08">Sunday, 08 Jul, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/2012/07/setting-up-pypy-1.9-on-osx.html">Setting up PyPy 1.9 on OSX</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-06-26">Tuesday, 26 Jun, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/2012/06/write-less-code.html">Write Less Code</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-06-10">Sunday, 10 Jun, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/great-django-test-talks.html">Great Python/Django Testing Talks</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-05-16">Wednesday, 16 May, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/be-pythonic-initpy.html">Be Pythonic: __init__.py</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-05-09">Wednesday, 09 May, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/compile-vim-with-python-on-osx-with-homebrew.html">Compile Vim with Python support on OSX with Homebrew</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-02-06">Monday, 06 Feb, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/introducing-pycoders-weekly.html">Introducing Pycoders Weekly</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2012-01-31">Tuesday, 31 Jan, 2012 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/zsh-is-your-friend.html">Zsh is your friend</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-12-14">Tuesday, 14 Dec, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/setting-up-nginx-with-ssl-and-godaddy.html">Setting up SSL with Nginx and Godaddy</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-07-05">Monday, 05 Jul, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/structure-and-interpretation-of-computer-programs-epub.html">SICP in Epub Format</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-07-04">Sunday, 04 Jul, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/my-development-toolbox.html">My Development Toolbox: An Introduction</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-05-05">Wednesday, 05 May, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/embeddable-tweets.html">Embeddable Tweets</a>
-			</li>
-
-  			<li class="post clear">
-						 	<time datetime="2010-04-30">Friday, 30 Apr, 2010 </time> <span class="list-arrow">&raquo;</span>
-				<a href="/blog/a-new-blog-a-new-beginning.html">A New Blog A New Beginning</a>
-			</li>
-
-  </ul>
-</div>
-					</div> <!--! end of .container -->
+</div>	</div> <!--! end of .container -->
 	<footer> Copyright 2009-2012 Mike Grouchy
   </footer>
     		<!-- Javascript at the bottom for fast page loading -->

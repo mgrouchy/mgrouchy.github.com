@@ -7,10 +7,45 @@
         <link href="/"/>
     
         
-    <updated>2012-07-18T08:53:21Z</updated>
+    <updated>2012-07-23T09:14:01Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Force websites to use SSL in Google Chrome</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2012/07/force-sites-to-use-ssl-in-chrome.html"/>
+            <updated>2012-07-23T09:30:00Z</updated>
+            <published>2012-07-23T09:30:00Z</published>
+            <id>http://mikegrouchy.comblog/2012/07/force-sites-to-use-ssl-in-chrome.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="browser"
+                        label="Browser" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="security"
+                        label="Security" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="tip"
+                        label="Tip" />
+            
+            <content type="html">
+                                &lt;p&gt;I saw this tip in the comments over at &lt;a href=&#34;http://news.ycombinator.com&#34;&gt;Hacker News&lt;/a&gt; today
+and I thought that this is a great alternative to force &lt;span class=&#34;caps&#34;&gt;SSL&lt;/span&gt; for sites that don&amp;#8217;t have
+it&amp;nbsp;available.&lt;/p&gt;
+&lt;h2&gt;Step&amp;nbsp;1&lt;/h2&gt;
+&lt;p&gt;Navigate to Chrome&amp;#8217;s net internals dashboard by&amp;nbsp;typing&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;chrome://net-internals/&lt;/code&gt; into your&amp;nbsp;browser.&lt;/p&gt;
+&lt;p&gt;You should&amp;nbsp;see:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;net-internals&#34; src=&#34;/media/images/2012/07/net-internals.png&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Step&amp;nbsp;2&lt;/h2&gt;
+&lt;p&gt;Navigate to the &lt;a href=&#34;http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HSTS&lt;/span&gt;&lt;/a&gt;(&lt;span class=&#34;caps&#34;&gt;HTTPS&lt;/span&gt; Strict Transport Security) Tab and you should see&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;/media/images/2012/07/hsts.png&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Step&amp;nbsp;3&lt;/h2&gt;
+&lt;p&gt;From there its pretty easy, just type in the site you want to force to &lt;span class=&#34;caps&#34;&gt;SSL&lt;/span&gt; and
+you are&amp;nbsp;done!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;/media/images/2012/07/add-hsts-domain.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Do you have any other Chrome security tips? Leave them in the&amp;nbsp;comments!&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">The Setup</title>
             <author><name>Mike Grouchy</name></author>
@@ -49,10 +84,11 @@
 &lt;li&gt;Magic&amp;nbsp;Mouse&lt;/li&gt;
 &lt;li&gt;Apple wireless bluetooth&amp;nbsp;keyboard&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I don&amp;#8217;t use this too much, as it is the computer my &lt;a href=&#34;http://twitter.com/nicolegrouchy&#34;&gt;wife&lt;/a&gt; uses&amp;nbsp;primarily.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t use this often, as it is the computer my &lt;a href=&#34;http://twitter.com/nicolegrouchy&#34;&gt;wife&lt;/a&gt; uses primarily. I only tend to use it when I
+don&amp;#8217;t feel like slogging around with my laptop at home, or I have left it at the &lt;a href=&#34;http://swixhq.com&#34;&gt;office&lt;/a&gt; or&amp;nbsp;something.&lt;/p&gt;
 &lt;p&gt;I have also taken to writing drafts for my blogposts using &lt;a href=&#34;http://gist.github.com&#34;&gt;Github Gists&lt;/a&gt; with my &lt;a href=&#34;http://amzn.to/KLFZrw&#34;&gt;1st Generation &lt;span class=&#34;caps&#34;&gt;32GB&lt;/span&gt; iPad&lt;/a&gt; and the apple bluetooth keyboard. I have found this to be a fantastic way to write a blogpost or a little code while out at a coffee shop or anywhere else when I am on the&amp;nbsp;go.&lt;/p&gt;
 &lt;h2&gt;Software&lt;/h2&gt;
-&lt;p&gt;Like I said earlier, I don&amp;#8217;t spend too much time outside the console, but when I do there are the things I couldn&amp;#8217;t live&amp;nbsp;without.&lt;/p&gt;
+&lt;p&gt;Like I said earlier, I don&amp;#8217;t spend too much time outside the console, but when I do these are the things I couldn&amp;#8217;t live&amp;nbsp;without.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://manytricks.com/moom/&#34;&gt;Moom&lt;/a&gt; - This is an awesome app, it allows you to tile windows in &lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;, attach hotkeys to tiling commands and a bunch of other niceties that don&amp;#8217;t exist on&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;OSX&lt;/span&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rd.io&#34;&gt;rdio&lt;/a&gt; - As I mentioned earlier, I use rdio. I listen to music all the time while coding, or thinking or just about anything, so I have rdio going basically all the&amp;nbsp;time.&lt;/li&gt;
@@ -86,7 +122,8 @@
 &lt;li&gt;&lt;a href=&#34;http://amzn.to/M3xogV&#34;&gt;Expert Python Programming&lt;/a&gt; - Tarek&amp;nbsp;Zaide&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A bunch of &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoders&lt;/a&gt;&amp;nbsp;stickers&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Pycoders Sickers!&#34; src=&#34;/media/images/2012/07/pycoders-stickers.jpg&#34; /&gt;&lt;/p&gt;            </content>
+&lt;p&gt;&lt;img alt=&#34;Pycoders Sickers!&#34; src=&#34;http://mikegrouchy.com/media/images/2012/07/pycoders-stickers.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Thats about it. What does your setup look&amp;nbsp;like?&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Broken RSS Links Fixed</title>

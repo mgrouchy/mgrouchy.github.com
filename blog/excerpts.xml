@@ -7,10 +7,31 @@
         <link href="/"/>
     
         
-    <updated>2012-07-18T08:53:23Z</updated>
+    <updated>2012-07-23T09:14:03Z</updated>
 
     <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Force websites to use SSL in Google Chrome</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2012/07/force-sites-to-use-ssl-in-chrome.html"/>
+            <updated>2012-07-23T09:30:00Z</updated>
+            <published>2012-07-23T09:30:00Z</published>
+            <id>http://mikegrouchy.comblog/2012/07/force-sites-to-use-ssl-in-chrome.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="browser"
+                        label="Browser" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="security"
+                        label="Security" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="tip"
+                        label="Tip" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">The Setup</title>
             <author><name>Mike Grouchy</name></author>
