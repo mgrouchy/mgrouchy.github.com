@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2013-02-14T11:21:59Z</updated>
+    <updated>2013-02-14T11:33:15Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
@@ -40,7 +40,7 @@ putting the best jobs in front of the best people. Jobs posted on the site are p
 the &lt;a href=&#34;http://twitter.com/pycoders&#34;&gt;@pycoders&lt;/a&gt; fast growing Twitter account and the Job Board
 is advertised weekly in the newsletter. Already we have had great companies like &lt;a href=&#34;http://newsle.com&#34;&gt;Newsle&lt;/a&gt;, &lt;a href=&#34;http://path.com&#34;&gt;Path&lt;/a&gt;
 &lt;a href=&#34;http://datadoghq.com&#34;&gt;Datadoghq&lt;/a&gt; and &lt;a href=&#34;http://cyaninc.com&#34;&gt;Cyan Inc&lt;/a&gt;. and others post with us. If you have a Python Job to post
-for your company or f you are looking to find a new job as a Python Developer,
+for your company or if you are looking to find a new job as a Python Developer,
 you should check out &lt;a href=&#34;http://pythonjobshq.com&#34;&gt;Python Jobs &lt;span class=&#34;caps&#34;&gt;HQ&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you have any questions feel free to reach out to me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;Twitter&lt;/a&gt; or email our &lt;a href=&#34;mailto:admin@pycoders.com&#34;&gt;Pycoder&amp;#8217;s Email&lt;/a&gt;.&lt;/p&gt;            </content>
         </entry>
@@ -799,16 +799,5 @@ had &lt;a href=&#34;http://mikegrouchy.com&#34;&gt;mikegrouchy.com&lt;/a&gt; for
 been a blog that entire time, but there hasn&amp;#8217;t been a lot of great content. I plan
 on bringing back some of my old tutorial posts that people used ,
 but probably update them a bit which hopefully will be an&amp;nbsp;improvement.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html"></title>
-            <author><name>Mike Grouchy</name></author>
-            <link href="http://mikegrouchy.com/blog/2013/02/index.html"/>
-            <updated>2010-01-01T00:00:00Z</updated>
-            <published>2010-01-01T00:00:00Z</published>
-            <id>http://mikegrouchy.comblog/2013/02/index.html</id>
-            
-            <content type="html">
-                                            </content>
         </entry>
     </feed>
