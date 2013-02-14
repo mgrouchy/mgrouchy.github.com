@@ -7,10 +7,43 @@
         <link href="/"/>
     
         
-    <updated>2012-07-23T09:14:01Z</updated>
+    <updated>2013-02-14T11:21:59Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Introducing Python Jobs HQ</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2013/02/introducing-pythonjobshq.html"/>
+            <updated>2013-02-14T10:35:00Z</updated>
+            <published>2013-02-14T10:35:00Z</published>
+            <id>http://mikegrouchy.comblog/2013/02/introducing-pythonjobshq.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="jobs"
+                        label="Jobs" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="careers"
+                        label="Careers" />
+            
+            <content type="html">
+                                &lt;p&gt;As you may know if you have read this blog, I am one of the curators for &lt;a href=&#34;http://pycoders.com&#34;&gt;Pycoder&amp;#8217;s Weekly&lt;/a&gt;.
+We have been working on a bunch of small projects to try to bring more value from Pycoder&amp;#8217;s
+into the python community. The first thing we have launched this year is &lt;a href=&#34;http://pythonjobshq.com&#34;&gt;Python Jobs &lt;span class=&#34;caps&#34;&gt;HQ&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonjobshq.com&#34;&gt;Python Jobs &lt;span class=&#34;caps&#34;&gt;HQ&lt;/span&gt;&lt;/a&gt; is a Job site we are running that is focused on
+putting the best jobs in front of the best people. Jobs posted on the site are posted to
+the &lt;a href=&#34;http://twitter.com/pycoders&#34;&gt;@pycoders&lt;/a&gt; fast growing Twitter account and the Job Board
+is advertised weekly in the newsletter. Already we have had great companies like &lt;a href=&#34;http://newsle.com&#34;&gt;Newsle&lt;/a&gt;, &lt;a href=&#34;http://path.com&#34;&gt;Path&lt;/a&gt;
+&lt;a href=&#34;http://datadoghq.com&#34;&gt;Datadoghq&lt;/a&gt; and &lt;a href=&#34;http://cyaninc.com&#34;&gt;Cyan Inc&lt;/a&gt;. and others post with us. If you have a Python Job to post
+for your company or f you are looking to find a new job as a Python Developer,
+you should check out &lt;a href=&#34;http://pythonjobshq.com&#34;&gt;Python Jobs &lt;span class=&#34;caps&#34;&gt;HQ&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have any questions feel free to reach out to me on &lt;a href=&#34;http://twitter.com/mgrouchy&#34;&gt;Twitter&lt;/a&gt; or email our &lt;a href=&#34;mailto:admin@pycoders.com&#34;&gt;Pycoder&amp;#8217;s Email&lt;/a&gt;.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Force websites to use SSL in Google Chrome</title>
             <author><name>Mike Grouchy</name></author>
@@ -36,14 +69,14 @@ it&amp;nbsp;available.&lt;/p&gt;
 &lt;p&gt;Navigate to Chrome&amp;#8217;s net internals dashboard by&amp;nbsp;typing&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;chrome://net-internals/&lt;/code&gt; into your&amp;nbsp;browser.&lt;/p&gt;
 &lt;p&gt;You should&amp;nbsp;see:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;net-internals&#34; src=&#34;/media/images/2012/07/net-internals.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;net-internals&#34; src=&#34;http://mikegrouchy.com/media/images/2012/07/net-internals.png&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;Step&amp;nbsp;2&lt;/h2&gt;
 &lt;p&gt;Navigate to the &lt;a href=&#34;http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HSTS&lt;/span&gt;&lt;/a&gt;(&lt;span class=&#34;caps&#34;&gt;HTTPS&lt;/span&gt; Strict Transport Security) Tab and you should see&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;/media/images/2012/07/hsts.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;http://mikegrouchy.com/media/images/2012/07/hsts.png&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;Step&amp;nbsp;3&lt;/h2&gt;
 &lt;p&gt;From there its pretty easy, just type in the site you want to force to &lt;span class=&#34;caps&#34;&gt;SSL&lt;/span&gt; and
 you are&amp;nbsp;done!&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;/media/images/2012/07/add-hsts-domain.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;hsts&#34; src=&#34;http://mikegrouchy.com/media/images/2012/07/add-hsts-domain.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Do you have any other Chrome security tips? Leave them in the&amp;nbsp;comments!&lt;/p&gt;            </content>
         </entry>
             <entry>
@@ -766,5 +799,16 @@ had &lt;a href=&#34;http://mikegrouchy.com&#34;&gt;mikegrouchy.com&lt;/a&gt; for
 been a blog that entire time, but there hasn&amp;#8217;t been a lot of great content. I plan
 on bringing back some of my old tutorial posts that people used ,
 but probably update them a bit which hopefully will be an&amp;nbsp;improvement.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html"></title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2013/02/index.html"/>
+            <updated>2010-01-01T00:00:00Z</updated>
+            <published>2010-01-01T00:00:00Z</published>
+            <id>http://mikegrouchy.comblog/2013/02/index.html</id>
+            
+            <content type="html">
+                                            </content>
         </entry>
     </feed>

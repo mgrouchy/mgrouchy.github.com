@@ -7,10 +7,34 @@
         <link href="/"/>
     
         
-    <updated>2012-07-23T09:14:03Z</updated>
+    <updated>2013-02-14T11:22:00Z</updated>
 
     <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Introducing Python Jobs HQ</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2013/02/introducing-pythonjobshq.html"/>
+            <updated>2013-02-14T10:35:00Z</updated>
+            <published>2013-02-14T10:35:00Z</published>
+            <id>http://mikegrouchy.comblog/2013/02/introducing-pythonjobshq.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="programming"
+                        label="Programming" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="jobs"
+                        label="Jobs" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="careers"
+                        label="Careers" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Force websites to use SSL in Google Chrome</title>
             <author><name>Mike Grouchy</name></author>
@@ -309,6 +333,18 @@
                         <category   scheme="http://mikegrouchy.com/blog/tags'"
                         term="meta"
                         label="Meta" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html"></title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2013/02/index.html"/>
+            <updated>2010-01-01T00:00:00Z</updated>
+            <published>2010-01-01T00:00:00Z</published>
+            <id>http://mikegrouchy.comblog/2013/02/index.html</id>
             
             <content type="html">
                 
