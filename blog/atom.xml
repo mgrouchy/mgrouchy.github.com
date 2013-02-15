@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2013-02-15T09:59:36Z</updated>
+    <updated>2013-02-15T10:38:28Z</updated>
 
     <id>http://mikegrouchy.com/blog/atom.xml/</id>
 
@@ -32,11 +32,11 @@
                                 &lt;p&gt;I spent much of last year trying to turn up my Open Source contributions
 so I spent much of my time contibuting to other peoples Open Source Projects. Its
 2013 and its a new year, so I am making a push to get some Open Source projects
-that I have had in the pipe actually out there in the wild. The first of these is
-&lt;a href=&#34;http://github.com/mgrouchy/django-stronghold&#34;&gt;django-stronghold&lt;/a&gt;. If you are a Django developer and
+that I have had in the pipe actually out there in the&amp;nbsp;wild.&lt;/p&gt;
+&lt;p&gt;The first of these is &lt;a href=&#34;http://github.com/mgrouchy/django-stronghold&#34;&gt;django-stronghold&lt;/a&gt;. If you are a Django developer and
 you have worked on a Django project of any size, you might have coded something
 like this already which makes it the perfect target for open&amp;nbsp;source.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://github.com/mgrouchy/django-stronghold&#34;&gt;Django-Stronghold&lt;/a&gt; defaults your Django project to private. This means that via
+&lt;p&gt;Stronghold defaults your Django project to private. This means that via
 some middleware all your Django Views become &lt;code&gt;login_required&lt;/code&gt;. Stronghold also
 provides some mechanisims to make views public via a decorator or whitelisting
 some of your url patterns. Either way, if this sounds useful to you &lt;a href=&#34;http://github.com/mgrouchy/django-stronghold&#34;&gt;check out the
