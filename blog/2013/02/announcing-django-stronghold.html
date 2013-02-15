@@ -22,7 +22,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title></title>
+  <title>Announcing Django-Stronghold</title>
   <meta name="description" content="">
   <meta name="author" content="Mike Grouchy">
 
@@ -47,7 +47,7 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="django">
+<body id="announcing-django-stronghold">
 	<div class="topbar ">
 			<div class="topbar-inner topbar-override">
         <div class="container container-expand">
@@ -61,61 +61,53 @@
       </div>
 	</div>
 		<div class="container container-expand">
-		<section class="archives">
-<h1 class="tag title">django</h1>
-<ul class="posts clear">
-<li class="post clear">
-    <time datetime="2013-02-15">
-        Fri, 15 Feb 2013
-    </time>
-    <a href="/blog/2013/02/announcing-django-stronghold.html">Announcing Django-Stronghold</a>
-        <ul class="tags">
-        <li>
-        <a class="small" href="/blog/tags/python.html">
-            python
-        </a>
-    </li>
-        <li>
-        <a class="small" href="/blog/tags/django.html">
-            django
-        </a>
-    </li>
-        <li>
-        <a class="small" href="/blog/tags/authentication.html">
-            authentication
-        </a>
-    </li>
-        </ul>
-    </li><li class="post clear">
-    <time datetime="2012-06-10">
-        Sun, 10 Jun 2012
-    </time>
-    <a href="/blog/great-django-test-talks.html">Great Python/Django Testing Talks</a>
-        <ul class="tags">
-        <li>
-        <a class="small" href="/blog/tags/django.html">
-            django
-        </a>
-    </li>
-        <li>
-        <a class="small" href="/blog/tags/python.html">
-            python
-        </a>
-    </li>
-        <li>
-        <a class="small" href="/blog/tags/test.html">
-            test
-        </a>
-    </li>
-        <li>
-        <a class="small" href="/blog/tags/testing.html">
-            testing
-        </a>
-    </li>
-        </ul>
-    </li></ul>
-</section>
-					</div> <!--! end of .container -->
+		<article class="post">
+		<h1 class="title">
+	    <a class="post-link" href="/blog/2013/02/announcing-django-stronghold.html">
+	        Announcing Django-Stronghold
+	    </a>
+	</h1>
+	<time datetime="2013-02-15">
+	    Posted: Friday, 15 February, 2013
+	</time>
+<div class="post-content">
+	<p>I spent much of last year trying to turn up my Open Source contributions
+so I spent much of my time contibuting to other peoples Open Source Projects. Its
+2013 and its a new year, so I am making a push to get some Open Source projects
+that I have had in the pipe actually out there in the wild. The first of these is
+<a href="http://github.com/mgrouchy/django-stronghold">django-stronghold</a>. If you are a Django developer and
+you have worked on a Django app, you might have coded something like this already which
+makes it the perfect target for open&nbsp;source.</p>
+<p>Django-Stronghold defaults your Django project to private. This means that via
+some middleware all your Django Views become <code>login_required</code>. Stronghold also
+provides some mechanisims to make views public via a decorator or whitelisting
+some of your url patterns. Either way, if this sounds useful to you <a href="http://github.com/mgrouchy/django-stronghold">check out the
+repo</a>, install it and report any issues you run&nbsp;into.</p>
+<p>Shout out to <a href="http://twitter.com/richardlblair">Richard Blair</a> for help with&nbsp;this.</p>
+			<div class="hero-unit disqus">
+		Tags:  <a class="" href="/blog/tags/python.html">python</a>,  <a class="" href="/blog/tags/django.html">django</a>,  <a class="" href="/blog/tags/authentication.html">authentication</a>.	</div>	
+	</article>			<div class="hero-unit about-block">
+<p><img alt="Mike" src="/media/images/mike.jpg" /> Mike is an ambitious Python/Django Developer, Beer drinker and lover of all things basketball.
+    He is also a curator of <a href="http://pycoders.com">Pycoder&#8217;s Weekly</a>.
+    You can follow him on <a href="http://twitter.com/mgrouchy">Twitter</a> or <a href="http://github.com/mgrouchy">Github</a>.</p></div>	<div class="hero-unit disqus">
+<h3 id="comment-header">Comments</h1>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		 var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>	</div> <!--! end of .container -->
 	<footer> Copyright 2009-2013 Mike Grouchy
   </footer>
     		<!-- Javascript at the bottom for fast page loading -->

@@ -7,10 +7,31 @@
         <link href="/"/>
     
         
-    <updated>2013-02-14T11:34:43Z</updated>
+    <updated>2013-02-15T09:52:10Z</updated>
 
     <id>http://mikegrouchy.com/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Announcing Django-Stronghold</title>
+            <author><name>Mike Grouchy</name></author>
+            <link href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html"/>
+            <updated>2013-02-15T10:00:00Z</updated>
+            <published>2013-02-15T10:00:00Z</published>
+            <id>http://mikegrouchy.comblog/2013/02/announcing-django-stronghold.html</id>
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="django"
+                        label="Django" />
+                        <category   scheme="http://mikegrouchy.com/blog/tags'"
+                        term="authentication"
+                        label="Authentication" />
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
             <entry>
             <title type="html">Introducing Python Jobs HQ</title>
             <author><name>Mike Grouchy</name></author>
