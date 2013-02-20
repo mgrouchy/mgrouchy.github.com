@@ -4,7 +4,7 @@ explaining some common Python idioms.&lt;/p&gt;
 &lt;p&gt;So the first thing I am going to address in this series of posts is &lt;code&gt;__init__.py&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;What is &lt;code&gt;__init__.py&lt;/code&gt; used for?&lt;/h2&gt;
 &lt;p&gt;The primary use of &lt;code&gt;__init__.py&lt;/code&gt; is to initialize Python packages. The easiest
-way to demonstrate this is to take a look at the structure of a standard python
+way to demonstrate this is to take a look at the structure of a standard Python
 module.&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;package&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
     &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
