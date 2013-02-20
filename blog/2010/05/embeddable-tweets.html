@@ -3,7 +3,7 @@
 	<head>
 					<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
-			<title>Announcing Django-Stronghold - Mike Grouchy</title>
+			<title>Embeddable Tweets - Mike Grouchy</title>
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
@@ -39,28 +39,29 @@
 				<p class="header"></p>
 			</header>
 			<section>
-				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html">Announcing Django-Stronghold</a></h1>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2010/05/embeddable-tweets.html">Embeddable Tweets</a></h1>
 <p class="meta">
 	<small>
-			<span class="article-date">Fri 15 February 2013</span>  <span class="tags"><a href="/tag//"></a>		</span>
+			<span class="article-date">Wed 05 May 2010</span>  <span class="tags"><a href="/tag//"></a>		</span>
 	</small>
 	</p>
 	<br/>
 	<div class="entry-content">
 		<p>
-			<p>I spent much of last year trying to turn up my open source contributions
-so I spent much of my time contributing to other peoples open source projects. Its
-2013 and its a new year, so I am making a push to get some open source projects
-that I have had in the pipe actually out there in the wild.</p>
-<p>The first of these is <a href="http://github.com/mgrouchy/django-stronghold">django-stronghold</a>.</p>
-<p>If you are a Django developer and
-you have worked on a Django project of any size, you might have coded something
-like this already which makes it the perfect target for open source.</p>
-<p>Stronghold defaults your Django project to private. This means that via
-some middleware all your Django views become <code>login_required</code>. Stronghold also
-provides some mechanisims to make views public via a decorator or whitelisting
-some of your url patterns. If this sounds useful to you <a href="http://github.com/mgrouchy/django-stronghold">check it out</a>. If you run into any issues please let me know!</p>
-<p>Shout out to <a href="http://twitter.com/richardlblair">Richard Blair</a> for help with this.</p>
+			<p>Twitter now allows you to Embed a Tweet, all you need is the url of a tweet, like
+<a href="http://twitter.com/mgrouchy/status/13429079254">http://twitter.com/mgrouchy/status/13429079254</a>,
+and you can use Twitters [Blackbird Pie](http://media.twitter.com/blackbird-pie/
+app to embed the tweet in your website like below:</p>
+<!-- http://twitter.com/mgrouchy/status/13429079254 -->
+
+<p><style type='text/css'>.bbpBox{background:url(http://s.twimg.com/a/1271891196/images/themes/theme15/bg.png) #022330;padding:20px;}p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px}p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6}p.bbpTweet span.metadata span.author{line-height:19px}p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px}p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}</style> <div class='bbpBox'><p class='bbpTweet'>This is me tweeting about how you can embed tweets, is this embedded?<span class='timestamp'><a title='Wed May 05 14:23:55 +0000 2010' href='http://twitter.com/mgrouchy/status/13429079254'>less than a minute ago</a> via <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a></span><span class='metadata'><span class='author'><a href='http://twitter.com/mgrouchy'><img src='http://a3.twimg.com/profile_images/817183015/swix-hipster_normal.JPG' /></a><strong><a href='http://twitter.com/mgrouchy'>Mike Grouchy</a></strong><br/>mgrouchy</span></span></p></div> <!-- end of tweet --></p>
+<p>Here is the Source:</p>
+<script src="http://gist.github.com/390841.js"></script>
+
+<p>Its kind of interesting, Blackbird Pie just generates a html/css snippet that you
+ can embed in your page. I am not sure if I prefer this way of doing things or the
+ way <a href="http://github.com">github</a> does it with cross site javascript.</p>
+<p>What do you think?</p>
 		</p>
 	</div>
 			<div class="disqus">

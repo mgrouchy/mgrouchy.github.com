@@ -3,7 +3,7 @@
 	<head>
 					<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
-			<title>Announcing Django-Stronghold - Mike Grouchy</title>
+			<title>Setting up SSL with Nginx and Godaddy - Mike Grouchy</title>
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
@@ -39,28 +39,42 @@
 				<p class="header"></p>
 			</header>
 			<section>
-				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html">Announcing Django-Stronghold</a></h1>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2010/12/setting-up-ssl-with-nginx-and-godaddy.html">Setting up SSL with Nginx and Godaddy</a></h1>
 <p class="meta">
 	<small>
-			<span class="article-date">Fri 15 February 2013</span>  <span class="tags"><a href="/tag//"></a>		</span>
+			<span class="article-date">Tue 14 December 2010</span>  <span class="tags"><a href="/tag//"></a>		</span>
 	</small>
 	</p>
 	<br/>
 	<div class="entry-content">
 		<p>
-			<p>I spent much of last year trying to turn up my open source contributions
-so I spent much of my time contributing to other peoples open source projects. Its
-2013 and its a new year, so I am making a push to get some open source projects
-that I have had in the pipe actually out there in the wild.</p>
-<p>The first of these is <a href="http://github.com/mgrouchy/django-stronghold">django-stronghold</a>.</p>
-<p>If you are a Django developer and
-you have worked on a Django project of any size, you might have coded something
-like this already which makes it the perfect target for open source.</p>
-<p>Stronghold defaults your Django project to private. This means that via
-some middleware all your Django views become <code>login_required</code>. Stronghold also
-provides some mechanisims to make views public via a decorator or whitelisting
-some of your url patterns. If this sounds useful to you <a href="http://github.com/mgrouchy/django-stronghold">check it out</a>. If you run into any issues please let me know!</p>
-<p>Shout out to <a href="http://twitter.com/richardlblair">Richard Blair</a> for help with this.</p>
+			<p>I was at a local coffee company the other day and <a href="http://twitter.com/jlgosse">Josh</a>
+and I were talking about some annoyances when dealing with godaddys SSL certificates.
+ Talking to him about this reminded me that I had this post in the pipe for a long
+ time and gave me the motivation to finish this.</p>
+<p>On Many browsers, if you set up a standard Godaddy SSL Certificate out of the box,
+ you will get ssl errors in many browsers saying that they can't recognize your
+ certificate authority, this is generally not a good thing the whole point of installing
+ SSL is for security and establishing trust iwith your customers, clients and website
+ visitors.</p>
+<p>To start the process of getting set up with an SSL certificate from godaddy just go
+ and purchase one. You can pick anyone you like, but in general for most things you
+ can get away with just purchasing the cheapest one, I think its around 21$/yr.</p>
+<p>After you purchase your certificate, open up a terminal and log onto your server.
+ You first need to create a key and certificate request for your domain.
+<script src="http://gist.github.com/524908.js?file=gistfile1.sh"></script></p>
+<p>Just fill out the requested information and you should be good to go. You then log
+ into your godaddy account and provide godaddy with the certificate request and they
+ will generate the certificate for you. With the cheaper certificate this process usually
+ takes minutes. For the more expensive certificte the process takes considerably longer.</p>
+<p>After you recieve your certificates from godaddy, you need to put your certificates
+ on your server and then you just add these lines to the approprate section of your
+ configs depending on your webserver.</p>
+<p>For nginx:
+<script src="http://gist.github.com/524908.js?file=gistfile2.sh"></script></p>
+<p>For apache:
+<script src="http://gist.github.com/524908.js?file=gistfile3.sh"></script></p>
+<p>If you have any questions, either leave something in the comments, or you can catch me <a href="http://twitter.com/mgrouchy">here on twitter</a>.</p>
 		</p>
 	</div>
 			<div class="disqus">

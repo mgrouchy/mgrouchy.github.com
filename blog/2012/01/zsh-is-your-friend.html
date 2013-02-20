@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Zsh is your friend - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class=""><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class=""><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2012/01/zsh-is-your-friend.html">Zsh is your friend</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Tue 31 January 2012</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p>I don't know if you know this, but ZShell is your friend, you might not know it
+yet, but its true. I know what you are thinking , "whats wrong with Bash?",
+nothing, except its not Zsh.</p>
+<p>Its not that Bash is a bad guy, I don't want to put him down, but if we
+were picking teams, Bash would be last picked in gym class.</p>
+<p>He isn't very versatile and he doesn't do anything particularily great, all in all
+he is kind of just a worse Zsh(or Zsh is kind of like a better Bash).</p>
+<p>Zsh is easy to get started with because it looks and acts like bash in a lot of
+ways. So if you are familiar with bash don't worry, you can try zsh out without
+skipping a beat and you still end up with a better shell.</p>
+<h3>Why is Zsh better than Bash?</h3>
+<p>In my mind one of the most important reasons why Zsh is better than bash is
+autocompletion, and I don't mean that whimpy autocompletion you get by installing
+bash completion. I mean, this is real deal command completion, besides getting all
+the completion of common commands on the command line, and being ridiculously
+fast, the completion also gives you a keyboard navigable completion list.</p>
+<p><img alt="zshcompletion" src="/static/images/2012/01/zshcompletion.jpg" /></p>
+<p>Okay, I know what you are saying, big deal right? Well how about really great built
+in autocompletion for common commands. Lets use Kill as an example. You type</p>
+<div class="codehilite"><pre>    <span class="n">Kill</span> <span class="o">&lt;</span><span class="n">tab</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p>in bash, you get what, the list of all files that are in your current
+working directory. Not very helpful behavior in my opinion. What happens if you
+type</p>
+<div class="codehilite"><pre>    <span class="n">kill</span> <span class="o">&lt;</span><span class="n">tab</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p>in Zsh? This:</p>
+<p><img alt="zshkillcompletion" src="/static/images/2012/01/zshkillcompletion.jpg" /></p>
+<p>Lists of all your processes with pids? Yes please.</p>
+<p>Another thing that make makes Zsh stand out is shared history. If you are anything
+like me you live in the terminal all day long. There is nothing worse(I'm exaggerating)
+than opening another terminal in a tab and navigating your history looking for
+that recent thing you just did in another window and have it not be in your
+history. In Zsh this isn't an issue.</p>
+<h3>Time for more awesome</h3>
+<p>Okay, so we have great, fast autocompletion and shared history. How much more awesome
+could there be? Lots!</p>
+<p>Autocorrect is pretty cool</p>
+<div class="codehilite"><pre><span class="n">mikegrouchyv2</span> <span class="p">::(</span><span class="n">master</span><span class="o">*</span><span class="p">)</span> » <span class="n">gut</span> <span class="n">status</span>
+<span class="n">zsh</span><span class="p">:</span> <span class="n">correct</span> <span class="s">&#39;gut&#39;</span> <span class="n">to</span> <span class="s">&#39;git&#39;</span> <span class="p">[</span><span class="n">nyae</span><span class="p">]</span>?<span class="n">y</span>
+<span class="n">git</span> <span class="n">status</span>
+</pre></div>
+
+
+<p>Hey thats pretty cool, autocorrect for known commands. What would I do
+without you(besides type the command again)?</p>
+<p>Even cooler than autocorrect, for the super nerd(like me) Vi and emacs mode,
+<strong>shit yeah</strong>, you can have your favorite editor on your command line. It will
+support common movement commands and editing modes, like command and insert mode
+for Vi.</p>
+<p>Last but certianly not least, Zsh has <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
+from the website:</p>
+<blockquote>
+<p>A community-driven framework for managing your zsh configuration. Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, macports, etc), over 80 terminal themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community.</p>
+</blockquote>
+<p>I know one exists for bash, but I find oh-my-zsh to be excellent, it autoupdates,
+has great plugins and a very active community behind it.</p>
+<p>All in all, Zsh is pretty great, so if you haven't tried Zsh, maybe its time you
+try it out. If so <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> is a
+pretty great place to start.</p>
+<p>Also releated reading, a book that was reccomended to me with a lot of great
+Zsh tips as well as Bash tips for those who I haven't convinced yet is <a href="http://amzn.to/KkPrDo">Bash to Z Shell: Conquering the Command Line</a>.</p>
+<p>If you are already drinking the Kool-aid and have some Zsh tips to share, either
+leave a comment or hit me up on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
+<p><strong>EDIT</strong>: If you are interested in learning more about Zsh, check out the <a href="http://zsh.sourceforge.net/FAQ/">Zsh FAQ</a>.
+Its pretty complete and much better than I could do in a very basic blog post.</p>
+<p>Also, <a href="http://news.ycombinator.com/item?id=3533895">More discussion on Hacker News</a></p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>

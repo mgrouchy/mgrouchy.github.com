@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Compile Vim with Python support on OSX with Homebrew - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class=""><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class=""><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2012/05/compile-vim-with-python-support-on-osx-with-homebrew.html">Compile Vim with Python support on OSX with Homebrew</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Wed 09 May 2012</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p><a href="http://twitter.com/myusuf3">Mahdi</a> asked me today how I compiled Vim with +Python
+on OSX and I couldn't remember the exact commands, so I am writing this blog post
+so I will remember in the future and because someone else might find this useful.</p>
+<p>Compiling Vim with +Python or +Ruby is required if you want to run any plugins
+that have peices that are written in those languages. The usual way around this
+on OSX is to just install <a href="https://github.com/b4winckler/macvim">MacVim</a> and use
+that. However, if you really want to use terminal Vim, you are out of luck on OSX.</p>
+<p>So this is where <a href="http://mxcl.github.com/homebrew/">Homebrew</a> comes in, we can use Homebrew to compile vim from a custom
+formula. The only requirements to do this are <a href="http://mercurial.selenic.com/">Mercurial</a> and Homebrew.</p>
+<p>You can install Mercurial by using either easy_install or pip:</p>
+<div class="codehilite"><pre><span class="c">#install mercurial</span>
+sudo easy_install mercurial
+<span class="c">#or</span>
+sudo pip install mercurial
+</pre></div>
+
+
+<p>You can follow the directions on the <a href="https://github.com/mxcl/homebrew/wiki/installation">Homebrew Github Wiki</a> to install homebrew.</p>
+<p>Now you can Install this Homebrew formula which has been modified slightly to my tastes
+to install Vim.</p>
+<script src="https://gist.github.com/2051422.js?file=vim.rb"></script>
+
+<p>To install this formula you can just use this command, or fork the Gist and modify
+the formula as you see fit(that's what I did) to install your flavor of Vim.</p>
+<div class="codehilite"><pre>brew install https://raw.github.com/gist/2051422/0cfce544a4ab86318221c4d7213306a7b7ec7b3d/vim.rb
+</pre></div>
+
+
+<p>By default the Vim compiled with this script is compiled with +python and +ruby,
+if you want support for other interpreters you can pass those parameters to the script with:</p>
+<div class="codehilite"><pre>--enable-interp<span class="o">=</span>NAME,...<span class="s2">&quot;, &quot;</span>lua, mzscheme, perl, python, python3, tcl and/or ruby<span class="err">&quot;</span>
+</pre></div>
+
+
+<p>You can also specify vim be compiled with features(the scripts, default is normal)
+To see what the features do, you can see this <a href="http://www.drchip.org/astronaut/vim/vimfeat.html">rather ugly table</a></p>
+<div class="codehilite"><pre>--with-features<span class="o">=</span>TYPE<span class="s2">&quot;, &quot;</span>tiny, small, normal, big or huge<span class="err">&quot;</span>
+</pre></div>
+
+
+<p>Now that you have vim installed with your interpreters and features compiled,
+go ahead and check the version:</p>
+<div class="codehilite"><pre>vim --version
+</pre></div>
+
+
+<p>and you should see that it is the updated version.</p>
+<p>If you don't see that it is the updated version, it means your /usr/local/bin isn't
+on your path, or if it is on your path it comes after usr/bin.</p>
+<p>So how do you fix this?</p>
+<h2>Option 1: Update your path:</h2>
+<p>In your .zshrc (<a href="http://mikegrouchy.com/blog/zsh-is-your-friend.html">you are using Zsh right?</a>) or .bashrc
+update your path.</p>
+<div class="codehilite"><pre><span class="c">#this</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/usr/bin:/usr/sbin
+<span class="c">#to this</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+</pre></div>
+
+
+<h2>Option 2: Move your old Vim and symlink the new one</h2>
+<p>You can move the Vim that comes with OSX and Symlink the one brew installed</p>
+<div class="codehilite"><pre>sudo mv /usr/bin/vim /usr/bin/oldvim
+ln -s /usr/local/bin/vim /usr/bin/vim
+</pre></div>
+
+
+<p>One of those should solve your problem.</p>
+<h2>Protip:</h2>
+<p>You may notice that your terminal Vim does not support backspace in Insert mode
+with the settings I have setup in the brew formula.</p>
+<p>If this is something you want, you can stick this line in your .vimrc:</p>
+<div class="codehilite"><pre><span class="n">set</span> <span class="n">backspace</span><span class="p">=</span><span class="n">indent</span><span class="p">,</span><span class="n">eol</span><span class="p">,</span><span class="n">start</span>
+</pre></div>
+
+
+<p>I think that should be it. If you have any questions leave it in the comments or
+ask me on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
+<p>Edit: Discussion on <a href="http://news.ycombinator.com/item?id=3949774">Hacker News</a></p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>

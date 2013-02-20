@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/06.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2012-06-26T09:50:00-04:00</updated><entry><title>Write Less Code</title><link href="http://mikegrouchy.com/blog/2012/06/write-less-code.html" rel="alternate"></link><updated>2012-06-26T09:50:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-06-26:blog/2012/06/write-less-code.html</id><summary type="html">&lt;p&gt;One of the fundamental truths of software development is that you have to write code,
+but one of the biggest fallacies is the idea that writing code is your job. When I
+first started out as a software developer, I fell into that trap, writing code is
+a powerful thing, its empowering, you feel like you are productive and you are
+accomplishing things. However, what I have learned over the years is the real
+truth of the matter. The truth that the job of a software developer is to write
+as little code as possible.&lt;/p&gt;
+&lt;p&gt;Now, don't get me wrong, we should not be getting ourselves into &lt;a href="http://codegolf.com/"&gt;code golf&lt;/a&gt;
+situations where we are compacting code and saving keystrokes to the point where
+the code you produce is no longer understandable. When you think about it though
+the fact that most of your time will be maintaining the terrible code you wrote,
+writing less code and not creating more work for yourself will start to look like
+an exceptionally good idea.&lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;Look around, look at your tools, look at the framework you likely use to
+produce that thing you work on. Everything you do, all the tools you use,
+everything is trying make you write less code. Your tools are trying to make
+you less error prone, and abstracting away the things that will cause you trouble
+down the road.&lt;/p&gt;
+&lt;p&gt;So why should you write less code? When I said earlier that your job was to write
+less code, I was fibbing a little bit. Really your job is to &lt;strong&gt;think&lt;/strong&gt;, your job
+is to think about the problem at hand, devise an elegant solution and then turn
+that solution into software. One of the byproducts of creating software is that you
+have to write code to solve problems.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="the thinker" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/The_Thinker,_Rodin.jpg/250px-The_Thinker,_Rodin.jpg" /&gt;&lt;/p&gt;
+&lt;h2&gt;Code is a by-product&lt;/h2&gt;
+&lt;p&gt;Code isn't that important. We love to convince ourselves that it is because
+as we actually start executing and turning our solutions into software, it seems
+like writing code is both a means and an end unto itself. We talk about our
+&lt;a href="http://mikegrouchy.com/blog/compile-vim-with-python-on-osx-with-homebrew.html"&gt;editors&lt;/a&gt;,
+we talk about our &lt;a href="http://pycoders.com"&gt;language of choice&lt;/a&gt; and we talk about our
+&lt;a href="http://mikegrouchy.com/blog/zsh-is-your-friend.html"&gt;environments&lt;/a&gt;. I do it,
+you do it, we all do it. There is no shame in enjoying the craft of the work you do.
+The trick is to stay focused. Code is awesome, but its also the enemy, it takes
+time to write, it can be fragile, it can be unclear and not particularly robust.&lt;/p&gt;
+&lt;p&gt;This is why I stick with the mantra "Write less code". Whenever I feel like something
+is getting bigger than it should be or more complicated than it should be, I say
+"Write less code". Whenever I write so much code that it gets hard to keep it
+in context, I refactor, I clean it up, all the while, thinking about "Write less code".&lt;/p&gt;
+&lt;p&gt;As much as it pains me to say, sometimes there is no way to get around writing a
+bunch of code, but if you can't be concise, be clear. Writing less code is
+writing &lt;a href="http://amzn.to/MJFkE4"&gt;clean code&lt;/a&gt;. Writing less code is also about
+writing clear code. When you are economical with the code you write the purpose
+of your code becomes clear.&lt;/p&gt;
+&lt;p&gt;So, whats the lesson here? Most importantly I think the lesson here is that
+code is a by-product, its an unavoidable thing that you generate in the process
+of doing your job. So think more, &lt;a href="http://amzn.to/KHjbJp"&gt;refactor more&lt;/a&gt;, remove some
+old code and write less new code, do yourself a favor and start this today.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Great Python/Django Testing Talks</title><link href="http://mikegrouchy.com/blog/2012/06/great-pythondjango-testing-talks.html" rel="alternate"></link><updated>2012-06-10T21:05:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-06-10:blog/2012/06/great-pythondjango-testing-talks.html</id><summary type="html">&lt;p&gt;I have been working on some tests for an upcoming product at &lt;a href="http://swixhq.com"&gt;SWIX&lt;/a&gt;
+and as any good developer I think its important to make an effort to constantly be
+learning new things. In this vein I starting digging through the videos for
+this years &lt;a href="https://us.pycon.org/2012/"&gt;Pycon US&lt;/a&gt;. Lo and Behold Testing was a
+popular topic at Pycon so there were lots of talks to watch!&lt;/p&gt;
+&lt;p&gt;My two favorite talks were Testing and Django by &lt;a href="https://twitter.com/carljm"&gt;Carl Meyer&lt;/a&gt;
+and Fast Test, Slow Test by the always insightful &lt;a href="https://twitter.com/garybernhardt"&gt;Gary Bernhardt&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Testing and Django - Carl Meyer&lt;/h2&gt;
+&lt;p&gt;&lt;iframe width="600" height="450" src="http://www.youtube.com/embed/ickNQcNXiS4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br/&gt;
+Carl Meyer gives this great deep dive into testing Django projects, there are
+plenty of gems in here, including some code for a Django Test Runner using Unittest2's
+test discovery. Carl gives some great tips for writing tests with Django as well as tips
+for just writing good tests in general.&lt;/p&gt;
+&lt;h2&gt;Fast Test, Slow Test - Gary Bernhardt&lt;/h2&gt;
+&lt;p&gt;&lt;iframe width="600" height="450" src="http://www.youtube.com/embed/RAxiiRPHS9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br/&gt;
+This talk is superb. Gary Bernhardt talks about how to write a fast test suite as
+well as how you should be testing your applications. He points out that the slow
+test suite problem is usually releated to the problem of test authors writing Unit
+Tests which are actually System Tests.&lt;/p&gt;
+&lt;p&gt;Those two testing talks were my favorites, but some other good ones that are
+worth checking out are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.youtube.com/watch?v=TmuEDxX1FDQ"&gt;Certainty in an Uncertain World: Gaining Confidence through Security Testing&lt;/a&gt; - Geremy Condra&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=hvPYuqzTPIk"&gt;Fake It Til You Make It: Unit Testing Patterns With Mocks and Fakes&lt;/a&gt; - Brian K. Jones&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1VZfL9JVgFg"&gt;Speedily Practical Large-Scale Tests&lt;/a&gt; - Erik Rose&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Xu5EhKVZdV8"&gt;Stop Mocking, Start Testing&lt;/a&gt; - Augie Fackler &amp;amp; Nathaniel Manista&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=9LVqBQcFmyw"&gt;pytest - rapid and simple testing with Python&lt;/a&gt; - Holger Krekel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides these videos another great resource to take your Python testing a bit
+farther is this book, the &lt;a href="http://amzn.to/LUe8SX"&gt;Python Testing Cookbook &lt;/a&gt;. It
+has plenty of great strategys that you can use for testing your Python projects.&lt;/p&gt;
+&lt;p&gt;If you have any other good Django testing tips or Talks leave them in the comments.
+If you are looking for more Python news, tips and discussion you should check out
+&lt;a href="http://pycoders.com"&gt;Pycoders Weekly&lt;/a&gt;, a weekly Python newsletter that I curate.&lt;/p&gt;</summary><category term=""></category></entry></feed>

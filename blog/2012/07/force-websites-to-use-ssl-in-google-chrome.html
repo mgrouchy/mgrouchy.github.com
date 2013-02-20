@@ -3,7 +3,7 @@
 	<head>
 					<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
-			<title>Announcing Django-Stronghold - Mike Grouchy</title>
+			<title>Force websites to use SSL in Google Chrome - Mike Grouchy</title>
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
 			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
@@ -39,28 +39,31 @@
 				<p class="header"></p>
 			</header>
 			<section>
-				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html">Announcing Django-Stronghold</a></h1>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2012/07/force-websites-to-use-ssl-in-google-chrome.html">Force websites to use SSL in Google Chrome</a></h1>
 <p class="meta">
 	<small>
-			<span class="article-date">Fri 15 February 2013</span>  <span class="tags"><a href="/tag//"></a>		</span>
+			<span class="article-date">Mon 23 July 2012</span>  <span class="tags"><a href="/tag//"></a>		</span>
 	</small>
 	</p>
 	<br/>
 	<div class="entry-content">
 		<p>
-			<p>I spent much of last year trying to turn up my open source contributions
-so I spent much of my time contributing to other peoples open source projects. Its
-2013 and its a new year, so I am making a push to get some open source projects
-that I have had in the pipe actually out there in the wild.</p>
-<p>The first of these is <a href="http://github.com/mgrouchy/django-stronghold">django-stronghold</a>.</p>
-<p>If you are a Django developer and
-you have worked on a Django project of any size, you might have coded something
-like this already which makes it the perfect target for open source.</p>
-<p>Stronghold defaults your Django project to private. This means that via
-some middleware all your Django views become <code>login_required</code>. Stronghold also
-provides some mechanisims to make views public via a decorator or whitelisting
-some of your url patterns. If this sounds useful to you <a href="http://github.com/mgrouchy/django-stronghold">check it out</a>. If you run into any issues please let me know!</p>
-<p>Shout out to <a href="http://twitter.com/richardlblair">Richard Blair</a> for help with this.</p>
+			<p>I saw this tip in the comments over at <a href="http://news.ycombinator.com">Hacker News</a> today
+and I thought that this is a great alternative to force SSL for sites that don't have
+it available.</p>
+<h2>Step 1</h2>
+<p>Navigate to Chrome's net internals dashboard by typing</p>
+<p><code>chrome://net-internals/</code> into your browser.</p>
+<p>You should see:</p>
+<p><img alt="net-internals" src="/static/images/2012/07/net-internals.png" /></p>
+<h2>Step 2</h2>
+<p>Navigate to the <a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a>(HTTPS Strict Transport Security) Tab and you should see this:</p>
+<p><img alt="hsts" src="/static/images/2012/07/hsts.png" /></p>
+<h2>Step 3</h2>
+<p>From there its pretty easy, just type in the site you want to force to SSL and
+you are done!</p>
+<p><img alt="hsts" src="/static/images/2012/07/add-hsts-domain.png" /></p>
+<p>Do you have any other Chrome security tips? Leave them in the comments!</p>
 		</p>
 	</div>
 			<div class="disqus">

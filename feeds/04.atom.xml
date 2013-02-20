@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/04.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2010-04-30T00:00:00-04:00</updated><entry><title>A New Blog A New Beginning</title><link href="http://mikegrouchy.com/blog/2010/04/a-new-blog-a-new-beginning.html" rel="alternate"></link><updated>2010-04-30T00:00:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2010-04-30:blog/2010/04/a-new-blog-a-new-beginning.html</id><summary type="html">&lt;p&gt;So as you can tell this all looks a bit different. This blog that you are currently
+reading is &lt;strong&gt;completely static&lt;/strong&gt;. All of this post content is actually written in
+&lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; and then generated as static html by
+&lt;a href="http://hyde.github.com/"&gt;Hyde&lt;/a&gt;. As you can tell some of the css is off and
+this blog isn't overly full featured. I'm considering this a work in process and
+a little project to import my css skills as well as a fun little thing I can work
+on, on the side.  I will probably write a post about how to get started with hyde
+for people interested in trying it out.&lt;/p&gt;
+&lt;p&gt;I decided that with this new blog its a completely fresh start, I haven't carried
+over any of the old posts from my old blog and I could care less about the google
+juice I am losing because of that. In this new incarnation of the blog, I'm hoping
+I will post a little more consistently as well as bring a tighter focus. I have
+had &lt;a href="http://mikegrouchy.com"&gt;mikegrouchy.com&lt;/a&gt; for 6 years and it has
+been a blog that entire time, but there hasn't been a lot of great content. I plan
+on bringing back some of my old tutorial posts that people used ,
+but probably update them a bit which hopefully will be an improvement.&lt;/p&gt;</summary><category term=""></category></entry></feed>

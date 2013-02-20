@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Be Pythonic: __init__.py - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class=""><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class=""><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html">Be Pythonic: __init__.py</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Wed 16 May 2012</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p>This is hopefully the first in a series of posts about writing Pythonic code and
+explaining some common Python idioms.</p>
+<p>So the first thing I am going to address in this series of posts is <code>__init__.py</code>.</p>
+<h2>What is <code>__init__.py</code> used for?</h2>
+<p>The primary use of <code>__init__.py</code> is to initialize Python packages. The easiest
+way to demonstrate this is to take a look at the structure of a standard python
+module.</p>
+<div class="codehilite"><pre><span class="n">package</span><span class="o">/</span>
+    <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+    <span class="n">file</span><span class="p">.</span><span class="n">py</span>
+    <span class="n">file2</span><span class="p">.</span><span class="n">py</span>
+    <span class="n">file3</span><span class="p">.</span><span class="n">py</span>
+    <span class="n">subpackage</span><span class="o">/</span>
+        <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+        <span class="n">submodule1</span><span class="p">.</span><span class="n">py</span>
+        <span class="n">submodule2</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+
+
+<p>As you can see in the structure above the inclusion of the <code>__init__.py</code> file in
+a directory indicates to the Python interpreter that the directory should be
+treated like a Python package</p>
+<h2>What goes in <code>__init__.py</code>?</h2>
+<p><code>__init__.py</code> can be an empty file but it is often used to perform setup needed
+for the package(import things, load things into path, etc).</p>
+<p>One common thing to do in your <code>__init__.py</code> is to import selected Classes, functions,
+etc into the package level so they can be convieniently imported from the package.</p>
+<p>In our example above we can say that file.py has the Class File. So without
+anything in our <code>__init__.py</code> you would import with this syntax:</p>
+<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">package.file</span> <span class="kn">import</span> <span class="n">File</span>
+</pre></div>
+
+
+<p>However you can import File into your <code>__init__.py</code> to make it available at the
+package level:</p>
+<div class="codehilite"><pre><span class="c"># in your __init__.py</span>
+<span class="kn">from</span> <span class="nn">file</span> <span class="kn">import</span> <span class="n">File</span>
+
+<span class="c"># now import File from package</span>
+<span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">File</span>
+</pre></div>
+
+
+<p>Another thing to do is at the package level make subpackages/modules available
+with the <code>__all__</code> variable. When the interpeter sees an <code>__all__</code> variable defined
+in an <code>__init__.py</code> it imports the modules listed in the <code>__all__</code> variable when you do:</p>
+<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+
+<p><code>__all__</code> is a list containing the names of modules that you want to be imported
+with import * so looking at our above example again if we wanted to import the
+submodules in subpackage the <code>__all__</code> variable in <code>subpackage/__init__.py</code> would be:</p>
+<div class="codehilite"><pre><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;submodule1&#39;</span><span class="p">,</span> <span class="s">&#39;submodule2&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>With the <code>__all__</code> variable populated like that, when you perform</p>
+<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">subpackage</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+
+<p>it would import submodule1 and submodule2.</p>
+<p>As you can see <code>__init__.py</code> can be very useful besides its primary function of
+indicating that a directory is a module. If you have any comments or questions,
+hit up the comments or contact me on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
+<p>If you are looking for more Python news, tips and discussion you should check out
+<a href="http://pycoders.com">Pycoder's Weekly</a> a weekly Python newsletter that I curate.</p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>

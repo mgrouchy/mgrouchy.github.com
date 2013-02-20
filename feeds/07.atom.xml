@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/07.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2012-07-23T09:30:00-04:00</updated><entry><title>Force websites to use SSL in Google Chrome</title><link href="http://mikegrouchy.com/blog/2012/07/force-websites-to-use-ssl-in-google-chrome.html" rel="alternate"></link><updated>2012-07-23T09:30:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-07-23:blog/2012/07/force-websites-to-use-ssl-in-google-chrome.html</id><summary type="html">&lt;p&gt;I saw this tip in the comments over at &lt;a href="http://news.ycombinator.com"&gt;Hacker News&lt;/a&gt; today
+and I thought that this is a great alternative to force SSL for sites that don't have
+it available.&lt;/p&gt;
+&lt;h2&gt;Step 1&lt;/h2&gt;
+&lt;p&gt;Navigate to Chrome's net internals dashboard by typing&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;chrome://net-internals/&lt;/code&gt; into your browser.&lt;/p&gt;
+&lt;p&gt;You should see:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="net-internals" src="/static/images/2012/07/net-internals.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Step 2&lt;/h2&gt;
+&lt;p&gt;Navigate to the &lt;a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security"&gt;HSTS&lt;/a&gt;(HTTPS Strict Transport Security) Tab and you should see this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="hsts" src="/static/images/2012/07/hsts.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Step 3&lt;/h2&gt;
+&lt;p&gt;From there its pretty easy, just type in the site you want to force to SSL and
+you are done!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="hsts" src="/static/images/2012/07/add-hsts-domain.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Do you have any other Chrome security tips? Leave them in the comments!&lt;/p&gt;</summary><category term=""></category></entry><entry><title>The Setup</title><link href="http://mikegrouchy.com/blog/2012/07/the-setup.html" rel="alternate"></link><updated>2012-07-18T08:35:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-07-18:blog/2012/07/the-setup.html</id><summary type="html">&lt;p&gt;This post is inspired by &lt;a href="http://www.mahdiyusuf.com/post/16687503726/the-setup"&gt;Mahdi&lt;/a&gt; and &lt;a href="http://usesthis.com/"&gt;The Setup&lt;/a&gt;. I had originally written a rather terrible post about my &lt;a href="http://mikegrouchy.com/blog/my-development-toolbox.html"&gt;development toolbox&lt;/a&gt; so I figured it was time to revisit this and get it right for people who care.&lt;/p&gt;
+&lt;h2&gt;Hardware&lt;/h2&gt;
+&lt;p&gt;Not a lot going on here, nothing fancy. Just macs, running OSX Lion. The hardware is a bit older, but I spend most of my time in a terminal, so I don't really notice so much.&lt;/p&gt;
+&lt;h3&gt;Work:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2008 Aluminum Macbook, 4GB ram&lt;/li&gt;
+&lt;li&gt;Magic Mouse&lt;/li&gt;
+&lt;li&gt;Standard Apple wired keyboard (I like having the numberpad and not having to be worried about batteries)&lt;/li&gt;
+&lt;li&gt;27" Cinema Display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Out of all these things, I would have to say the cinema display is incredible. I don't normally use my laptop screen when it is connected to the cinema display to avoid &lt;a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury"&gt;RSI&lt;/a&gt; issues, however, when I do have it open its normally just for the &lt;a href="http://rd.io"&gt;rdio&lt;/a&gt; client.&lt;/p&gt;
+&lt;h3&gt;Home:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2010 iMac 21.5", 8GB Ram&lt;/li&gt;
+&lt;li&gt;Magic Mouse&lt;/li&gt;
+&lt;li&gt;Apple wireless bluetooth keyboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don't use this often, as it is the computer my &lt;a href="http://twitter.com/nicolegrouchy"&gt;wife&lt;/a&gt; uses primarily. I only tend to use it when I
+don't feel like slogging around with my laptop at home, or I have left it at the &lt;a href="http://swixhq.com"&gt;office&lt;/a&gt; or something.&lt;/p&gt;
+&lt;p&gt;I have also taken to writing drafts for my blogposts using &lt;a href="http://gist.github.com"&gt;Github Gists&lt;/a&gt; with my &lt;a href="http://amzn.to/KLFZrw"&gt;1st Generation 32GB iPad&lt;/a&gt; and the apple bluetooth keyboard. I have found this to be a fantastic way to write a blogpost or a little code while out at a coffee shop or anywhere else when I am on the go.&lt;/p&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;Like I said earlier, I don't spend too much time outside the console, but when I do these are the things I couldn't live without.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://manytricks.com/moom/"&gt;Moom&lt;/a&gt; - This is an awesome app, it allows you to tile windows in OSX, attach hotkeys to tiling commands and a bunch of other niceties that don't exist on OSX.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rd.io"&gt;rdio&lt;/a&gt; - As I mentioned earlier, I use rdio. I listen to music all the time while coding, or thinking or just about anything, so I have rdio going basically all the time.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://giantcomet.com/flint"&gt;Flint&lt;/a&gt; - We use campfire for team chat in the office so I use flint for that.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://chrome.google.com"&gt;Chrome&lt;/a&gt; - The web browser of champions, I pretty much use Chrome exclusively now and normally have way too many tabs open.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://skitch.com/"&gt;Skitch&lt;/a&gt; - I use skitch for taking screenshots on OSX it has really great support for simple editing and cropping of your screenshots that I would have a hard time switching to anything else. I dont use their server anymore for storage of my screenshots, I have a proxy set up using &lt;a href="http://heroku.com"&gt;heroku&lt;/a&gt; to send my screenshots to a Amazon S3 bucket. This is accomplished with &lt;a href="https://github.com/mgrouchy/s3itch"&gt;s3itch&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://db.tt/Hc6Cqm1"&gt;Dropbox&lt;/a&gt; -Dropbox is fantastic. I store all the git repos I am working on in Github and it has saved my butt a few times now. I can feel safe everything is backed up and even untracked files(in git) are being versioned, just incase I delete a untracked file I end up needing.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.alfredapp.com/"&gt;Alfred&lt;/a&gt; - Alfred is an indispensable quick launcher app in the vein of &lt;a href="http://qsapp.com/"&gt;quicksilver&lt;/a&gt;. I spend most of my time with my hands off the mouse so I don't know what I would do without Alfred.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rescuetime.com/ref/161860"&gt;RescueTime&lt;/a&gt; - I work pretty hard to try to stay productive and at the very least stay knowledgeable about where my time is going. RescueTime helps with that by tracking what I do on the computer every day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Command Line Life&lt;/h2&gt;
+&lt;p&gt;The command line is where I spend most of my time, on OSX I don't use the terminal software that comes with OSX, I use &lt;a href="http://www.iterm2.com/"&gt;iTerm2&lt;/a&gt;. In that terminal I use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.zsh.org/"&gt;Zsh&lt;/a&gt; with &lt;a href="https://github.com/robbyrussell/oh-my-zsh/"&gt;Oh-my-zsh&lt;/a&gt;, because as you know, &lt;a href=""&gt;Zsh is your friend&lt;/a&gt;, you can check out my .zshrc in my &lt;a href="https://github.com/mgrouchy/dotfiles"&gt;dotfiles repo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; - The only text editor in my opinion. This is where I spend most of my time check out my &lt;a href="https://github.com/mgrouchy/vim"&gt;vimfiles&lt;/a&gt; for setup details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="vim screenshot" src="http://img.mikegrouchy.s3.amazonaws.com/1._ControlP_-_%28%7E%29_-_VIM_%28vim%29-20120628-111826.jpg" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://tmux.sourceforge.net/"&gt;tmux&lt;/a&gt; - Tmux is great. Its a great alternative to gnu screen, highly configurable and looks great.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="tmux screenshot" src="http://img.mikegrouchy.s3.amazonaws.com/1._tmux_%28tmux%29-20120628-111332.jpg" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bpython-interpreter.org/"&gt;bpython&lt;/a&gt; - bpython is improved interface to the Python interpreter. It supports syntax highlighting, autocomplete and a bunch of other useful features. I usually have bpython open all day every day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="bpython screenshot" src="http://img.mikegrouchy.s3.amazonaws.com/1._bpython_%28Python%29-20120628-111458.jpg" /&gt;&lt;/p&gt;
+&lt;h2&gt;On My desk&lt;/h2&gt;
+&lt;p&gt;Books:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://amzn.to/L2qI4V"&gt;Natural Language Processing With Python&lt;/a&gt; - Steven Bird, Ewan Klein and Edward Loper&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://amzn.to/KyjsLo"&gt;Javascript - The Definitive Guide&lt;/a&gt; - David Flanagan&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://amzn.to/M3xogV"&gt;Expert Python Programming&lt;/a&gt; - Tarek Zaide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A bunch of &lt;a href="http://pycoders.com"&gt;Pycoders&lt;/a&gt; stickers&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pycoders Sickers!" src="http://mikegrouchy.com/media/images/2012/07/pycoders-stickers.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Thats about it. What does your setup look like?&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Broken RSS Links Fixed</title><link href="http://mikegrouchy.com/blog/2012/07/broken-rss-links-fixed.html" rel="alternate"></link><updated>2012-07-10T09:00:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-07-10:blog/2012/07/broken-rss-links-fixed.html</id><summary type="html">&lt;p&gt;&lt;img alt="Darth Fail" src="/static/images/2012/07/darth-vader-epic-fail.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;It seems my RSS feed has failed epically and none of the actual links to the blog
+worked. Not too awesome for you RSS readers out there.&lt;/p&gt;
+&lt;p&gt;Needless to say, that is fixed now. Thank you to the people who went through the
+trouble to notify me of my broken RSS. Your help is much appreciated.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Setting up PyPy 1.9 on OSX</title><link href="http://mikegrouchy.com/blog/2012/07/setting-up-pypy-19-on-osx.html" rel="alternate"></link><updated>2012-07-08T10:00:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2012-07-08:blog/2012/07/setting-up-pypy-19-on-osx.html</id><summary type="html">&lt;p&gt;&lt;img alt="pypy" src="http://pypy.org/image/pypy-logo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As I had said before on &lt;a href="http://mikegrouchy.com/blog/setting-up-nginx-with-ssl-and-godaddy.html"&gt;this&lt;/a&gt; &lt;a href="http://mikegrouchy.com/blog/great-django-test-talks.html"&gt;blog&lt;/a&gt;, I sometimes use it as a way to record things I want to remember. This is one of those times.&lt;/p&gt;
+&lt;p&gt;I have started a new project that uses PyPy and while there is documentation out there to get started, I find it useful to have it all in the same place and not spread around.&lt;/p&gt;
+&lt;h2&gt;What is PyPy&lt;/h2&gt;
+&lt;p&gt;PyPy is Python interpreter and JIT compiler. The latest PyPy release PyPy 1.9, the one we are installing, is CPython 2.7.2 compatible. PyPy is focused on speed and 100% compatibility with the &lt;a href="http://en.wikipedia.org/wiki/CPython"&gt;CPython&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Installing PyPy&lt;/h2&gt;
+&lt;p&gt;There are a couple of options to install PyPy on OSX.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can install using the &lt;a href="https://bitbucket.org/pypy/pypy/downloads/pypy-1.9-osx64.tar.bz2"&gt;binary&lt;/a&gt; from the PyPy website.&lt;/li&gt;
+&lt;li&gt;You can &lt;a href="http://pypy.org/download.html#building-from-source"&gt;build PyPy from source&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You can install using &lt;a href="http://mxcl.github.com/homebrew/"&gt;Homebrew&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I like to manage my packages using Homebrew when thats an option, so I installed using Homebrew.
+It was very easy to get setup just&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    brew install PyPy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then follow any instructions in your terminal.&lt;/p&gt;
+&lt;p&gt;You should then see a symlink in your /usr/local/bin directory for PyPy&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    ~ &amp;gt;&amp;gt; ls /usr/local/bin | grep pypy
+    pypy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And assuming you have homebrew setup correctly you should be able to type "pypy" in your terminal and get an interactive interpreter.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    ~ &amp;gt;&amp;gt; pypy
+    Python 2.7.2 &lt;span class="o"&gt;(&lt;/span&gt;341e1e3821ff, Jun 07 2012, 15:42:54&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="o"&gt;[&lt;/span&gt;PyPy 1.9.0 with GCC 4.2.1&lt;span class="o"&gt;]&lt;/span&gt; on darwin
+    Type &lt;span class="s2"&gt;&amp;quot;help&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;copyright&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;credits&amp;quot;&lt;/span&gt; or &lt;span class="s2"&gt;&amp;quot;license&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;for &lt;/span&gt;more information.
+    And now &lt;span class="k"&gt;for &lt;/span&gt;something completely different: &lt;span class="sb"&gt;``&lt;/span&gt;it&lt;span class="s1"&gt;&amp;#39;s beautiful: very rectangular&lt;/span&gt;
+&lt;span class="s1"&gt;    and yellow&amp;#39;&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+    &amp;gt;&amp;gt;&amp;gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you have gotten this far you have been successful at installing PyPy!&lt;/p&gt;
+&lt;p&gt;Now, like any good &lt;a href="http://pycoders.com"&gt;pycoder&lt;/a&gt;, lets move on to getting PyPy setup inside a Virtualenv.&lt;/p&gt;
+&lt;h2&gt;Getting PyPy to work with Virtualenv or Virtualenvwrapper&lt;/h2&gt;
+&lt;p&gt;Luckily getting PyPy set up in a virtualenv is really easy, for virtualenv the command is:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    virtualenv -p /usr/local/bin/pypy environmentname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;for Virtualenvwrapper, its basically the same:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    mkvirtualenv -p /usr/local/bin/pypy environmentname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the output of each of these commands you should see:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    Running virtualenv with interpreter /usr/local/bin/pypy
+    New pypy executable in testpypy2/bin/pypy
+    Installing setuptools............done.
+    Installing pip...............done.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can activate your environment.&lt;/p&gt;
+&lt;p&gt;In virtualenv:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="nb"&gt;source&lt;/span&gt; /path/to/your/virtualenv/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In &lt;a href="http://www.doughellmann.com/projects/virtualenvwrapper/"&gt;virtualenvwrapper&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    workon environmentname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And test your Python version:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    python --version
+    Python 2.7.2 &lt;span class="o"&gt;(&lt;/span&gt;341e1e3821ff, Jun 07 2012, 15:42:54&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="o"&gt;[&lt;/span&gt;PyPy 1.9.0 with GCC 4.2.1&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you are good to get working on your Python project with PyPy. Happy hacking!&lt;/p&gt;</summary><category term=""></category></entry><entry><title>SICP in Epub Format</title><link href="http://mikegrouchy.com/blog/2010/07/sicp-in-epub-format.html" rel="alternate"></link><updated>2010-07-05T20:14:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2010-07-05:blog/2010/07/sicp-in-epub-format.html</id><summary type="html">&lt;p&gt;Awhile ago, I ran across a list of programming/algorithm/computer
+science book reccomendations and on that list was &lt;a href="http://mitpress.mit.edu/sicp/"&gt;Structure and Interpretation
+of Computer Programs(SICP)&lt;/a&gt;. Ever since then it and a few other books have been
+on the top of my &lt;strong&gt;must&lt;/strong&gt; read list.&lt;/p&gt;
+&lt;p&gt;I have been interested in learning lisp for quite awhile, I think its probably the
+ &lt;a href="http://news.ycombinator.com"&gt;Hacker News&lt;/a&gt; influence, lisp is often talked
+ about there as Hacker News is written in a dialect of lisp authored by
+ &lt;a href="http://paulgraham.com"&gt;Paul Graham&lt;/a&gt; and &lt;a href="http://pdos.csail.mit.edu/~rtm/"&gt;Robert Morris&lt;/a&gt;
+ called &lt;a href="http://arclanguage.org"&gt;Arc&lt;/a&gt;. So while in SICP the dialect of
+ lisp is not Arc but Scheme, from its description and reviews I have read, SICP seems
+ like it would be a great way to get started programming in lisp.&lt;/p&gt;
+&lt;p&gt;Why learn lisp you say? Certianly not to actually program in it professionally, I
+ actually don't know anyone who programs in lisp for their job(Thats not to say there
+ aren't lisp jobs out there). The reason to learn lisp is that by all accounts learning
+ lisp is a transformative experience. I have consistently read and have had one of my
+ very good friends tell me that learning to write lisp changes the way you think about
+ programming and writing software. If nothing else that should make it worth the
+ time and effort to learn.&lt;/p&gt;
+&lt;p&gt;So back to SICP. I have been meaning to pick up a copy and start reading it for awhile
+ but I had never got around to it. There is a web version but like a lot of people,
+ I have a hard time reading from my computer screen, not because it hurts my eyes or
+ anything like that, I think its just a matter of focus. There are so many things external
+ to the book when you are reading it while sitting at your computer that it becomes tempting
+ to multitask while reading. So today I was very excited to learn that &lt;a href="http://twitter.com/ieure"&gt;Ian Eure&lt;/a&gt;
+ created an epub copy of the book and its available on &lt;a href="http://github.com/ieure/sicp"&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a perfect format for me, I can now load it onto my iphone(on stanza or ibooks)
+ and read away while I spend my ~1.5 hours/day commuting on the bus back and forth to work.
+ I usually try to get books in PDF form and just read them out of &lt;a href="https://www.dropbox.com/referrals/NTE5Nzg0MTU5"&gt;dropbox&lt;/a&gt;,
+ which is a good experience, but I would definately prefer epub as its easier to read.
+ All in all this is a pretty big win for me and its certianly a great motivator to
+ get me started reading SICP and learning Scheme.&lt;/p&gt;
+&lt;p&gt;Are there any books like SICP that you would reccomend? I'd love to get some suggestions,
+ just leave a note in the comments!&lt;/p&gt;</summary><category term=""></category></entry><entry><title>My Development Toolbox: An Introduction</title><link href="http://mikegrouchy.com/blog/2010/07/my-development-toolbox-an-introduction.html" rel="alternate"></link><updated>2010-07-04T18:14:00-04:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2010-07-04:blog/2010/07/my-development-toolbox-an-introduction.html</id><summary type="html">&lt;p&gt;Lately I have seen a bunch of posts where bloggers, developers, etc. talk about their
+ current development environments and hardware. I really enjoy these posts because
+ its always nice to see what tools other developers are using, so I thought I would
+ chip in with a few blog posts of my own. In a couple of "My Toolbox" posts, I will
+ talk about the hardware and software I use to do my work as Software Developer(currently
+ doing mostly Python/Django work at &lt;a href="http://swixhq.com"&gt;SWIX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All in all the hardware I use in the office is pretty basic. I currently use a
+ &lt;strong&gt;13.3-Inch MacBook Pro&lt;/strong&gt;, a pretty standard &lt;strong&gt;Dell 22-inch monitor&lt;/strong&gt;,
+ standard &lt;strong&gt;Apple keyboard&lt;/strong&gt; and the amazing &lt;strong&gt;Apple Magic Mouse&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nothing fancy going on there, pretty standard hardware configuration and generally
+ what everyone in the office currently uses as we all tend to work both in the office
+ and from home from time to time. This hardware is essentially the perfect setup for
+ the work that I do. Generally the apps that I use are pretty light and I find the
+ 13.3 inch Macbook Pro to be pretty zippy. Probably the only thing that would be a
+ good upgrade would be from the 22-24 inch monitor to maybe 2-22 inch monitors.&lt;/p&gt;
+&lt;p&gt;What does your setup look like? What kind of hardware do you use?&lt;/p&gt;</summary><category term=""></category></entry></feed>
