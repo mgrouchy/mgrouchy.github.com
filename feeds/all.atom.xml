@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-02-15T10:00:00-05:00</updated><entry><title>Announcing Django-Stronghold</title><link href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html" rel="alternate"></link><updated>2013-02-15T10:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-15:blog/2013/02/announcing-django-stronghold.html</id><summary type="html">&lt;p&gt;I spent much of last year trying to turn up my open source contributions
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-02-20T22:00:00-05:00</updated><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-20T22:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-20:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
+For most apps you can drop Johnny-cache in and depending on your Django project get
+a good result right out of the box. If this sounds appealing check out the &lt;a href="http://pythonhosted.org/johnny-cache/"&gt;docs&lt;/a&gt;
+for more details.&lt;/p&gt;
+&lt;p&gt;A recent issue that I have run into is that a deploying a Django App on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt; with
+Johnny Cache does not work out of the box with my &lt;a href="http://memcached.org/"&gt;Memcached&lt;/a&gt; service
+of choice &lt;a href="http://www.memcachier.com/"&gt;Memcachier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After some investigation the issue here is that Johnny Cache doesn't support
+&lt;a href="http://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer"&gt;SASL&lt;/a&gt; out of the box which is how the authentication for Memcachier works.
+Memcachier reccomends using &lt;a href="https://github.com/jbalogh/django-pylibmc"&gt;django-pylibmc's&lt;/a&gt;
+&lt;a href="http://libmemcached.org/libMemcached.html"&gt;libmemcached&lt;/a&gt; backend to use its app.
+Of course this isn't compatible with Johnny Cache out of the box either so what do you do?&lt;/p&gt;
+&lt;h2&gt;Create your own SASL compatible backend for Johnny Cache&lt;/h2&gt;
+&lt;p&gt;This is a fairly straightforward problem to solve, we can just inherit from the
+&lt;code&gt;PyLibMCCache&lt;/code&gt; backend from django-pylibmc and override its &lt;code&gt;_get_memcache_timeout&lt;/code&gt;
+method with the one from Johnny Cache.&lt;/p&gt;
+&lt;p&gt;Then update your django settings file to point at the new backend you have just
+created.&lt;/p&gt;
+&lt;script src="https://gist.github.com/mgrouchy/4956137.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;Make sure in your CACHES settings dict that you make sure you set BINARY to True
+and you are off to the races.&lt;/p&gt;
+&lt;p&gt;Any questions? Feel free to ask in the comments or hit me up on &lt;a href="http://twitter.com/mgrouchy"&gt;Twitter&lt;/a&gt;&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Announcing Django-Stronghold</title><link href="http://mikegrouchy.com/blog/2013/02/announcing-django-stronghold.html" rel="alternate"></link><updated>2013-02-15T10:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-15:blog/2013/02/announcing-django-stronghold.html</id><summary type="html">&lt;p&gt;I spent much of last year trying to turn up my open source contributions
 so I spent much of my time contributing to other peoples open source projects. Its
 2013 and its a new year, so I am making a push to get some open source projects
 that I have had in the pipe actually out there in the wild.&lt;/p&gt;

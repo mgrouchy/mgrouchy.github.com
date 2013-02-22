@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Using Johnny Cache with Heroku and Memcachier - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class=""><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class=""><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+																<li class=""><a class="" href="mailto:mgrouchy@gmail.com"><i class="icon-envelope"></i> Email</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html">Using Johnny Cache with Heroku and Memcachier</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Wed 20 February 2013</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p><a href="https://github.com/jmoiron/johnny-cache">Johnny Cache</a> is a pretty great caching framework for Django.
+For most apps you can drop Johnny-cache in and depending on your Django project get
+a good result right out of the box. If this sounds appealing check out the <a href="http://pythonhosted.org/johnny-cache/">docs</a>
+for more details.</p>
+<p>A recent issue that I have run into is that a deploying a Django App on <a href="http://heroku.com">Heroku</a> with
+Johnny Cache does not work out of the box with my <a href="http://memcached.org/">Memcached</a> service
+of choice <a href="http://www.memcachier.com/">Memcachier</a>.</p>
+<p>After some investigation the issue here is that Johnny Cache doesn't support
+<a href="http://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer">SASL</a> out of the box which is how the authentication for Memcachier works.
+Memcachier reccomends using <a href="https://github.com/jbalogh/django-pylibmc">django-pylibmc's</a>
+<a href="http://libmemcached.org/libMemcached.html">libmemcached</a> backend to use its app.
+Of course this isn't compatible with Johnny Cache out of the box either so what do you do?</p>
+<h2>Create your own SASL compatible backend for Johnny Cache</h2>
+<p>This is a fairly straightforward problem to solve, we can just inherit from the
+<code>PyLibMCCache</code> backend from django-pylibmc and override its <code>_get_memcache_timeout</code>
+method with the one from Johnny Cache.</p>
+<p>Then update your django settings file to point at the new backend you have just
+created.</p>
+<script src="https://gist.github.com/mgrouchy/4956137.js"></script>
+
+<p>Make sure in your CACHES settings dict that you make sure you set BINARY to True
+and you are off to the races.</p>
+<p>Any questions? Feel free to ask in the comments or hit me up on <a href="http://twitter.com/mgrouchy">Twitter</a></p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>
