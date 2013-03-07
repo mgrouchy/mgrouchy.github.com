@@ -101,4 +101,9 @@ relies on your own judgement but we can cover most issues with some steadfast ru
 &lt;li&gt;Always keep comments up to date when editing commented code.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
-are necessary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;</summary><category term=""></category></entry></feed>
+are necessary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are interested in keeping up with the latest Python news, discussions,
+projects, articles and Jobs you should check out &lt;a href="http://pycoders.com"&gt;Pycoder's Weekly&lt;/a&gt; the Python
+newsletter that I curate.&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term=""></category></entry></feed>

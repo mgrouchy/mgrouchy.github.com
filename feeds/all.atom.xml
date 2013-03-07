@@ -101,7 +101,12 @@ relies on your own judgement but we can cover most issues with some steadfast ru
 &lt;li&gt;Always keep comments up to date when editing commented code.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
-are necessary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
+are necessary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are interested in keeping up with the latest Python news, discussions,
+projects, articles and Jobs you should check out &lt;a href="http://pycoders.com"&gt;Pycoder's Weekly&lt;/a&gt; the Python
+newsletter that I curate.&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term=""></category></entry><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
 For most apps you can drop Johnny-cache in and depending on your Django project get
 a good result right out of the box. If this sounds appealing check out the &lt;a href="http://pythonhosted.org/johnny-cache/"&gt;docs&lt;/a&gt;
 for more details.&lt;/p&gt;
