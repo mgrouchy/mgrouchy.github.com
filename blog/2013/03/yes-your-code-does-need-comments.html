@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Yes, your code does need comments. - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class=""><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class=""><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+																<li class=""><a class="" href="mailto:mgrouchy@gmail.com"><i class="icon-envelope"></i> Email</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2013/03/yes-your-code-does-need-comments.html">Yes, your code does need comments.</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Tue 05 March 2013</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p>I think that for your code to be considered good it needs comments.</p>
+<p>I imagine that this post is going to draw the ire of some. It seems like every
+time I mention this on <a href="http://twitter.com/mgrouchy">Twitter</a> or anywhere else
+there is always some pushback from people who think that putting comments in
+your code is a waste of time.</p>
+<p>Now lets qualify the statement "for your code to be good it needs comments".</p>
+<div class="codehilite"><pre><span class="k">def</span> <span class="nf">somefunction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+   <span class="c">#add a to b</span>
+   <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+   <span class="c">#return the result of a + b</span>
+   <span class="k">return</span> <span class="n">c</span>
+</pre></div>
+
+
+<p>I understand this is a contrived example but this is the comment trap that new
+developers get caught in. These types of comments really aren't useful to anyone.
+Peppering the code that you just wrote with excessive comments, especially when
+it is abundantly clear what the code is doing, is the least useful type of comment
+you can write.</p>
+<blockquote>
+<p>"Code is far better describing what code does than English so just write clear code"</p>
+</blockquote>
+<p>This is usually the blowback you get from comments like the ones above. I don't
+disagree, programming languages are definately more precise then English. What I
+don't agree with is the idea that if the code is clear and understandable that
+comments are unneeded or don't have a place in modern software development.</p>
+<p>So knowing this, what kind of comments am I advocating for? I'm advocating for
+comments as documentation. Comments that explain what a complex peice of code
+does, and most importantly what an entire function or Class does and why they
+exist in the first place.</p>
+<p>So what is a good example of the kind of documentation I am talking about? I
+think <a href="http://twitter.com/zedshaw">Zed Shaw's</a> <a href="http://github.com/zedshaw/lamson">Lamson</a> is a fantastic example of this. Here is a code exerpt from that:</p>
+<div class="codehilite"><pre><span class="k">class</span> <span class="nc">Relay</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Used to talk to your &quot;relay server&quot; or smart host, this is probably the most</span>
+<span class="sd">    important class in the handlers next to the lamson.routing.Router.</span>
+<span class="sd">    It supports a few simple operations for sending mail, replying, and can</span>
+<span class="sd">    log the protocol it uses to stderr if you set debug=1 on __init__.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                 <span class="n">ssl</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">starttls</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The hostname and port we&#39;re connecting to, and the debug level (default to 0).</span>
+<span class="sd">        Optional username and password for smtp authentication.</span>
+<span class="sd">        If ssl is True smtplib.SMTP_SSL will be used.</span>
+<span class="sd">        If starttls is True (and ssl False), smtp connection will be put in TLS mode.</span>
+<span class="sd">        It does the hard work of delivering messages to the relay host.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hostname</span> <span class="o">=</span> <span class="n">host</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">debug</span> <span class="o">=</span> <span class="n">debug</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ssl</span> <span class="o">=</span> <span class="n">ssl</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">starttls</span> <span class="o">=</span> <span class="n">starttls</span>
+
+   <span class="o">...</span>
+</pre></div>
+
+
+<p>This code snippet is from <a href="https://github.com/zedshaw/lamson/blob/master/lamson/server.py">https://github.com/zedshaw/lamson/blob/master/lamson/server.py</a>. You can poke around the lamson code and see some good looking
+Python code but also some usefully documented code.</p>
+<h2>So hold on. Why are we writing comments?</h2>
+<p>Why are we writing comments, if you write clean, understandable code? Why do we
+need to explain what classes and functions do if the code is "clear" and easy to
+understand.</p>
+<p>In my opinion, we write comments to capture intent. Comments are the only way
+to capture the intent of the code at the time of writing.</p>
+<p>Looking at a block of code only allows you to understand the intent of that
+particular code at that moment in time which may be very different then the
+intent of the code at time of its original writing.</p>
+<h2>Writing comments captures intent.</h2>
+<p>Writing comments captures the original meaning of the code. Python has <a href="http://www.python.org/dev/peps/pep-0257/">docstrings</a>
+for this, other languages have comparable options. What is so good about docstring
+type comments? In conjunction with unambiguous class and function names they can
+easily describe the original intent of your code.</p>
+<p>Why is capturing the original intent of your code important?</p>
+<ul>
+<li>It allows a developer, at a glance, to look at a peice of code and know why it exists.</li>
+<li>It reduces situations where a peice of codes original intent isn't clear then gets modified
+and leads to unintended regressions.</li>
+<li>It reduces the amount of context a developer must hold his/her mind to solve any particular problem that may be contained in a piece of code.</li>
+</ul>
+<p><strong>Writing comments to capture intent is like writing tests to prove that your software does what is expected.</strong></p>
+<h2>Where do we go from here?</h2>
+<p>The first step is to realize that the documentation/comments accompanying a peice
+of code can be just important as the code itself and need to be maintained as such.
+Just like code can become stale if you don't keep it updated so do comments.
+If you update some code you <em>must</em> update the accompanying comments/documentation
+or they become useless and can lead to more developer error then not having comments
+at all. So we have to treat comments and documentation as first class citizens.</p>
+<p>Next we have to agree on what is important to comment on in your code, and how to
+structure your code to make your use of comments most effective. Most of this
+relies on your own judgement but we can cover most issues with some steadfast rules.</p>
+<ol>
+<li>Never name your classes and functions ambigiously.</li>
+<li>Always use inline comments on code blocks that are complicated or may appear unclear.</li>
+<li>Always use descriptive variable names.</li>
+<li>Always write comments describing the intent or reason why a peice of code exists.</li>
+<li>Always keep comments up to date when editing commented code.</li>
+</ol>
+<p>As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
+are necessecary to create readable code that is easily maintained by you and future maintainers.</p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>

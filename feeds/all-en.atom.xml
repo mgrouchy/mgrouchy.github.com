@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all-en.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-02-21T20:25:00-05:00</updated><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all-en.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-03-05T00:00:00-05:00</updated><entry><title>Yes, your code does need comments.</title><link href="http://mikegrouchy.com/blog/2013/03/yes-your-code-does-need-comments.html" rel="alternate"></link><updated>2013-03-05T00:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-03-05:blog/2013/03/yes-your-code-does-need-comments.html</id><summary type="html">&lt;p&gt;I think that for your code to be considered good it needs comments.&lt;/p&gt;
+&lt;p&gt;I imagine that this post is going to draw the ire of some. It seems like every
+time I mention this on &lt;a href="http://twitter.com/mgrouchy"&gt;Twitter&lt;/a&gt; or anywhere else
+there is always some pushback from people who think that putting comments in
+your code is a waste of time.&lt;/p&gt;
+&lt;p&gt;Now lets qualify the statement "for your code to be good it needs comments".&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;somefunction&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+   &lt;span class="c"&gt;#add a to b&lt;/span&gt;
+   &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;
+   &lt;span class="c"&gt;#return the result of a + b&lt;/span&gt;
+   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I understand this is a contrived example but this is the comment trap that new
+developers get caught in. These types of comments really aren't useful to anyone.
+Peppering the code that you just wrote with excessive comments, especially when
+it is abundantly clear what the code is doing, is the least useful type of comment
+you can write.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Code is far better describing what code does than English so just write clear code"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is usually the blowback you get from comments like the ones above. I don't
+disagree, programming languages are definately more precise then English. What I
+don't agree with is the idea that if the code is clear and understandable that
+comments are unneeded or don't have a place in modern software development.&lt;/p&gt;
+&lt;p&gt;So knowing this, what kind of comments am I advocating for? I'm advocating for
+comments as documentation. Comments that explain what a complex peice of code
+does, and most importantly what an entire function or Class does and why they
+exist in the first place.&lt;/p&gt;
+&lt;p&gt;So what is a good example of the kind of documentation I am talking about? I
+think &lt;a href="http://twitter.com/zedshaw"&gt;Zed Shaw's&lt;/a&gt; &lt;a href="http://github.com/zedshaw/lamson"&gt;Lamson&lt;/a&gt; is a fantastic example of this. Here is a code exerpt from that:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Relay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="sd"&gt;    Used to talk to your &amp;quot;relay server&amp;quot; or smart host, this is probably the most&lt;/span&gt;
+&lt;span class="sd"&gt;    important class in the handlers next to the lamson.routing.Router.&lt;/span&gt;
+&lt;span class="sd"&gt;    It supports a few simple operations for sending mail, replying, and can&lt;/span&gt;
+&lt;span class="sd"&gt;    log the protocol it uses to stderr if you set debug=1 on __init__.&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;127.0.0.1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                 &lt;span class="n"&gt;ssl&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;starttls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="sd"&gt;        The hostname and port we&amp;#39;re connecting to, and the debug level (default to 0).&lt;/span&gt;
+&lt;span class="sd"&gt;        Optional username and password for smtp authentication.&lt;/span&gt;
+&lt;span class="sd"&gt;        If ssl is True smtplib.SMTP_SSL will be used.&lt;/span&gt;
+&lt;span class="sd"&gt;        If starttls is True (and ssl False), smtp connection will be put in TLS mode.&lt;/span&gt;
+&lt;span class="sd"&gt;        It does the hard work of delivering messages to the relay host.&lt;/span&gt;
+&lt;span class="sd"&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hostname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;host&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;port&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;debug&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;username&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ssl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ssl&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;starttls&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;starttls&lt;/span&gt;
+
+   &lt;span class="o"&gt;...&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This code snippet is from &lt;a href="https://github.com/zedshaw/lamson/blob/master/lamson/server.py"&gt;https://github.com/zedshaw/lamson/blob/master/lamson/server.py&lt;/a&gt;. You can poke around the lamson code and see some good looking
+Python code but also some usefully documented code.&lt;/p&gt;
+&lt;h2&gt;So hold on. Why are we writing comments?&lt;/h2&gt;
+&lt;p&gt;Why are we writing comments, if you write clean, understandable code? Why do we
+need to explain what classes and functions do if the code is "clear" and easy to
+understand.&lt;/p&gt;
+&lt;p&gt;In my opinion, we write comments to capture intent. Comments are the only way
+to capture the intent of the code at the time of writing.&lt;/p&gt;
+&lt;p&gt;Looking at a block of code only allows you to understand the intent of that
+particular code at that moment in time which may be very different then the
+intent of the code at time of its original writing.&lt;/p&gt;
+&lt;h2&gt;Writing comments captures intent.&lt;/h2&gt;
+&lt;p&gt;Writing comments captures the original meaning of the code. Python has &lt;a href="http://www.python.org/dev/peps/pep-0257/"&gt;docstrings&lt;/a&gt;
+for this, other languages have comparable options. What is so good about docstring
+type comments? In conjunction with unambiguous class and function names they can
+easily describe the original intent of your code.&lt;/p&gt;
+&lt;p&gt;Why is capturing the original intent of your code important?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It allows a developer, at a glance, to look at a peice of code and know why it exists.&lt;/li&gt;
+&lt;li&gt;It reduces situations where a peice of codes original intent isn't clear then gets modified
+and leads to unintended regressions.&lt;/li&gt;
+&lt;li&gt;It reduces the amount of context a developer must hold his/her mind to solve any particular problem that may be contained in a piece of code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Writing comments to capture intent is like writing tests to prove that your software does what is expected.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Where do we go from here?&lt;/h2&gt;
+&lt;p&gt;The first step is to realize that the documentation/comments accompanying a peice
+of code can be just important as the code itself and need to be maintained as such.
+Just like code can become stale if you don't keep it updated so do comments.
+If you update some code you &lt;em&gt;must&lt;/em&gt; update the accompanying comments/documentation
+or they become useless and can lead to more developer error then not having comments
+at all. So we have to treat comments and documentation as first class citizens.&lt;/p&gt;
+&lt;p&gt;Next we have to agree on what is important to comment on in your code, and how to
+structure your code to make your use of comments most effective. Most of this
+relies on your own judgement but we can cover most issues with some steadfast rules.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Never name your classes and functions ambigiously.&lt;/li&gt;
+&lt;li&gt;Always use inline comments on code blocks that are complicated or may appear unclear.&lt;/li&gt;
+&lt;li&gt;Always use descriptive variable names.&lt;/li&gt;
+&lt;li&gt;Always write comments describing the intent or reason why a peice of code exists.&lt;/li&gt;
+&lt;li&gt;Always keep comments up to date when editing commented code.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
+are necessecary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
 For most apps you can drop Johnny-cache in and depending on your Django project get
 a good result right out of the box. If this sounds appealing check out the &lt;a href="http://pythonhosted.org/johnny-cache/"&gt;docs&lt;/a&gt;
 for more details.&lt;/p&gt;
