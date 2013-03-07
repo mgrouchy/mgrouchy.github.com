@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-03-05T00:00:00-05:00</updated><entry><title>Yes, your code does need comments.</title><link href="http://mikegrouchy.com/blog/2013/03/yes-your-code-does-need-comments.html" rel="alternate"></link><updated>2013-03-05T00:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-03-05:blog/2013/03/yes-your-code-does-need-comments.html</id><summary type="html">&lt;p&gt;I think that for your code to be considered good it needs comments.&lt;/p&gt;
-&lt;p&gt;I imagine that this post is going to draw the ire of some. It seems like every
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mike Grouchy</title><link href="http://mikegrouchy.com/" rel="alternate"></link><link href="http://mikegrouchy.com/feeds/all.atom.xml" rel="self"></link><id>http://mikegrouchy.com/</id><updated>2013-03-05T00:00:00-05:00</updated><entry><title>Yes, your code does need comments.</title><link href="http://mikegrouchy.com/blog/2013/03/yes-your-code-does-need-comments.html" rel="alternate"></link><updated>2013-03-05T00:00:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-03-05:blog/2013/03/yes-your-code-does-need-comments.html</id><summary type="html">&lt;p&gt;I imagine that this post is going to draw the ire of some. It seems like every
 time I mention this on &lt;a href="http://twitter.com/mgrouchy"&gt;Twitter&lt;/a&gt; or anywhere else
 there is always some pushback from people who think that putting comments in
 your code is a waste of time.&lt;/p&gt;
-&lt;p&gt;Now lets qualify the statement "for your code to be good it needs comments".&lt;/p&gt;
+&lt;p&gt;I think your code needs comments, but so we have a mutual understanding, lets
+qualify that.&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;somefunction&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
    &lt;span class="c"&gt;#add a to b&lt;/span&gt;
    &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;
@@ -22,15 +22,15 @@ you can write.&lt;/p&gt;
 &lt;p&gt;"Code is far better describing what code does than English so just write clear code"&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This is usually the blowback you get from comments like the ones above. I don't
-disagree, programming languages are definately more precise then English. What I
+disagree, programming languages are definitely more precise then English. What I
 don't agree with is the idea that if the code is clear and understandable that
 comments are unneeded or don't have a place in modern software development.&lt;/p&gt;
 &lt;p&gt;So knowing this, what kind of comments am I advocating for? I'm advocating for
-comments as documentation. Comments that explain what a complex peice of code
+comments as documentation. Comments that explain what a complex piece of code
 does, and most importantly what an entire function or Class does and why they
 exist in the first place.&lt;/p&gt;
 &lt;p&gt;So what is a good example of the kind of documentation I am talking about? I
-think &lt;a href="http://twitter.com/zedshaw"&gt;Zed Shaw's&lt;/a&gt; &lt;a href="http://github.com/zedshaw/lamson"&gt;Lamson&lt;/a&gt; is a fantastic example of this. Here is a code exerpt from that:&lt;/p&gt;
+think &lt;a href="http://twitter.com/zedshaw"&gt;Zed Shaw's&lt;/a&gt; &lt;a href="http://github.com/zedshaw/lamson"&gt;Lamson&lt;/a&gt; is a fantastic example of this. Here is a code excerpt from that:&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Relay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 &lt;span class="sd"&gt;    Used to talk to your &amp;quot;relay server&amp;quot; or smart host, this is probably the most&lt;/span&gt;
@@ -77,14 +77,14 @@ type comments? In conjunction with unambiguous class and function names they can
 easily describe the original intent of your code.&lt;/p&gt;
 &lt;p&gt;Why is capturing the original intent of your code important?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It allows a developer, at a glance, to look at a peice of code and know why it exists.&lt;/li&gt;
-&lt;li&gt;It reduces situations where a peice of codes original intent isn't clear then gets modified
+&lt;li&gt;It allows a developer, at a glance, to look at a piece of code and know why it exists.&lt;/li&gt;
+&lt;li&gt;It reduces situations where a piece of codes original intent isn't clear then gets modified
 and leads to unintended regressions.&lt;/li&gt;
 &lt;li&gt;It reduces the amount of context a developer must hold his/her mind to solve any particular problem that may be contained in a piece of code.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Writing comments to capture intent is like writing tests to prove that your software does what is expected.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;Where do we go from here?&lt;/h2&gt;
-&lt;p&gt;The first step is to realize that the documentation/comments accompanying a peice
+&lt;p&gt;The first step is to realize that the documentation/comments accompanying a piece
 of code can be just important as the code itself and need to be maintained as such.
 Just like code can become stale if you don't keep it updated so do comments.
 If you update some code you &lt;em&gt;must&lt;/em&gt; update the accompanying comments/documentation
@@ -94,14 +94,14 @@ at all. So we have to treat comments and documentation as first class citizens.&
 structure your code to make your use of comments most effective. Most of this
 relies on your own judgement but we can cover most issues with some steadfast rules.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Never name your classes and functions ambigiously.&lt;/li&gt;
+&lt;li&gt;Never name your classes and functions ambiguously.&lt;/li&gt;
 &lt;li&gt;Always use inline comments on code blocks that are complicated or may appear unclear.&lt;/li&gt;
 &lt;li&gt;Always use descriptive variable names.&lt;/li&gt;
-&lt;li&gt;Always write comments describing the intent or reason why a peice of code exists.&lt;/li&gt;
+&lt;li&gt;Always write comments describing the intent or reason why a piece of code exists.&lt;/li&gt;
 &lt;li&gt;Always keep comments up to date when editing commented code.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
-are necessecary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
+are necessary to create readable code that is easily maintained by you and future maintainers.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Using Johnny Cache with Heroku and Memcachier</title><link href="http://mikegrouchy.com/blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html" rel="alternate"></link><updated>2013-02-21T20:25:00-05:00</updated><author><name>Mike Grouchy</name></author><id>tag:mikegrouchy.com,2013-02-21:blog/2013/02/using-johnny-cache-with-heroku-and-memcachier.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/jmoiron/johnny-cache"&gt;Johnny Cache&lt;/a&gt; is a pretty great caching framework for Django.
 For most apps you can drop Johnny-cache in and depending on your Django project get
 a good result right out of the box. If this sounds appealing check out the &lt;a href="http://pythonhosted.org/johnny-cache/"&gt;docs&lt;/a&gt;
 for more details.&lt;/p&gt;

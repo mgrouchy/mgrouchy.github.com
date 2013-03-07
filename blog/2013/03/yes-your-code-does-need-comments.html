@@ -49,12 +49,12 @@
 	<br/>
 	<div class="entry-content">
 		<p>
-			<p>I think that for your code to be considered good it needs comments.</p>
-<p>I imagine that this post is going to draw the ire of some. It seems like every
+			<p>I imagine that this post is going to draw the ire of some. It seems like every
 time I mention this on <a href="http://twitter.com/mgrouchy">Twitter</a> or anywhere else
 there is always some pushback from people who think that putting comments in
 your code is a waste of time.</p>
-<p>Now lets qualify the statement "for your code to be good it needs comments".</p>
+<p>I think your code needs comments, but so we have a mutual understanding, lets
+qualify that.</p>
 <div class="codehilite"><pre><span class="k">def</span> <span class="nf">somefunction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
    <span class="c">#add a to b</span>
    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
@@ -72,15 +72,15 @@ you can write.</p>
 <p>"Code is far better describing what code does than English so just write clear code"</p>
 </blockquote>
 <p>This is usually the blowback you get from comments like the ones above. I don't
-disagree, programming languages are definately more precise then English. What I
+disagree, programming languages are definitely more precise then English. What I
 don't agree with is the idea that if the code is clear and understandable that
 comments are unneeded or don't have a place in modern software development.</p>
 <p>So knowing this, what kind of comments am I advocating for? I'm advocating for
-comments as documentation. Comments that explain what a complex peice of code
+comments as documentation. Comments that explain what a complex piece of code
 does, and most importantly what an entire function or Class does and why they
 exist in the first place.</p>
 <p>So what is a good example of the kind of documentation I am talking about? I
-think <a href="http://twitter.com/zedshaw">Zed Shaw's</a> <a href="http://github.com/zedshaw/lamson">Lamson</a> is a fantastic example of this. Here is a code exerpt from that:</p>
+think <a href="http://twitter.com/zedshaw">Zed Shaw's</a> <a href="http://github.com/zedshaw/lamson">Lamson</a> is a fantastic example of this. Here is a code excerpt from that:</p>
 <div class="codehilite"><pre><span class="k">class</span> <span class="nc">Relay</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Used to talk to your &quot;relay server&quot; or smart host, this is probably the most</span>
@@ -127,14 +127,14 @@ type comments? In conjunction with unambiguous class and function names they can
 easily describe the original intent of your code.</p>
 <p>Why is capturing the original intent of your code important?</p>
 <ul>
-<li>It allows a developer, at a glance, to look at a peice of code and know why it exists.</li>
-<li>It reduces situations where a peice of codes original intent isn't clear then gets modified
+<li>It allows a developer, at a glance, to look at a piece of code and know why it exists.</li>
+<li>It reduces situations where a piece of codes original intent isn't clear then gets modified
 and leads to unintended regressions.</li>
 <li>It reduces the amount of context a developer must hold his/her mind to solve any particular problem that may be contained in a piece of code.</li>
 </ul>
 <p><strong>Writing comments to capture intent is like writing tests to prove that your software does what is expected.</strong></p>
 <h2>Where do we go from here?</h2>
-<p>The first step is to realize that the documentation/comments accompanying a peice
+<p>The first step is to realize that the documentation/comments accompanying a piece
 of code can be just important as the code itself and need to be maintained as such.
 Just like code can become stale if you don't keep it updated so do comments.
 If you update some code you <em>must</em> update the accompanying comments/documentation
@@ -144,14 +144,14 @@ at all. So we have to treat comments and documentation as first class citizens.<
 structure your code to make your use of comments most effective. Most of this
 relies on your own judgement but we can cover most issues with some steadfast rules.</p>
 <ol>
-<li>Never name your classes and functions ambigiously.</li>
+<li>Never name your classes and functions ambiguously.</li>
 <li>Always use inline comments on code blocks that are complicated or may appear unclear.</li>
 <li>Always use descriptive variable names.</li>
-<li>Always write comments describing the intent or reason why a peice of code exists.</li>
+<li>Always write comments describing the intent or reason why a piece of code exists.</li>
 <li>Always keep comments up to date when editing commented code.</li>
 </ol>
 <p>As you can see from the points above code as documentation and comments as documentation are not mutually exclusive. Both
-are necessecary to create readable code that is easily maintained by you and future maintainers.</p>
+are necessary to create readable code that is easily maintained by you and future maintainers.</p>
 		</p>
 	</div>
 			<div class="disqus">
