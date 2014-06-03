@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Pro Tip - Pip Upgrade All Python Packages - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="buttons" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class="buttons"><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class="buttons"><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+																<li class="buttons"><a class="" href="mailto:mgrouchy@gmail.com"><i class="icon-envelope"></i> Email</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2014/06/pro-tip-pip-upgrade-all-python-packages.html">Pro Tip - Pip Upgrade All Python Packages</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Mon 02 June 2014</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p>An open and ongoing <a href="https://github.com/pypa/pip/issues/59">feature request</a> for PIP is to add an <code>upgrade-all</code> command to
+PIP. Due to the lack of this feature a workaround is required. Enter Stackoverflow.</p>
+<p>I have been using a variation of this particular command line trick for awhile,
+but when starting writing this up I googled other solutions and <a href="http://stackoverflow.com/a/3452888/2867">this</a> is one of the
+nicest and most straightforward I have seen.</p>
+<div class="codehilite"><pre>    <span class="n">pip</span> <span class="n">freeze</span> <span class="o">--</span><span class="n">local</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">v</span> <span class="s">&#39;^\-e&#39;</span> <span class="o">|</span> <span class="n">cut</span> <span class="o">-</span><span class="n">d</span> <span class="p">=</span> <span class="o">-</span><span class="n">f</span> 1  <span class="o">|</span> <span class="n">xargs</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span>
+</pre></div>
+
+
+<p>So next time you want to upgrade all the packages in your virtualenv, this is a great
+place to start. I have this set up as an alias to <code>pipup</code> in my <a href="https://github.com/mgrouchy/dotfiles/blob/master/.zshalias#L31">.zshrc</a> for convenience.</p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>
