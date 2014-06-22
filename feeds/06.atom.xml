@@ -47,7 +47,7 @@ your machine(Mac or Linux) to eventually run sshuttle.&lt;/p&gt;
 &lt;h2&gt;3. Start your Tunnel&lt;/h2&gt;
 &lt;p&gt;Okay. We have our droplet setup and we have downloaded sshuttle. Now to start
 our DNS tunnel.&lt;/p&gt;
-&lt;p&gt;Navigate to the directory where you downloaded sshuttle then:&lt;/p&gt;
+&lt;p&gt;Navigate to the directory where you downloaded sshuttle locally then:&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;   &lt;span class="o"&gt;./&lt;/span&gt;&lt;span class="n"&gt;sshuttle&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;dns&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;vvr&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;dropletserver&lt;/span&gt; 0&lt;span class="o"&gt;/&lt;/span&gt;0
 &lt;/pre&gt;&lt;/div&gt;
 
