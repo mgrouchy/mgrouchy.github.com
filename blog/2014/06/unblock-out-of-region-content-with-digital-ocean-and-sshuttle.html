@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+					<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
+			<title>Unblock out of region content with Digital Ocean and sshuttle - Mike Grouchy</title>
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/styles.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/pygment_trac.css">
+			<link rel="stylesheet" href="http://mikegrouchy.com/theme/stylesheets/font-awesome.min.css">
+			<script src="http://mikegrouchy.com/theme/javascripts/scale.fix.js"></script>
+			<link rel="alternate" type="application/rss+xml" title="MikeGrouchy.com RSS Feed" href="http://feeds.feedburner.com/mikegrouchycom">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+											<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1990784-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+									</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			<h1 class="header"><a href="http://mikegrouchy.com" class="home-link">Mike Grouchy</a></h1>
+			  <p class="header">Ambitious Python Developer, Beer drinker and lover of all things basketball.</p>
+				<ul>
+					<li><a class="buttons" href="http://mikegrouchy.com/projects.html"><i class="icon-beaker"></i> Projects</a></li>
+										<li class="buttons"><a class="twitter" href="http://twitter.com/mgrouchy"><i class="icon-twitter"></i> @mgrouchy</a></li>
+																<li class="buttons"><a class="" href="http://github.com/mgrouchy"><i class="icon-github"></i> Code</a></li>
+																<li class="buttons"><a class="" href="mailto:mgrouchy@gmail.com"><i class="icon-envelope"></i> Email</a></li>
+									</ul>
+				<p class="header"></p>
+			</header>
+			<section>
+				<h1><a class="article-title" href="http://mikegrouchy.com/blog/2014/06/unblock-out-of-region-content-with-digital-ocean-and-sshuttle.html">Unblock out of region content with Digital Ocean and sshuttle</a></h1>
+<p class="meta">
+	<small>
+			<span class="article-date">Sun 22 June 2014</span>  <span class="tags"><a href="/tag//"></a>		</span>
+	</small>
+	</p>
+	<br/>
+	<div class="entry-content">
+		<p>
+			<p>If you live in Canada(like me) or elsewhere. You are probably interested in
+paying for services like Hulu and Spotify and are probably wondering how you
+can get that good US netflix content. You will be happy to know that it is in
+fact very easy to accomplish this for as little as 5$/month through Digital
+Ocean and still have a server that you can do other things with in the meantime.</p>
+<p>Before I go through the setup here, I know there are alternatives which are
+similarily priced. Unblock.us, and mediahint to just name a couple.The big
+advantage here is that you can setup/teardown your Digital Ocean droplets at
+your convenience which is nice if you are really pinching pennies, because
+these are charged hourly.</p>
+<p><img alt="&quot;Digital Ocean Pricing&quot;" src="/static/images/2014/digital-ocean-pricing.png" /></p>
+<p>The other big advantage of using something like Digital Ocean is that you can
+use the droplet for other things besides using it tunnel your internet traffic.
+Convinced yet? If so, lets move on to the setup.</p>
+<h2>1. Signup For Digital Ocean/Set up a Droplet</h2>
+<p>The first step here is just to head over to [<a href="https://www.digitalocean.com/?refcode=b0a3d514963a">Digital Ocean</a>(referral) and signup. This can
+also be accomplished with a VPN you already have, and if that is the route you
+want to go, just head on down to step 2.</p>
+<p>Once you have logged into your Digital Ocean account and have verified your email
+and billing details you can go ahead and click on the "Create" button in the
+side bar. This should give you the Droplet creation wizard and you can just follow
+these steps:</p>
+<p>First chose a hostname, this can be whatever you want, like "VPN", etc.
+<img alt="&quot;Choose Hostname&quot;" src="/static/images/2014/creat-droplet-hostname.png" />
+Once you have chosen a hostname, go ahead and select the region you want your
+traffic to be in. If you are Canadian like me who might want your traffic to
+appear as it is comign from the US then you want to select a US Region.
+<img alt="&quot;Select Region&quot;" src="/static/images/2014/digital-ocean-select-region.png" />
+Next you choose your flavor of Linux, in my case I have chosen Ubuntu.
+<img alt="&quot;Select Droplet Image&quot;" src="/static/images/2014/digital-ocean-select-image.png" />
+Next you want to choose the SSH keys to use, if you have <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">set them up</a>.
+If you don't have ssh keys set up and you don't want to use them. That is okay,
+after you create the droplet digital ocean will email you a root password to the
+email you signed up with. It is recommended you change this root password by sshing
+into your droplet with the current root password and <a href="https://www.digitalocean.com/community/questions/can-i-change-root-password">changing it</a>.
+<img alt="&quot;Choose SSH Keys and Create&quot;" src="/static/images/2014/digital-ocean-ssh-create.png" /></p>
+<h2>2. Install sshuttle</h2>
+<p>Installing sshuttle is each, just download it to your computer. You also need Python installed on
+your machine(Mac or Linux) to eventually run sshuttle.</p>
+<div class="codehilite"><pre>    <span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">apenwarr</span><span class="o">/</span><span class="n">sshuttle</span>
+</pre></div>
+
+
+<p>Optionally you can download and extract a <code>zip</code> or a <code>.tar.gz</code> from the sshuttle
+<a href="https://github.com/apenwarr/sshuttle/releases">download page</a> on <a href="http://github.com">Github</a>.</p>
+<h2>3. Start your Tunnel</h2>
+<p>Okay. We have our droplet setup and we have downloaded sshuttle. Now to start
+our DNS tunnel.</p>
+<p>Navigate to the directory where you downloaded sshuttle then:</p>
+<div class="codehilite"><pre>   <span class="o">./</span><span class="n">sshuttle</span> <span class="o">--</span><span class="n">dns</span> <span class="o">-</span><span class="n">vvr</span> <span class="n">root</span><span class="p">@</span><span class="n">dropletserver</span> 0<span class="o">/</span>0
+</pre></div>
+
+
+<p>This will then prompt you for your local root password and the password to your
+droplet.
+<strong>Note</strong>: On OSX this will require a restart after you run this the first time.</p>
+<p>You should now be able to navigate to that out of region website you wanted to
+visit so much and it should just work.</p>
+<p><img alt="&quot;Hulu&quot;" src="/static/images/2014/hulu.png" /></p>
+<h2>What else is this good for?</h2>
+<ul>
+<li>It is essentially a poor mans instant VPN, you don't even need to have root access on the machine you are connecting to.</li>
+<li>Allows you to surf safely. It protects you from standard attacks like Firesheep on insecure networks.</li>
+<li>Anything else you can think of that you would like to use a VPN for.</li>
+</ul>
+<p>Any other uses for this or thoughts about this? Leave something in the comments or
+contact me on <a href="http://twitter.com/mgrouchy">twitter</a>.</p>
+		</p>
+	</div>
+			<div class="disqus">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/**
+			* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+			*/
+		var disqus_shortname = 'mikegrouchy';
+
+ (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>					</section>
+				<footer>
+					<span class="copyright" style="font-size:10px;">© Mike Grouchy - 2008-2013</span><br/></p>
+					</footer>
+						</div>
+						<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+					</body>
+</html>
